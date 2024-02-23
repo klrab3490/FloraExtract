@@ -21,7 +21,7 @@ const Extract = () => {
 
 const PatentedProducts = () => {
   return(
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 items-center justify-items-center'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-items-center'>
       <Patented />
     </div>
   )

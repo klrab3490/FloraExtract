@@ -1,11 +1,11 @@
 import { NavLink } from 'react-router-dom'
 
 // Assets
-import bcm95 from '../../../assets/BCM95.png'
 import akbamax from '../../../assets/AKBAMAX.png'
-import shoden from '../../../assets/Shoden.png'
+import bcm95 from '../../../assets/BCM95.png'
 import herbagut from '../../../assets/Herbagut.png'
 import oxystorm from '../../../assets/Oxystorm.png'
+import shoden from '../../../assets/Shoden.png'
 import trilow from '../../../assets/Trilow.png'
 
 export default function Patented() {
@@ -66,17 +66,19 @@ export default function Patented() {
   return (
     <>
       {data.map((data,index) => (
-        <div key={index} className='border-2 rounded-xl w-auto sm:h-[450px] h-auto m-5 border-[#5e1c0e] text-[#5e1c0e]'>
+        <div key={index} className='border-2 rounded-xl w-auto sm:h-[500px] h-auto m-5 border-[#5e1c0e] text-[#5e1c0e] flex flex-col justify-between'>
           <div>
             <img src={data.image} className='rounded-t-xl h-[220px] w-full' />
           </div>
           <div className='ml-2 font-semibold'>
             <div className='text-2xl font-bold'>{data.title}</div>
             <div className='text-xs'>{data.subtitle}</div>
-            <div className='flex flex-col justify-between p-5 text-xl'>
-              <div className='mt-5'>{data.description}</div>
-              <NavLink to={data.link} className='underline p-4 text-end items-end flex justify-end'>Read More</NavLink>
+            <div className='p-5 text-xl'>
+              <div>{data.description}</div>
             </div>
+          </div>
+          <div className='p-5 text-xl'>
+            <NavLink to={data.link} className='underline text-end items-end flex justify-end'>Read More</NavLink>
           </div>
         </div>
       ))}

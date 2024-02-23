@@ -1,26 +1,27 @@
 // images
-import Tribulus from "./assets/Tribulus.png"
-import Sesame from "./assets/Sesame.png"
-import Pterocarpus from "./assets/Pterocarpus.png"
-import Gymnema from "./assets/Gymnema.jpg"
-import Guggul from "./assets/Guggul.png"
-import GreenTea from "./assets/GreenTea.png"
-import GreenCoffee from "./assets/GreenCoffee.png"
-import Ginger from "./assets/Ginger.jpg"
-import GarciniaCambogia from "./assets/GarciniaCambogia.jpg"
-import Fenugreek from "./assets/Fenugreek.png"
-import Mustard from "./assets/Mustard.png"
-import Cinnamon from "./assets/Cinnamon.jpg"
-import CurcuminEthanol from "./assets/CurcuminEthanol.jpg"
-import CurcuminOilSoluble from "./assets/CurcuminOilSoluble.png"
-import CurcuminHighDensity from "./assets/CurcuminHighDensity.jpeg"
-import CurcuminPowderWaterDispersible from "./assets/CurcuminPowderWaterDispersible.jpg"
-import CurcuminPowder from "./assets/CurcuminPowder.png"
-import CurcuminStainFree from "./assets/CurcuminStainFree.jpg"
-import Brahmi from "./assets/Brahmi.jpg"
-import BoswelliaSerratta from "./assets/BoswelliaSerratta.png"
-import Ashwagandha from "./assets/Ashwagandha.png"
 import AndrographisPaniculata from "./assets/AndrographisPaniculata.jpg"
+import Ashwagandha from "./assets/Ashwagandha.png"
+import BoswelliaSerratta from "./assets/BoswelliaSerratta.png"
+import Brahmi from "./assets/Brahmi.jpg"
+import Cinnamon from "./assets/Cinnamon.jpg"
+import CurcuminEffervescen from "./assets/CurcuminEffervescen.png"
+import CurcuminEthanol from "./assets/CurcuminEthanol.jpg"
+import CurcuminHighDensity from "./assets/CurcuminHighDensity.jpeg"
+import CurcuminOilSoluble from "./assets/CurcuminOilSoluble.png"
+import CurcuminPowder from "./assets/CurcuminPowder.jpg"
+import CurcuminPowderWaterDispersible from "./assets/CurcuminPowderWaterDispersible.jpg"
+import CurcuminStainFree from "./assets/CurcuminStainFree.jpg"
+import Fenugreek from "./assets/Fenugreek.png"
+import GarciniaCambogia from "./assets/GarciniaCambogia.jpg"
+import Ginger from "./assets/Ginger.jpg"
+import GreenCoffee from "./assets/GreenCoffee.png"
+import GreenTea from "./assets/GreenTea.png"
+import Guggul from "./assets/Guggul.png"
+import Gymnema from "./assets/Gymnema.jpg"
+import Mustard from "./assets/Mustard.png"
+import Pterocarpus from "./assets/Pterocarpus.png"
+import Sesame from "./assets/Sesame.png"
+import Tribulus from "./assets/Tribulus.png"
 
 export default function Extracts() {
   const extracts = [
@@ -86,7 +87,7 @@ export default function Extracts() {
       desc:"",
       ingredients:"Curcuminiods 37.5%",
       benefit:"Free flowing effervescent granules",
-      img:""
+      img:CurcuminEffervescen
     },{
       id:10,
       name:"Curcumin Oil Soluble",
@@ -200,11 +201,11 @@ export default function Extracts() {
     <div className='flex flex-col'>
       {extracts.map((data,index) => (
         <div key={index} className='p-5'>
-          <div className='flex border-[2px] border-black w-full p-5 rounded-xl'>
+          <div className='flex flex-col sm:flex-row border-[2px] border-black w-full p-5 rounded-xl'>
             <div className=''>
-              <img src={data.img} className='rounded-xl' />
+              <img src={data.img} className='w-[400px] h-[300px] rounded-xl object-cover' />
             </div>
-            <div className='ml-4 font-semibold text-2xl'>
+            <div className='ml-4 w-full font-semibold text-2xl'>
               <div className="text-4xl mb-2">{data.name}</div>
               <div>{data.desc}</div>
               <div>Ingredients : {data.ingredients}</div>

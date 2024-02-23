@@ -56,7 +56,7 @@ export default function FinishedProducts() {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-items-center'>
                 {filteredContents.map((data,index) => (
                     <div key={index} className='p-4'>
-                        <div className='border-[2px] p-4'>
+                        <div className='border-2 rounded-xl p-4 border-[#5e1c0e] text-[#5e1c0e]'>
                             <div>{data.catogory}</div>
                             <div>
                                 <img src={data.img} className='h-max-[200px]' />
