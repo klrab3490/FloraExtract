@@ -10,14 +10,14 @@ import RunningMarquee from '../components/RunningMarque'
 function HomeSec() {
   return (
     <div>
-        <HeroSectionSec/>
-        <HomeSlider/>
-        <ProductJourney/>
-        <TeamSection/>
-        <Exclusive/>
-        <WhatSet/>
-        <Certifications/>
-        <RunningMarquee/>
+      <HeroSectionSec/>
+      <HomeSlider/>
+      <ProductJourney/>
+      <TeamSection/>
+      <Exclusive/>
+      <WhatSet/>
+      <Certifications/>
+      <RunningMarquee/>
     </div>
   )
 }
