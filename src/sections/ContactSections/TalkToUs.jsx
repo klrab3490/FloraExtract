@@ -80,7 +80,7 @@ export default function TalkToUs() {
                                 <div>
                                     <div className='flex-col w-full mt-2'>
                                         <p>Country:</p>
-                                        <select id="country" name="Country" className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1'>
+                                        <select id="country" name="Country"  className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1'>
                                             <option>select country</option>
                                             <option value="AF">Afghanistan</option>
                                             <option value="AX">Aland Islands</option>

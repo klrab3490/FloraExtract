@@ -3,7 +3,6 @@ import Sep1 from "../../assets/Vector-IMG/sep-1.png";
 import Sep2 from "../../assets/Vector-IMG/sep-2.png";
 import ArrowLeft from "../../assets/icons/ArrowLeft.png"
 import ArrowRight from "../../assets/icons/ArrowRight.png"
-import { FaArrowRightLong } from "react-icons/fa6"
 
 const Research = () => {
   return (
@@ -14,14 +13,14 @@ const Research = () => {
           <div>Identifying herbs with potential compounds</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
           <div>Determining the potent actives</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
@@ -40,14 +39,14 @@ const ClinicalValidation = () => {
           <div>Designing comprehensive clinical studies</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
           <div>Undertaking clinical studies worldwide</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
@@ -66,14 +65,14 @@ const Manufacturing = () => {
           <div>Obtaining /gathering herbs from sustainable sources</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
           <div>Extracting actives using gentle processes</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
@@ -92,14 +91,14 @@ const QualityControl = () => {
           <div>Testing to ensure actives&apos; specifications</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
           <div>Testing to ensure the product&apos;s safety</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
@@ -118,14 +117,14 @@ const GlobalDelivery = () => {
           <div>Packaging the product safely</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
           <div>Collaborating with delivery partners</div>
         </div>
         <div className="flex justify-center items-center m-2">
-          <FaArrowRightLong size={50}/>
+          <img src={ArrowLeft} className="rotate-180"/>
         </div>
         <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
           <div>Icon</div>
