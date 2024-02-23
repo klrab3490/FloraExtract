@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 // Assets
@@ -69,7 +68,7 @@ export default function Patented() {
       {data.map((data,index) => (
         <div key={index} className='border-2 rounded-xl w-auto sm:h-[450px] h-auto m-5 border-[#5e1c0e] text-[#5e1c0e]'>
           <div>
-            <img src={data.image} className='rounded-t-xl h-[220px]' width={500} />
+            <img src={data.image} className='rounded-t-xl h-[220px] w-full' />
           </div>
           <div className='ml-2 font-semibold'>
             <div className='text-2xl font-bold'>{data.title}</div>

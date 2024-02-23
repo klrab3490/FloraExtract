@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import bcm95 from "../../../assets/BCM95.png"
 
 export default function FinishedProducts() {
@@ -53,9 +53,9 @@ export default function FinishedProducts() {
             </div>
         </div>
         <div className='flex sm:flex-row flex-col'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 items-center justify-items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-items-center'>
                 {filteredContents.map((data,index) => (
-                    <div className='p-4'>
+                    <div key={index} className='p-4'>
                         <div className='border-[2px] p-4'>
                             <div>{data.catogory}</div>
                             <div>
