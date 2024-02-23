@@ -1,18 +1,23 @@
 import React, { useState } from 'react'
 import Patented from "../sections/ShopSections/PatentedProducts/Patented"
+import Extracts from '../sections/ShopSections/Extract/Extract'
 
 const FinishedProduct = () => {
   return <div>Finished Product</div>
 }
 
 const Extract = () => {
-  return <div>Extract</div>
+  return (
+    <div>
+      <Extracts />
+    </div>
+  )
 }
 
 const PatentedProducts = () => {
   return(
-    <div>
-      <patented />RA
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 items-center justify-items-center'>
+      <Patented />
     </div>
   )
 }

@@ -67,16 +67,16 @@ export default function Patented() {
   return (
     <>
       {data.map((data,index) => (
-        <div key={index} className='border-2 rounded-xl w-auto sm:h-[450px] h-auto m-5 border-gray-400'>
+        <div key={index} className='border-2 rounded-xl w-auto sm:h-[450px] h-auto m-5 border-[#5e1c0e] text-[#5e1c0e]'>
           <div>
-            <img src={data.image} className='rounded-t-xl' width={500} />
+            <img src={data.image} className='rounded-t-xl h-[220px]' width={500} />
           </div>
-          <div className='ml-2'>
-            <div className='text-2xl'>{data.title}</div>
-            <div className='text-xs text-gray-500'>{data.subtitle}</div>
-            <div className='flex flex-col justify-between text-xl text-gray-500'>
+          <div className='ml-2 font-semibold'>
+            <div className='text-2xl font-bold'>{data.title}</div>
+            <div className='text-xs'>{data.subtitle}</div>
+            <div className='flex flex-col justify-between p-5 text-xl'>
               <div className='mt-5'>{data.description}</div>
-              <NavLink to={data.link} className='underline p-4 text-end'>Read More</NavLink>
+              <NavLink to={data.link} className='underline p-4 text-end items-end flex justify-end'>Read More</NavLink>
             </div>
           </div>
         </div>
