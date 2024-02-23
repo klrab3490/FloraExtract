@@ -33,7 +33,7 @@ export default function Extracts() {
     <div className='flex flex-col'>
       {extracts.map((data,index) => (
         <div className='p-5'>
-          <div className='flex border-[2px] border-black w-full p-5 rounded-xl'>
+          <div className='flex border-[2px] border-[#5e1c0e] text-[#5e1c0e] text-xl font-semibold w-full p-5 rounded-xl'>
             <div className='mr-5'>
               <img src={data.img} className='rounded-xl' />
             </div>
