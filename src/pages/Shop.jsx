@@ -1,14 +1,9 @@
 import React, { useState } from 'react'
 import Patented from "../sections/ShopSections/PatentedProducts/Patented"
 import Extracts from '../sections/ShopSections/Extract/Extract'
-import FinishedProducts from '../sections/ShopSections/FinishedProduct/FinishedProducts'
 
 const FinishedProduct = () => {
-  return (
-    <div>
-      <FinishedProducts />
-    </div>
-  )
+  return <div>Finished Product</div>
 }
 
 const Extract = () => {
@@ -44,7 +39,9 @@ export default function Shop() {
         </div>
         <div>
           {contents[currentIndex]}
+
         </div>
+
     </div>
   )
 }
