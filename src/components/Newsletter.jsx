@@ -19,17 +19,17 @@ function Newsletter() {
             we’ve grown exponentially, serving customers in over 60 countries
           </div>
           <div className="flex items-center">
-          <div className="flex mt-4 relative justify-center items-center w-52 z-20">
+            <div className="flex items-center justify-center">
+              <div className="flex mt-4 relative justify-center items-center w-52 z-20">
                 <div className="flex justify-center items-center px-3 py-3 w-40 bg-[#fd9b40] hover:bg-[#e88b34] cursor-pointer">
-                    <h1 className='text-xl font-medium text-[#290c06]'>About us</h1>
-                    <IoMdArrowRoundForward size={28} className='text-white'/>
+                  <h1 className='text-xl font-medium text-[#290c06]'>About us</h1>
+                  <IoMdArrowRoundForward size={28} className='text-white'/>
                 </div>
                 <div className="w-40 h-14 -z-10 top-1 right-4 bg-[#290c06] absolute"></div>
+              </div>
             </div>
-
             <p className="flex items-center ml-10 text-xl">
-              {" "}
-              <IoIosPlayCircle className="mr-2" size={40} /> Play Video
+              {" "} <IoIosPlayCircle className="mr-2" size={40} /> Play Video
             </p>
           </div>
         </div>

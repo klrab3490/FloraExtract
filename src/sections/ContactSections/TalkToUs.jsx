@@ -2,42 +2,27 @@
 import { IoMdMail, IoIosCall, IoLogoInstagram, IoLogoWhatsapp } from 'react-icons/io';
 import { FaXTwitter } from 'react-icons/fa6';
 
-// image
-import Sep1 from "../../assets/Vector-IMG/sep-1.png";
-import Sep2 from "../../assets/Vector-IMG/sep-2.png";
-
 export default function TalkToUs() {
     return (
         <div>
             <section>
                 <div className='py-5'>
-                    <div className="bg-[#fdfde1]">
-                        <img src={Sep1} alt="" className="w-[100vw] h-20" />
-                    </div>
-                    <div className='w-full h-auto py-3 bg-[#5ACEA1]'>
-                        <div className='text-5xl px-4 sm:px-14'>It All Started With A Vision</div>
-                        <div className='mt-3 text-xl mb-3 px-4 sm:px-14'>Our journey began over three decades ago with Mr. P.J. Kunjachan and Dr. Benny Antony, who firmly believed in the power of nature and recognized the role of herbs in providing a healthy life.</div>
-                    </div>
-                    <div className="w-full flex justify-start items-center pl-10 relative pb-4 h-auto py-3 bg-[#5ACEA1]">
-                        <div className="w-auto text-3xl px-5 py-2 h-20 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10">
-                            <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Talk To Us
+                    <div className='px-4 sm:px-14'>
+                        <div className="w-full flex justify-start items-center pl-10 relative pb-4">
+                            <div className="w-auto text-3xl px-5 py-2 h-20 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10">
+                                <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Talk With Us 
+                            </div>
+                            <div className="w-auto text-3xl px-5 py-2 h-20 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13">
+                                <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Talk With Us 
+                            </div>
                         </div>
-                        <div className="w-auto text-3xl px-5 py-2 h-20 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13">
-                            <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Talk To Us 
-                        </div>
-                    </div>
-                    <div className='px-4 sm:px-14 bg-[#5ACEA1]'>
-                        <hr />
-                    </div>
-                    <div className="">
-                        <img src={Sep2} alt="" className="w-[100vw] h-24" />
                     </div>
 
                     <div className='flex sm:flex-row flex-col px-4 sm:px-14'>
-                        <div className="sm:w-1/2 w-full flex flex-col sm:border-r-[1px]">
+                        <div className="sm:w-1/2 w-full flex flex-col sm:border-r-[1px] border-t-[1px] border-[#5e1c0e]">
                             <div className="text-5xl sm:text-7xl w-full p-4">Get in Touch with FloraExtracts</div>
-                            <div className='flex sm:flex-row flex-col border-y-[1px] p-3'>
-                                <div className="flex-col sm:border-r-[1px] sm:w-2/3 w-full">
+                            <div className='flex sm:flex-row flex-col border-y-[1px] border-[#5e1c0e] p-3'>
+                                <div className="flex-col sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/2 w-full">
                                     <div className='flex'>
                                         <div className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoMdMail className='mr-2 flex items-center justify-center' /> nutraextracts@gmail.com</div>
                                     </div>
@@ -50,45 +35,47 @@ export default function TalkToUs() {
                                         <div className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp /> </div>                                        
                                     </div>
                                 </div>
-                                <div className="flex justify-center items-center sm:w-1/3 w-full p-3 sm:p-0">
+                                <div className="flex justify-center items-center sm:w-1/2 w-full p-3 sm:p-0">
                                     <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">Download Contact</div>
                                 </div>
                             </div>
+                            {/* Map */}
+                            <div></div>
                         </div>
-                        <div className="sm:w-1/2 w-full flex sm:p-8 p-4 text-xl">
-                            <form action="submit" className='w-full bg-[#5ACEA1] rounded-xl sm:p-8 p-4'>
+                        <div className="sm:w-1/2 w-full flex sm:p-8 p-4 text-xl border-0 sm:border-t-[1px] border-[#5e1c0e]">
+                            <form action="submit" className='w-full bg-[#5ACEA1] rounded-xl sm:p-8 p-4 text-[#5e1c0e]'>
                                 <div className='flex'>
-                                    <div className='flex-col w-1/2 mr-4'>
+                                    <div className='flex-col w-1/2 mr-4 text-[#5e1c0e]'>
                                         <p>First Name:</p>
-                                        <input type="text" placeholder='First Name' className='w-full text-white bg-slate-600 rounded-xl p-1' />
+                                        <input type="text" placeholder='First Name' className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1' />
                                     </div>
                                     <div className='flex-col w-1/2 ml-4'>
                                         <p>Last Name:</p>
-                                        <input type="text" placeholder='Last Name' className='w-full text-white bg-slate-600 rounded-xl p-1' />
+                                        <input type="text" placeholder='Last Name' className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1' />
                                     </div>
                                 </div>
                                 <div>
                                     <div className='flex-col w-full mt-2'>
                                         <p>Email ID:</p>
-                                        <input type="email" placeholder='Email ID' className='w-full text-white bg-slate-600 rounded-xl p-1' />
+                                        <input type="email" placeholder='Email ID' className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1' />
                                     </div>                                    
                                 </div>
                                 <div>
                                     <div className='flex-col w-full mt-2'>
                                         <p>Contact Number:</p>
-                                        <input type="number" placeholder='Contact Number' className='w-full text-white bg-slate-600 rounded-xl p-1' />
+                                        <input type="number" placeholder='Contact Number' className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1' />
                                     </div>
                                 </div>
                                 <div>
                                     <div className='flex-col w-full mt-2'>
                                         <p>Company Name:</p>
-                                        <input type="text" placeholder='Company Name' className='w-full text-white bg-slate-600 rounded-xl p-1' />
+                                        <input type="text" placeholder='Company Name' className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1' />
                                     </div>         
                                 </div>
                                 <div>
                                     <div className='flex-col w-full mt-2'>
                                         <p>Country:</p>
-                                        <select id="country" name="Country"  className='w-full text-white bg-slate-600 rounded-xl p-1'>
+                                        <select id="country" name="Country"  className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1'>
                                             <option>select country</option>
                                             <option value="AF">Afghanistan</option>
                                             <option value="AX">Aland Islands</option>
@@ -348,11 +335,18 @@ export default function TalkToUs() {
                                 <div>
                                     <div className='flex-col w-full mt-2'>
                                         <p>Message:</p>
-                                        <textarea type="email" placeholder='Message' className='w-full text-white h-50 bg-slate-600 rounded-xl p-1' />
+                                        <textarea type="email" placeholder='Message' className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] h-50 bg-[#fdfde1] rounded-xl p-1' />
                                     </div>
                                 </div>
                                 <div className='mt-2 flex justify-center items-center'>
-                                    <button className='flex items-center justify-center rounded-xl p-2 bg-slate-600 text-white'>Request</button>
+                                    <div className="w-full flex justify-center items-center relative pb-4">
+                                        <button className="w-auto text-3xl px-5 py-2 h-15 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10">
+                                        Request 
+                                        </button>
+                                        <div className="w-auto text-3xl px-5 py-2 h-15 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13">
+                                            Request
+                                        </div>
+                                    </div>
                                 </div>
                             </form>
                         </div>

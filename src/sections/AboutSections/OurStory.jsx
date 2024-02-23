@@ -19,8 +19,8 @@ export default function OurStory() {
                             <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Our Story 
                         </div>
                     </div>
-                    <hr className='mt-5 mb-5' />
-                    <div className='relative flex justify-center items-center'>
+                    <hr className='my-5' />
+                    <div className='relative flex justify-center items-center font-bold'>
                         <img src={ourstory} className='rounded-s-xl w-full' />
                         <div className='absolute top-10 left-10 right-10 flex-col text-2xl sm:text-5xl text-white'>
                             <div>Our story is more than just the extracts we&apos;ve built.</div>
