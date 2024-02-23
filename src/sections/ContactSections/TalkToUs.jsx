@@ -40,7 +40,12 @@ export default function TalkToUs() {
                                 </div>
                             </div>
                             {/* Map */}
-                            <div></div>
+                            <div className='w-full h-full'>
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.7795699334706!2d76.2833386748764!3d10.359502389765051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7f83104152d61%3A0x47836d6961e2b979!2sSahrdaya%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1708669672069!5m2!1sen!2sin" 
+                                    className='w-full h-full' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            </div>
                         </div>
                         <div className="sm:w-1/2 w-full flex sm:p-8 p-4 text-xl border-0 sm:border-t-[1px] border-[#5e1c0e]">
                             <form action="submit" className='w-full bg-[#5ACEA1] rounded-xl sm:p-8 p-4 text-[#5e1c0e]'>

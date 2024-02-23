@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound"
+import Shop from "./pages/Shop";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<HomeSec />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/shop" element={<Shop />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       <Newsletter />
