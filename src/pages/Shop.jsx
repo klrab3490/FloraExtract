@@ -2,11 +2,20 @@ import { useState } from 'react'
 import Patented from "../sections/ShopSections/PatentedProducts/Patented"
 import Extracts from '../sections/ShopSections/Extract/Extract'
 import FinishedProducts from '../sections/ShopSections/FinishedProduct/FinishedProducts'
+import NaturalColors from '../sections/ShopSections/NaturalColors/NaturalColors'
 
 const FinishedProduct = () => {
   return (
     <div>
       <FinishedProducts />
+    </div>
+  )
+}
+
+const Natural = () => {
+  return (
+    <div>
+      <NaturalColors />
     </div>
   )
 }
@@ -32,6 +41,7 @@ export default function Shop() {
     <PatentedProducts key={'PatentedProducts'} />,
     <Extract key={'Extract'} />,
     <FinishedProduct key={'FinishedProduct'} />,
+    <Natural key={'Natural'} />,
   ];
   const [currentIndex,setCurrentIndex] = useState(0)
 
@@ -41,6 +51,7 @@ export default function Shop() {
           <div className={ currentIndex === 0 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline' } onClick={() => setCurrentIndex(0)}>Patented Products</div>
           <div className={ currentIndex === 1 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline' } onClick={() => setCurrentIndex(1)}>Extracts</div>
           <div className={ currentIndex === 2 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline' } onClick={() => setCurrentIndex(2)}>Finished Products</div>
+          <div className={ currentIndex === 3 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline' } onClick={() => setCurrentIndex(3)}>Natural Food Colours</div>
         </div>
         <div>
           {contents[currentIndex]}
