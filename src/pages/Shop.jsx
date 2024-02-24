@@ -4,27 +4,11 @@ import FinishedProducts from '../sections/ShopSections/FinishedProduct/FinishedP
 import NaturalColors from '../sections/ShopSections/NaturalColors/NaturalColors';
 import NaturalPreservatives from '../sections/ShopSections/NaturalPreservatives/NaturalPreservatives';
 
-const FinishedProduct = () => {
-  return (
-    <div>
-      <FinishedProducts />
-    </div>
-  );
-}
-
-const Natural = () => {
-  return (
-    <div>
-      <NaturalColors />
-    </div>
-  );
-}
-
 export default function Shop() {
   const contents = [
     <Extract key={'Extract'} />,
-    <FinishedProduct key={'FinishedProduct'} />,
-    <Natural key={'Natural'} />,
+    <FinishedProducts key={'FinishedProducts'} />,
+    <NaturalColors key={'NaturalColors'} />,
     <NaturalPreservatives key={'NaturalPreservatives'} />,
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
