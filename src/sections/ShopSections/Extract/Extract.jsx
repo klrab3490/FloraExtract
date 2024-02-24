@@ -205,8 +205,8 @@ export default function Extracts() {
             <div className=''>
               <img src={data.img} className='w-[400px] h-[300px] rounded-xl object-cover' />
             </div>
-            <div className='ml-4 w-full font-semibold text-2xl'>
-              <div className="text-4xl mb-2">{data.name}</div>
+            <div className='ml-4 w-full font-medium text-2xl'>
+              <div className="text-4xl font-bold mb-2">{data.name}</div>
               <div>{data.desc}</div>
               <div>Ingredients : {data.ingredients}</div>
               <div>Benifits : {data.benefit}</div>
