@@ -33,14 +33,14 @@ function NavbarSec() {
       <div className="w-[100vw] flex justify-center items-center px-2 py-2 font-semibold">
         
         <div className="px-4 py-2 hidden sm:flex">
-          <NavLink to={'/shop'} className="text-2xl text-[#290c06] hover:text-[#fd9b40] transition duration-300 cursor-pointer">Shop</NavLink>
+          <NavLink to={'/shop'} className="text-2xl text-[#290c06] hover:text-[#fd9b40] transition duration-300 cursor-pointer">Products</NavLink>
         </div>
         <div className="px-4 py-2 hidden sm:flex">
           <NavLink to={'/'} className="text-2xl text-[#290c06] hover:text-[#fd9b40] transition duration-300 cursor-pointer">Home</NavLink>
         </div>
         <div to={'/'} className="flex flex-col items-center px-4 cursor-pointer">
           <img src={Logo} alt="Floral Extracts" className="h-14" />
-          <h1 className="text-3xl text-[#290c06] font-bold ">Floral Extacts</h1>
+          <h1 className="text-3xl text-[#290c06] font-bold ">Flora Extracts</h1>
           <div className="sm:hidden">
             {Nav ? <IoMdClose onClick={handleNav} className="text-4xl text-[#290c06] cursor-pointer absolute top-15 right-4" /> : <IoMdOpen onClick={handleNav} className="text-4xl text-[#290c06] cursor-pointer absolute top-15 right-4" /> }
             <AnimatePresence>
@@ -50,7 +50,7 @@ function NavbarSec() {
                     <NavLink to={'/'}>Home</NavLink>
                   </motion.div>
                   <motion.div onClick={handleNav} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2">
-                    <NavLink to={'/shop'}>Shop</NavLink>
+                    <NavLink to={'/shop'}>Products</NavLink>
                   </motion.div>
                   <motion.div onClick={handleNav} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2">
                     <NavLink to={'/about'}>About</NavLink>
