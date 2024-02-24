@@ -198,10 +198,10 @@ export default function Extracts() {
   ]
 
   return (
-    <div className='flex flex-col'>
+    <div className='grid sm:grid-cols-2'>
       {extracts.map((data,index) => (
         <div key={index} className='p-5'>
-          <div className='flex flex-col sm:flex-row border-[2px] border-black w-full p-5 rounded-xl'>
+          <div className='flex flex-col sm:flex-row border-[2px] border-black p-5 rounded-xl'>
             <div className=''>
               <img src={data.img} className='w-[400px] h-[300px] rounded-xl object-cover' />
             </div>
