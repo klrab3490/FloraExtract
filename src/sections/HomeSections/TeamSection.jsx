@@ -15,8 +15,6 @@ function TeamSection() {
       </div>
       <div className="w-full p-5 h-auto flex justify-around items-center">
         <Social/>
-        <Social/>
-        <Social/>
       </div>
     </div>
   );
