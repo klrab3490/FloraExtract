@@ -41,10 +41,10 @@ export default function NaturalColors() {
       <div className='flex flex-col items-center justify-center'>
         <h1 className='text-2xl font-bold py-4'>Delivering Widest Range Of Natural Food Colours</h1>
         <div className='flex flex-col items-center justify-center'>
-          <div className='grid grid-cols-2 gap-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
             {data.map((item,index) => (
               <div key={index} className='py-2 px-4 text-xl font-semibold'>
-                <div className='flex p-2'>
+                <div className='flex flex-col sm:flex-row p-2'>
                   <div className='flex items-center justify-center h-64 w-64 bg-[#fd9b40] mr-10'>
                     <img src={item.image} alt={item.title} className='h-60 w-60 object-cover' />
                   </div>
