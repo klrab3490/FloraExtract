@@ -8,23 +8,29 @@ const Research = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex sm:flex-row flex-col">
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Identifying herbs with potential compounds</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl">1</div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center">Identifying herbs with potential compounds</div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Determining the potent actives</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl">2</div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center">Determining the potent actives</div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Creating the product & its process</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl">3</div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center">Creating the product & its process</div>
+          </div>
         </div>
       </div>
     </div>
@@ -34,23 +40,29 @@ const ClinicalValidation = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex sm:flex-row flex-col">
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Designing comprehensive clinical studies</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl">4</div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center">Designing comprehensive clinical studies</div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Undertaking clinical studies worldwide</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl">5</div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Undertaking clinical studies worldwide </div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Publishing scientific papers after  peer review</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl">6</div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Publishing scientific papers after  peer review </div>
+          </div>
         </div>
       </div>
     </div>
@@ -60,23 +72,29 @@ const Manufacturing = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex sm:flex-row flex-col">
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Obtaining /gathering herbs from sustainable sources</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl"> 7 </div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Obtaining gathering herbs from sustainable sources </div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Extracting actives using gentle processes</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl"> 8 </div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Extracting actives using gentle processes </div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Customising products as per customers&apos; needs</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl"> 9 </div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Customising products as per customers&apos; needs </div>
+          </div>
         </div>
       </div>
     </div>
@@ -85,24 +103,30 @@ const Manufacturing = () => {
 const QualityControl = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className="flex sm:flex-row flex-col">
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Testing to ensure actives&apos; specifications</div>
+      <div className="flex sm:flex-row flex-col px-4">
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl"> 10 </div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Testing to ensure actives&apos; specifications </div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Testing to ensure the product&apos;s safety</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl"> 11 </div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Testing to ensure the product&apos;s safety </div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Documenting the product&apos;s validations</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl"> 12 </div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Documenting the product&apos;s validations </div>
+          </div>
         </div>
       </div>
     </div>
@@ -112,23 +136,29 @@ const GlobalDelivery = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex sm:flex-row flex-col">
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Packaging the product safely</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl"> 13 </div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Packaging the product safely </div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Collaborating with delivery partners</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl"> 14 </div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Collaborating with delivery partners </div>
+          </div>
         </div>
         <div className="flex justify-center items-center m-2">
           <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
         </div>
-        <div className="w-96 h-48 p-5 border-[2px] border-black flex flex-col justify-center items-center text-center">
-          <div>Icon</div>
-          <div>Delivering the order on time, every time</div>
+        <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
+          <div className="flex items-start justify-center text-xl"> 15 </div>
+          <div className="flex w-full h-full flex-col justify-center items-center text-center">
+            <div className="text-2xl flex justify-center items-center text-center"> Delivering the order on time, every time </div>
+          </div>
         </div>
       </div>
     </div>
@@ -186,7 +216,7 @@ function ProductJourney() {
                 <div className={currentIndex === 3 ? 'underline cursor-pointer' : 'cursor-pointer'} onClick={() => setCurrentIndex(3)}>Quality Control</div>
                 <div className={currentIndex === 4 ? 'underline cursor-pointer' : 'cursor-pointer'} onClick={() => setCurrentIndex(4)}>Global Delivery</div>
               </div>
-              <div>
+              <div className="py-5">
                 <div className="flex flex-col m-5">
                   {contents[currentIndex]}
                   <div className="flex items-end justify-end mt-5">

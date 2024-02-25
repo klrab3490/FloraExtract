@@ -1,8 +1,11 @@
-import React from 'react'
+import NaturalPreservativesTable from './NaturalPreservativesTable'
 
 function NaturalPreservatives() {
   return (
-    <div>NaturalPreservatives</div>
+    <div className='flex flex-col items-center justify-center'>
+      <h1 className='text-5xl font-bold py-8 text-center'>Natural Preservatives</h1>
+      <NaturalPreservativesTable />
+    </div>
   )
 }
 

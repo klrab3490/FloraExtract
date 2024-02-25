@@ -45,8 +45,8 @@ export default function NaturalColors() {
             {data.map((item,index) => (
               <div key={index} className='py-2 px-4 text-xl font-semibold'>
                 <div className='flex p-2'>
-                  <div className='flex items-center justify-center w-48 h-48 rounded-full bg-[#fd9b40] mr-7'>
-                    <img src={item.image} alt={item.title} className='h-44 w-44 rounded-full object-cover' />
+                  <div className='flex items-center justify-center h-64 w-64 bg-[#fd9b40] mr-10'>
+                    <img src={item.image} alt={item.title} className='h-60 w-60 object-cover' />
                   </div>
                   <div>
                     <h2 className='text-2xl'>{item.title}</h2>
