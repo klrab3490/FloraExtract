@@ -5,7 +5,7 @@ const Table = ({ headers, rows }) => (
     <thead>
       <tr>
         {headers.map((header, index) => (
-          <th key={index} className='border w-52 text-2xl border-gray-900'>
+          <th key={index} className='border w-60 bg-white text-2xl border-gray-900'>
             {header}
           </th>
         ))}
@@ -13,7 +13,7 @@ const Table = ({ headers, rows }) => (
     </thead>
     <tbody>
       {rows.map((row, rowIndex) => (
-        <tr key={rowIndex}>
+        <tr key={rowIndex} className={rowIndex % 2 === 0 ? "bg-gray-200" : "bg-white" }>
           {row.map((data, colIndex) => (
             <td key={colIndex} className='border text-xl border-gray-900' colSpan={row.length === 2 && colIndex === 1 ? 3 : 1}>
               {data}
