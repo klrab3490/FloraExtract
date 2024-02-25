@@ -7,7 +7,7 @@ import ArrowRight from "../../assets/icons/ArrowRight.png"
 const Research = () => {
     return (
         <div className="flex justify-center items-center">
-            <div className="flex sm:flex-row flex-col">
+            <div className="flex xl:flex-row flex-col">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl">1</div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
@@ -15,7 +15,7 @@ const Research = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl">2</div>
@@ -24,7 +24,7 @@ const Research = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl">3</div>
@@ -40,7 +40,7 @@ const Research = () => {
 const ClinicalValidation = () => {
     return (
         <div className="flex justify-center items-center">
-            <div className="flex sm:flex-row flex-col">
+            <div className="flex xl:flex-row flex-col">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl">4</div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
@@ -48,7 +48,7 @@ const ClinicalValidation = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl">5</div>
@@ -57,7 +57,7 @@ const ClinicalValidation = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl">6</div>
@@ -73,7 +73,7 @@ const ClinicalValidation = () => {
 const Manufacturing = () => {
     return (
         <div className="flex justify-center items-center">
-            <div className="flex sm:flex-row flex-col">
+            <div className="flex xl:flex-row flex-col">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl"> 7 </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
@@ -81,7 +81,7 @@ const Manufacturing = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl"> 8 </div>
@@ -90,7 +90,7 @@ const Manufacturing = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl"> 9 </div>
@@ -106,7 +106,7 @@ const Manufacturing = () => {
 const QualityControl = () => {
     return (
         <div className="flex justify-center items-center">
-            <div className="flex sm:flex-row flex-col px-4">
+            <div className="flex flex-col xl:flex-row px-4">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl"> 10 </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
@@ -114,7 +114,7 @@ const QualityControl = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl"> 11 </div>
@@ -123,7 +123,7 @@ const QualityControl = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl"> 12 </div>
@@ -139,7 +139,7 @@ const QualityControl = () => {
 const GlobalDelivery = () => {
     return (
         <div className="flex justify-center items-center">
-            <div className="flex sm:flex-row flex-col">
+            <div className="flex xl:flex-row flex-col">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl"> 13 </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
@@ -147,7 +147,7 @@ const GlobalDelivery = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl"> 14 </div>
@@ -156,7 +156,7 @@ const GlobalDelivery = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
-                    <img src={ArrowLeft} className="sm:rotate-180 sm:py-0 -rotate-90 py-2"/>
+                    <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
                     <div className="flex items-start justify-center text-xl"> 15 </div>
