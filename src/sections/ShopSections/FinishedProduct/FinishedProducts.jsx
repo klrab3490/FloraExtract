@@ -199,16 +199,18 @@ export default function FinishedProducts() {
             <div className='flex sm:flex-row flex-col mt-2'>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-items-center gap-4 mb-5'>
                     {filteredContents.map((data) => (
-                        <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
-                            <div className='flex flex-col h-full'>
-                                <div className='flex items-center justify-center'>
-                                    <img src={data.productimg || bcm95} alt={data.name} className='h-max-[200px] object-contain items-center' />
-                                </div>
-                                <div className='p-5'>
-                                    <div className='font-bold text-xl text-center'>{data.name}</div>
-                                    <div className='text-lg text-center text-[#39160f]'>{data.ingredients}</div>
-                                    <div className='text-sm text-left text-[#290c06] mt-2'>{data.benfits}</div>
-                                    <div className='text-sm font-medium text-left text-[#4a2017] mt-2'>{data.extrainfor}</div>
+                        <div key={data.id} className='p-2 h-full'> 
+                            <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
+                                <div className='flex flex-col h-full'>
+                                    <div className='flex items-center justify-center'>
+                                        <img src={data.productimg || bcm95} alt={data.name} className='h-max-[200px] object-contain items-center' />
+                                    </div>
+                                    <div className='p-5'>
+                                        <div className='font-bold text-xl text-center'>{data.name}</div>
+                                        <div className='text-lg text-center text-[#39160f]'>{data.ingredients}</div>
+                                        <div className='text-sm text-left text-[#290c06] mt-2'>{data.benfits}</div>
+                                        <div className='text-sm font-medium text-left text-[#4a2017] mt-2'>{data.extrainfor}</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
