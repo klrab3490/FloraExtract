@@ -4,6 +4,13 @@ import { NavLink } from 'react-router-dom'
 import { IoIosPlayCircle, IoMdArrowRoundForward } from 'react-icons/io'
 import { FaRegRegistered } from 'react-icons/fa6'
 
+function ScrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+
 function Newsletter() {
     return (
         <div>
@@ -22,7 +29,7 @@ function Newsletter() {
                         <div className="flex items-center justify-center">
                             <div className="flex mt-4 relative justify-center items-center w-52 z-20">
                                 <NavLink to={'/about'} className="flex justify-center items-center px-3 py-3 w-40 bg-[#fd9b40] hover:bg-[#e88b34] cursor-pointer">
-                                    <h1 className='text-xl font-medium text-[#290c06]'>About us</h1>
+                                    <h1 className='text-xl font-medium text-[#290c06]' onClick={() => ScrollToTop()} >About us</h1>
                                     <IoMdArrowRoundForward size={28} className='text-white' />
                                 </NavLink>
                                 <div className="w-40 h-14 -z-10 top-1 right-4 bg-[#290c06] absolute"></div>

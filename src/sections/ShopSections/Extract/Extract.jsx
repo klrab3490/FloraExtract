@@ -201,8 +201,8 @@ export default function Extracts() {
         <div className='grid sm:grid-cols-2 grid-cols-1'>
             {extracts.map((data,index) => (
                 <div key={index} className='sm:p-5 p-2'>
-                    <div className='flex flex-col sm:flex-row border-[2px] border-black p-5 rounded-xl group transition-transform transform hover:scale-105'>
-                        <div className='flex items-center'>
+                    <div className='flex flex-col xl:flex-row border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
+                        <div className='items-center'>
                             <img src={data.img} className='w-[400px] h-[300px] rounded-xl object-cover' />
                         </div>
                         <div className='w-full font-normal text-2xl sm:rpx-4 px-2'>
