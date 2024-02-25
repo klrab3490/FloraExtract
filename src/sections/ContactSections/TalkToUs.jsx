@@ -8,11 +8,11 @@ export default function TalkToUs() {
             <section>
                 <div className='py-5'>
                     <div className='px-4 sm:px-14'>
-                        <div className="w-full flex justify-start items-center pl-10 relative pb-4">
-                            <div className="w-auto text-3xl px-5 py-2 h-20 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10">
+                        <div className="w-full flex justify-start items-center pl-5 sm:pl-10 relative pb-4">
+                            <div className="w-auto text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10">
                                 <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Talk With Us 
                             </div>
-                            <div className="w-auto text-3xl px-5 py-2 h-20 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13">
+                            <div className="w-auto text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13">
                                 <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Talk With Us 
                             </div>
                         </div>
@@ -20,7 +20,7 @@ export default function TalkToUs() {
 
                     <div className='flex sm:flex-row flex-col px-4 sm:px-14'>
                         <div className="sm:w-1/2 w-full flex flex-col sm:border-r-[1px] border-t-[1px] border-[#5e1c0e]">
-                            <div className="text-5xl sm:text-7xl w-full p-4">Get in Touch with FloraExtracts</div>
+                            <div className="text-5xl sm:text-7xl w-full text-center p-4">Get in Touch with FloraExtracts</div>
                             <div className='flex sm:flex-row flex-col border-y-[1px] border-[#5e1c0e] p-3'>
                                 <div className="flex-col sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/2 w-full">
                                     <div className='flex'>
@@ -43,7 +43,7 @@ export default function TalkToUs() {
                             <div className='w-full h-full'>
                                 <iframe 
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.7795699334706!2d76.2833386748764!3d10.359502389765051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7f83104152d61%3A0x47836d6961e2b979!2sSahrdaya%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1708669672069!5m2!1sen!2sin" 
-                                    className='w-full h-full' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    className='w-full h-full' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
                             </div>
                         </div>
@@ -343,14 +343,10 @@ export default function TalkToUs() {
                                         <textarea type="email" placeholder='Message' className='w-full text-[#5e1c0e] placeholder:text-[#5e1c0e] h-50 bg-[#fdfde1] rounded-xl p-1' />
                                     </div>
                                 </div>
-                                <div className='mt-2 flex justify-center items-center'>
-                                    <div className="w-full flex justify-center items-center relative pb-4">
-                                        <button className="w-auto text-3xl px-5 py-2 h-15 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10">
-                                        Request 
-                                        </button>
-                                        <div className="w-auto text-3xl px-5 py-2 h-15 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13">
-                                            Request
-                                        </div>
+                                <div className='mt-2 flex justify-center items-center text-center'>
+                                    <div className="flex justify-center items-center text-center pl-5 sm:pl-10 relative pb-4">
+                                        <button className="text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10"> Request </button>
+                                        <div className="text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13"> Request </div>
                                     </div>
                                 </div>
                             </form>

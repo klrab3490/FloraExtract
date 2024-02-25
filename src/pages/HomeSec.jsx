@@ -8,18 +8,18 @@ import Certifications from '../sections/HomeSections/Certifications'
 import RunningMarquee from '../components/RunningMarque'
 
 function HomeSec() {
-  return (
-    <div>
-      <HeroSectionSec/>
-      <HomeSlider/>
-      <ProductJourney/>
-      <TeamSection/>
-      <Exclusive/>
-      <WhatSet/>
-      <Certifications/>
-      <RunningMarquee/>
-    </div>
-  )
+    return (
+        <div>
+            <HeroSectionSec/>
+            <HomeSlider/>
+            <ProductJourney/>
+            <TeamSection/>
+            <Exclusive/>
+            <WhatSet/>
+            <Certifications/>
+            <RunningMarquee/>
+        </div>
+    )
 }
 
 export default HomeSec

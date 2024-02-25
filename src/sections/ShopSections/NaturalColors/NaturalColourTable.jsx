@@ -13,7 +13,7 @@ const Table = ({ headers, rows }) => (
     </thead>
     <tbody>
       {rows.map((row, rowIndex) => (
-        <tr key={rowIndex} className={rowIndex % 2 === 0 ? "bg-gray-200" : "bg-white" }>
+        <tr key={rowIndex} className={rowIndex % 2 === 0 ? "bg-[#5ACEA1]" : "bg-white" }>
           {row.map((data, colIndex) => (
             <td key={colIndex} className='border text-xl border-gray-900' colSpan={row.length === 2 && colIndex === 1 ? 3 : 1}>
               {data}
