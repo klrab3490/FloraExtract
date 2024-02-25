@@ -1,18 +1,13 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-
-
 // icon
-import { IoIosPlayCircle, IoMdArrowRoundForward } from 'react-icons/io'
+import { IoMdArrowRoundForward } from 'react-icons/io'
 import { FaRegRegistered } from 'react-icons/fa6'
 
 export default function Footer() {
   return (
     <div>
       <footer className=''>
-        {/* Top */}
-
         {/* Bottom */}
         <div className='py-7 font-semibold'>
           {/* Redirection Links */}

@@ -152,15 +152,10 @@ export default function FinishedProducts() {
 
     return (
         <div className='flex flex-col'>
-            <div className='flex items-end justify-end'>
+            <div className='flex sm:items-end sm:justify-end justify-center items-center'>
                 <div className='flex items-center justify-center gap-2 border-1 mb-6 bg-[#fd9b40] p-2 mt-2 rounded-lg'>
                     <p className='text-lg'>Category By : </p>
-                    <select
-                        id="sortby"
-                        name='sortby'
-                        className='w-48 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1'
-                        onChange={handleChange}
-                    >
+                    <select id="sortby" name='sortby' className='w-48 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1' onChange={handleChange}>
                         <option value="capsules" className='p-2'>Capsules</option>
                         <option value="softgels" className='p-2'>Softgels</option>
                         <option defaultChecked value="All" className='p-2'>All</option>

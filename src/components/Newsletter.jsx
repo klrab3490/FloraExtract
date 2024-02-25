@@ -9,11 +9,10 @@ function Newsletter() {
       <div className="bg-[#5ACEA1] text-[#290c06] font-semibold grid grid-cols-1 lg:grid-cols-2 py-7">
         {/* Right */}
         <div className="px-4 sm:px-14">
-          <div className="text-5xl flex">
+          <div className="sm:text-5xl text-4xl flex">
             FLORAEXTRACTS <FaRegRegistered size={25} className="" />
           </div>
           <div className="text-xl sm:w-[500px] py-5">
-
             Is the world&apos;s leading manufacturer and innovator of
             standardised botanical extracts. Since opening our doors in 1989,
             we’ve grown exponentially, serving customers in over 60 countries
@@ -40,16 +39,12 @@ function Newsletter() {
           </div>
           <div className="mt-3">
             <div className="flex items-center justify-center">
-              <input
-                type="email"
-                placeholder="Email Adddress"
-                className="w-[250px] sm:w-[300px] text-xl h-12 rounded-l-xl text-[#290c06] border-2 border-[#290c06] px-5 bg-[#fdfde1] focus:outline-none focus:ring-2 focus:ring-[#fd9b40] focus:border-transparent"
-              />
+              <input type="email" placeholder="Email Adddress" className="w-[225px] sm:w-[300px] text-xl h-12 rounded-l-xl text-[#290c06] border-2 border-[#290c06] px-5 bg-[#fdfde1] focus:outline-none focus:ring-2 focus:ring-[#fd9b40] focus:border-transparent" />
               <button className="bg-[#fd9b40] text-[#290c06] h-12 w-32 rounded-r-xl text-xl border-[#290c06] border-2 border-l-0">
                 Subscribe
               </button>
             </div>
-            <div className="text-xl text-[#290c06] mt-3 w-full sm:w-[428px] text-center sm:text-left">
+            <div className="text-xl text-[#290c06] mt-3 w-full p-2 sm:w-[428px] text-center sm:text-left">
               {" "}
               For sales related enquires please email us at sales@something.com{" "}
             </div>
