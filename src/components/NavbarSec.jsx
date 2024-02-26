@@ -9,21 +9,26 @@ import { IoMenu } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
+import { MenuButton } from "./MenuButton";
 
 function NavbarSec() {
     const navRef = useRef();
     const [Nav, SetNav] = useState(false);
+    const [isOpen, setOpen] = useState(false);
     const handleNav = useCallback(() => {
         SetNav(!Nav);
     }, [Nav]);
     const variants = {
-        open: { opacity: 1, y: 0, transition: { staggerChildren: 0.5 } },
+        open: { opacity: 1, y: 0, transition: { staggerChildren: 0.5, duration: 0.8 } },
         closed: { opacity: 0, y: "-100%" }
     };
     const itemVariants = {
         open: { opacity: 1, y: 0 },
         closed: { opacity: 0, y: -50 }
     }
+    const menuButtonStyle = {
+        marginLeft: "2rem",
+    };
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -65,24 +70,24 @@ function NavbarSec() {
                     <h1 className="text-3xl text-[#290c06] font-bold">Flora Extracts</h1>
                 </div>
                 <div className="">
-                    {Nav ? <IoMdClose onClick={handleNav} className="text-4xl text-[#290c06] cursor-pointer" /> : <IoMenu onClick={handleNav} className="text-4xl text-[#290c06] cursor-pointer" />}
+                    <MenuButton isOpen={isOpen} onClick={() => setOpen(!isOpen)} style={menuButtonStyle} />
                 </div>
             </div>
-            <div className={`fixed left-0 w-full top-28 z-50 ${Nav ? '' : 'hidden'}`}>
+            <div className={`fixed left-0 w-full top-28 z-50 ${isOpen ? '' : 'hidden'}`}>
                 <div className="w-full h-full flex items-center justify-center">
                         <AnimatePresence>
-                            {Nav && (
+                            {isOpen && (
                                 <motion.div ref={navRef} key="menu" initial="closed" animate="open" exit="closed" variants={variants} className="xl:hidden w-1/2 p-5 space-y-4 rounded-xl text-2xl flex-col items-center justify-center bg-white text-center z-30">
-                                    <motion.div onClick={handleNav} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
+                                    <motion.div onClick={() => setOpen(!isOpen)} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
                                         <NavLink to={'/'}>Home</NavLink>
                                     </motion.div>
-                                    <motion.div onClick={handleNav} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
+                                    <motion.div onClick={() => setOpen(!isOpen)} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
                                         <NavLink to={'/shop'}>Products</NavLink>
                                     </motion.div>
-                                    <motion.div onClick={handleNav} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
+                                    <motion.div onClick={() => setOpen(!isOpen)} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
                                         <NavLink to={'/about'}>About</NavLink>
                                     </motion.div>
-                                    <motion.div onClick={handleNav} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
+                                    <motion.div onClick={() => setOpen(!isOpen)} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
                                         <NavLink to={'/contact'}>Contact</NavLink>
                                     </motion.div>
                                 </motion.div>
