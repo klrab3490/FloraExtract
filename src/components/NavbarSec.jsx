@@ -1,48 +1,28 @@
-import { useCallback, useRef } from "react";
-
 // icon
 import Logo from "../assets/logo.png";
-import { IoMdClose } from "react-icons/io";
-import { IoMenu } from "react-icons/io5";
 
 // import
-import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
 import { MenuButton } from "./MenuButton";
+import { useState, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function NavbarSec() {
-    const navRef = useRef();
-    const [Nav, SetNav] = useState(false);
     const [isOpen, setOpen] = useState(false);
-    const handleNav = useCallback(() => {
-        SetNav(!Nav);
-    }, [Nav]);
+    const handleClose = useCallback(() => {
+        setOpen(!isOpen);
+    }, [isOpen]);
     const variants = {
-        open: { opacity: 1, y: 0, transition: { staggerChildren: 0.5, duration: 0.8 } },
+        open: { opacity: 1, y: 0, transition: { staggerChildren: 0.5 } },
         closed: { opacity: 0, y: "-100%" }
     };
     const itemVariants = {
-        open: { opacity: 1, y: 0 },
+        open: { opacity: 1, y: 0, transition: { duration: 0.3 } },
         closed: { opacity: 0, y: -50 }
     }
     const menuButtonStyle = {
         marginLeft: "2rem",
     };
-
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (navRef.current && !navRef.current.contains(event.target)) {
-                handleNav();
-            }
-        }
-        // Bind the event listener
-        document.addEventListener("mousedown", handleClickOutside);
-            return () => {
-            // Unbind the event listener on clean up
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [handleNav]);
 
     return (
         <div>
@@ -70,29 +50,29 @@ function NavbarSec() {
                     <h1 className="text-3xl text-[#290c06] font-bold">Flora Extracts</h1>
                 </div>
                 <div className="">
-                    <MenuButton isOpen={isOpen} onClick={() => setOpen(!isOpen)} style={menuButtonStyle} />
+                    <MenuButton isOpen={isOpen} onClick={() => setOpen(!isOpen)} strokeWidth={4} width="32" style={menuButtonStyle} />
                 </div>
             </div>
             <div className={`fixed left-0 w-full top-28 z-50 ${isOpen ? '' : 'hidden'}`}>
                 <div className="w-full h-full flex items-center justify-center">
-                        <AnimatePresence>
-                            {isOpen && (
-                                <motion.div ref={navRef} key="menu" initial="closed" animate="open" exit="closed" variants={variants} className="xl:hidden w-1/2 p-5 space-y-4 rounded-xl text-2xl flex-col items-center justify-center bg-white text-center z-30">
-                                    <motion.div onClick={() => setOpen(!isOpen)} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
-                                        <NavLink to={'/'}>Home</NavLink>
-                                    </motion.div>
-                                    <motion.div onClick={() => setOpen(!isOpen)} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
-                                        <NavLink to={'/shop'}>Products</NavLink>
-                                    </motion.div>
-                                    <motion.div onClick={() => setOpen(!isOpen)} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
-                                        <NavLink to={'/about'}>About</NavLink>
-                                    </motion.div>
-                                    <motion.div onClick={() => setOpen(!isOpen)} variants={itemVariants} className="bg-white border-[1px] border-[#33363F] py-2 rounded-xl">
-                                        <NavLink to={'/contact'}>Contact</NavLink>
-                                    </motion.div>
+                    <AnimatePresence>
+                        {isOpen && (
+                            <motion.div key="menu" initial="closed" animate="open" exit="closed" variants={variants} className="xl:hidden border-[1px] border-[#290c06] w-1/2 p-5 space-y-4 rounded-xl text-2xl flex-col items-center justify-center bg-[#fdfde1] text-center z-30">
+                                <motion.div onClick={handleClose} variants={itemVariants} className="border-[1px] border-[#290c06] py-2 rounded-xl">
+                                    <NavLink to={'/'}>Home</NavLink>
                                 </motion.div>
-                            )}
-                        </AnimatePresence>
+                                <motion.div onClick={handleClose} variants={itemVariants} className="border-[1px] border-[#290c06] py-2 rounded-xl">
+                                    <NavLink to={'/shop'}>Products</NavLink>
+                                </motion.div>
+                                <motion.div onClick={handleClose} variants={itemVariants} className="border-[1px] border-[#290c06] py-2 rounded-xl">
+                                    <NavLink to={'/about'}>About</NavLink>
+                                </motion.div>
+                                <motion.div onClick={handleClose} variants={itemVariants} className="border-[1px] border-[#290c06] py-2 rounded-xl">
+                                    <NavLink to={'/contact'}>Contact</NavLink>
+                                </motion.div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
         </div>
