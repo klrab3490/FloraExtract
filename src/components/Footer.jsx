@@ -32,9 +32,7 @@ export default function Footer() {
                         <div className='flex flex-col items-center p-5'>
                             <div className='text-3xl font-semibold'>Popular</div>
                             <div className='text-xl mt-4'>
-                                <p> <NavLink className='flex items-center justify-center' to={'/product'}>BCM 95<FaRegRegistered className='ml-1' /> </NavLink> </p>
-                                <p> <NavLink className='flex items-center justify-center' to={'/product'}>SHODEN<FaRegRegistered className='ml-1' /> </NavLink> </p>
-                                <p> <NavLink className='flex items-center justify-center' to={'/product'}>OXYSTORM<FaRegRegistered className='ml-1' /> </NavLink> </p>
+                                <p> <NavLink className='flex items-center justify-center' to={'/product'}></NavLink> </p>
                                 <p> <NavLink className='flex items-center justify-center' to={'/product'}>View All <IoMdArrowRoundForward className='ml-2'/> </NavLink> </p>
                             </div>
                         </div>
