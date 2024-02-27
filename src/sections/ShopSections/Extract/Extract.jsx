@@ -198,7 +198,7 @@ export default function Extracts() {
     ];
 
     return (
-        <div className='grid sm:grid-cols-2 grid-cols-1'>
+        <div className='grid sm:grid-cols-2 grid-cols-1 py-5'>
             {extracts.map((data,index) => (
                 <div key={index} className='sm:p-5 p-2'>
                     <div className='flex flex-col xl:flex-row border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
