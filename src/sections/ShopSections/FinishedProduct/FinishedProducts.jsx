@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-    // image
+// image
 import bcm95 from "../../../assets/Finished Product/BCM95.png";
 import Boswellia from "../../../assets/Finished Product/DAILY BOSWELLIA.png";
 import Greentea from "../../../assets/Finished Product/DAILY GREEN TEA.png";
@@ -207,9 +207,9 @@ export default function FinishedProducts() {
                     {filteredContents.map((data) => (
                         <div key={data.id} className='p-2 h-full'> 
                             <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
-                                <div className='flex flex-col h-full'>
-                                    <div className='flex items-center justify-center'>
-                                        <img src={data.productimg || bcm95} alt={data.name} className='h-max-[200px] object-contain items-center' />
+                                <div className='flex flex-col'>
+                                    <div className='flex items-center justify-center h-max-[200px]'>
+                                        <img src={data.productimg || bcm95} alt={data.name} className='h-[200px] w-[200px] object-contain items-center' />
                                     </div>
                                     <div className='p-5'>
                                         <div className='font-bold text-xl text-center'>{data.name}</div>
