@@ -1,5 +1,6 @@
 // Table of Contents
 import NaturalPreservativesTable from './NaturalPreservativesTable';
+import Food from './Food';
 
 // image
 import Diary from './assets/Diary.jpg';
@@ -94,8 +95,14 @@ function NaturalPreservatives() {
                     </div>
                 </div>
             </div>
-            <h1 className='text-5xl font-bold py-8 text-center'>Natural Preservatives</h1>
-            <NaturalPreservativesTable />
+            <div>
+                <h1 className='text-5xl font-bold py-8 text-center'>Discover Our Wide Array Of Applications</h1>
+                <Food />
+            </div>
+            <div>
+                <h1 className='text-5xl font-bold py-8 text-center'>Natural Preservatives</h1>
+                <NaturalPreservativesTable />
+            </div>
         </div>
     );
 }

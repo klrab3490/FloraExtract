@@ -208,8 +208,8 @@ export default function Extracts() {
                         <div className='w-full font-normal text-2xl sm:rpx-4 px-2'>
                             <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
                             <div>{data.desc}</div>
-                            <div> Ingredients : {data.ingredients}</div>
-                            <div> Benefits :  {data.benefit}</div>
+                            <div className="flex flex-col sm:flow-row"> <span className="font-medium">Ingredients : </span> {data.ingredients}</div>
+                            <div className="flex flex-col sm:flow-row"> <span className="font-medium">Benefits : </span> {data.benefit}</div>
                         </div>
                     </div>
                 </div>
