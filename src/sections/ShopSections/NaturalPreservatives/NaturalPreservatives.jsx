@@ -48,7 +48,7 @@ function NaturalPreservatives() {
                         {data.map((item,index) => (
                             <div key={index} className='py-2 px-4 text-xl'>
                                 <div className='flex flex-col sm:flex-row p-2'>
-                                    <div className='flex items-center justify-center h-64 w-64 bg-[#fd9b40] mr-10'>
+                                    <div className='flex items-center justify-center h-64 w-64 mr-10'>
                                         <img src={item.image} alt={item.title} className='h-60 w-60 object-cover' />
                                     </div>
                                     <div>

@@ -179,14 +179,15 @@ export default function Extracts() {
             ingredients: "Total lignans 70%",
             benefit: "Antioxidant, healthy blood glucose, enhances the metabolism of omega-3 fatty acids, protects liver from alcohol toxicity, reduces hangover",
             img: Sesame
-        },{
-            id: 23,
-            name: "Tribulus Terrestris",
-            desc: "",
-            ingredients: "Saponins 40%-90%",
-            benefit: "Sports medicine, libido enhancer, suitable for beverages",
-            img: Tribulus
         },
+        // {
+        //     id: 23,
+        //     name: "Tribulus Terrestris",
+        //     desc: "",
+        //     ingredients: "Saponins 40%-90%",
+        //     benefit: "Sports medicine, libido enhancer, suitable for beverages",
+        //     img: Tribulus
+        // },
         // {
         //   id:,
         //   name:"",

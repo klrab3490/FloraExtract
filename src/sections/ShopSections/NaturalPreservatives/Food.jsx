@@ -44,42 +44,43 @@ export default function Food() {
             action:"Enzyme Inhibition | Interfere Cell wall Synthesis",
             img: beverages
         },{
-            id:5,
+            id:6,
             name:"Mayonnaise",
             microbes:"Bacillus sp.,Yeast | Aspergillus sp.,Penicillium sp.",
             action:"Combating Oxidative and Microbial Rancidity",
             img: mayonnaise
         },{
-            id:5,
+            id:7,
             name:"Hummus",
             microbes:"Bacillus sp., Yeast | Aspergillus sp.,Penicillium sp.| Staphylococcus sp.,Coliform",
             action:"Combating Oxidative and Microbial Rancidity",
             img:hummus
         },{
-            id:5,
+            id:8,
             name:"Jam & Jellies",
             microbes:"Yeast,Lactobacillus sp. | Penicillium sp.",
             action:"Combating Oxidative and Microbial Rancidity",
             img: jam
         },{
-            id:5,
+            id:9,
             name:"Frying Oil",
             benefits:"Anti-oxidant, lowers oil consumption, reduces oil cost, creates healthier products, increases productivity",
             action:"Oxidation Inhibition",
             img: oil
         },{
-            id:5,
+            id:10,
             name:"Sweets",
             microbes:"Yeast, Lactobacillus sp., Penicillium sp.",
             action:"Combating Oxidative and Microbial Rancidity",
             img: sweets
-        },{
-            id:5,
-            name:"Paprika Oleoresin",
-            benefits:"Stabiliser",
-            action:"Combating Oxidative and Microbial Rancidity",
-            img: paprika
         },
+        // {
+        //     id:11,
+        //     name:"Paprika Oleoresin",
+        //     benefits:"Stabiliser",
+        //     action:"Combating Oxidative and Microbial Rancidity",
+        //     img: paprika
+        // },
         // {
         //     id:1,
         //     name:"Breads",
