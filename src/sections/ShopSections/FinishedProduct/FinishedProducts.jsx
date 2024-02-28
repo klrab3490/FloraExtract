@@ -9,6 +9,12 @@ import Triphala from "../../../assets/Finished Product/DAILY TRIPHALA.png";
 import Amla from "../../../assets/Finished Product/DAILY AMLA.png"; 
 import Brahmi from "../../../assets/Finished Product/DAILY BRAHMI.png"; 
 import Glucobalance from "../../../assets/Finished Product/DAILY GLUCOBALANCE.png"; 
+import DailyDefence from "../../../assets/Finished Product/DailyDefence.png";
+import DailyNDurance from "../../../assets/Finished Product/DailyNDurance.png";
+import FlaxNCumin from "../../../assets/Finished Product/FlaxNCumin.png";
+import JointRescue from "../../../assets/Finished Product/JointRescue.png";
+import Omega3 from "../../../assets/Finished Product/Omega3.png";
+import SleepNRest from "../../../assets/Finished Product/SleepNRest.png";
 
 export default function FinishedProducts() {
     const FinishedProductsData = [
@@ -19,7 +25,7 @@ export default function FinishedProducts() {
             ingredients:"BCM-95®( Purified turmeric Extract)",
             benfits:"Strengthen body’s defence system naturally, Protect body from detrimental free radicals, Build strong immunity from inside out",
             extrainfor:"each vegetable contains purified turmeric extract",
-            productimg:bcm95,
+            productimg:DailyDefence,
         },{
             id:2,
             cateogory:"softgels",
@@ -35,7 +41,7 @@ export default function FinishedProducts() {
             ingredients:"Omega 3 Fish oil",
             benfits:"Improve overall heart health, Boost overall immunity, Boost eye, Brain and Nerve function, Promote Liver health",
             extrainfor:"each softgel contains fish oil",
-            productimg:"",
+            productimg: "",
         },{
             id:4,
             cateogory:"softgels",
@@ -43,7 +49,7 @@ export default function FinishedProducts() {
             ingredients:"Omega 3 Fish oil",
             benfits:"Improve overall heart health, Boost overall immunity, Boost eye, Brain and Nerve function, Promote Liver health",
             extrainfor:"each softgel contains vitamin D, E & K",
-            productimg:"",
+            productimg: Omega3,
         },{
             id:5,
             cateogory:"softgels",
@@ -59,7 +65,7 @@ export default function FinishedProducts() {
             ingredients:"Boswellia Serrata Extract (Akbamax®)",
             benfits:"Supports joint health, Improve joint mobility & flexibility, Supports Healthy Cartilage function, Helps reduce inflammation",
             extrainfor:"each Vegetarian capsule contains Turmeric and Boswellia extract",
-            productimg:"",
+            productimg: JointRescue,
         },{
             id:7,
             cateogory:"capsules",
@@ -83,7 +89,7 @@ export default function FinishedProducts() {
             ingredients:"Ashwagandha Extract (Shoden®)",
             benfits:"Restful sleep, Helps manage stress, Wake-Up Refreshed",
             extrainfor:"Each vegetarian capsules contains Ashwagandha Extract",
-            productimg:"",
+            productimg:SleepNRest,
         },{
             id:10,
             cateogory:"capsules",
@@ -91,7 +97,7 @@ export default function FinishedProducts() {
             ingredients:"Red Spinach Extract (Oxystorm®)",
             benfits:"Supports enhanced nitric oxide level in the body, Improved Athletic performance, Enhanced Blood Circulation",
             extrainfor:"Each vegetarian capsules contains Red Spinach Extract",
-            productimg:"",
+            productimg:DailyNDurance,
         },{
             id:11,
             cateogory:"capsules",
@@ -147,7 +153,7 @@ export default function FinishedProducts() {
             ingredients:"Omega 3 Flaxseed oil",
             benfits:"Improve immunity, supports skin & hair health, supports brain health, anti-oxidant &anti-inflammatory",
             extrainfor:"Each softgel contains Flaxseed oil and black cumin seed extract",
-            productimg:"",
+            productimg: FlaxNCumin,
         },{
             id:18,
             cateogory:"capsules",

@@ -1,6 +1,6 @@
 // images
-import bread from './assets/bread.png'
-import cake from './assets/cake.png'
+import bread from './assets/bread.jpg'
+import cake from './assets/cake.jpg'
 import beverages from './assets/fruit&beverages.png'
 import hummus from './assets/hummus.png'
 import jam from './assets/jam&jellies.png'
@@ -8,7 +8,7 @@ import mayonnaise from './assets/mayonnaise.png'
 import oil from './assets/oil.png'
 import paprika from './assets/paprika.png'
 import processedmeat from './assets/processedmeat.png'
-import rawmeat from './assets/rawmeat.png'
+import rawmeat from './assets/rawmeat.jpg'
 import sweets from './assets/sweets.png'
 
 export default function Food() {
