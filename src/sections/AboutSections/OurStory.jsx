@@ -5,18 +5,23 @@ import { IoMdArrowRoundForward } from 'react-icons/io';
 
 // image
 import ourstory from '../../assets/ourstory.png';
+import Sep1 from "../../assets/Vector-IMG/sep-1.png";
+import Sep2 from "../../assets/Vector-IMG/sep-2.png";
 
 export default function OurStory() {
     return (
         <div>
             <section>
-                <div className='py-5 px-4 sm:px-14'>
+                <div className="">
+                    <img src={Sep1} alt="" className="w-[100vw] h-20" />
+                </div>
+                <div className='py-5 px-4 sm:px-14 bg-[#5ACEA1]'>
                     <div className="w-full flex justify-start items-center pl-5 sm:pl-10 relative pb-4">
                         <div className="w-auto text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10">
-                            <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Our Story 
+                            <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">03</span> Our Story 
                         </div>
                         <div className="w-auto text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13">
-                            <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Our Story 
+                            <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">03</span> Our Story 
                         </div>
                     </div>
                     <hr className='my-5' />
@@ -30,6 +35,9 @@ export default function OurStory() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="">
+                    <img src={Sep2} alt="" className="w-[100vw] h-20" />
                 </div>
             </section>
         </div>
