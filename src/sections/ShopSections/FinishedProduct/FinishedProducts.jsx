@@ -31,7 +31,7 @@ export default function FinishedProducts() {
             cateogory:"softgels",
             name:"FAST RHULIEF",
             ingredients:"Blend of Turmeric, Boswellia and Sesame oil",
-            benfits:"Supports pain relief,helps reduce inflammation,Help improve flexibility, Supports Musculoskeletal mobility",
+            benfits:"Supports pain relief, helps reduce inflammation, Help improve flexibility, Supports Musculoskeletal mobility",
             extrainfor:"each softgel contains Turmeric & Boswellia extract with Sesame oil",
             productimg:"",
         },{
@@ -208,8 +208,8 @@ export default function FinishedProducts() {
                         <div key={data.id} className='p-2 h-full'> 
                             <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
                                 <div className='flex flex-col'>
-                                    <div className='flex items-center justify-center h-max-[200px]'>
-                                        <img src={data.productimg || bcm95} alt={data.name} className='h-[200px] w-[200px] object-contain items-center' />
+                                    <div className='flex items-center justify-center'>
+                                        <img src={data.productimg || bcm95} alt={data.name} className='h-[250px] w-[250px] object-contain items-center' />
                                     </div>
                                     <div className='p-5'>
                                         <div className='font-bold text-xl text-center'>{data.name}</div>
