@@ -49,7 +49,7 @@ function NaturalPreservatives() {
                             <div key={index} className='py-2 px-4 text-xl'>
                                 <div className='flex flex-col sm:flex-row p-2'>
                                     <div className='flex items-center justify-center h-64 w-64 mr-10'>
-                                        <img src={item.image} alt={item.title} className='h-60 w-60 object-cover' />
+                                        <img src={item.image} alt={item.title} className='h-60 w-60 object-cover rounded-lg' />
                                     </div>
                                     <div>
                                         <h2 className='text-2xl font-semibold text-center sm:text-start'>{item.title}</h2>
