@@ -80,8 +80,7 @@ export default function Food() {
         //     benefits:"Stabiliser",
         //     action:"Combating Oxidative and Microbial Rancidity",
         //     img: paprika
-        // },
-        // {
+        // },{
         //     id:1,
         //     name:"Breads",
         //     microbes:"11",
@@ -100,7 +99,8 @@ export default function Food() {
                         </div>
                         <div className='w-full font-normal text-2xl sm:rpx-4 px-2'>
                             <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
-                            <div className="flex flex-col sm:flow-row"> <span className="font-medium">Targeted Microbes : </span> {data.microbes}</div>
+                            { data.microbes && <div className="flex flex-col sm:flow-row"> <span className="font-medium">Targeted Microbes : </span> {data.microbes}</div> }
+                            { data.benefits && <div className="flex flex-col sm:flow-row"> <span className="font-medium">Benefits : </span> {data.benefits}</div> }
                             <div className="flex flex-col sm:flow-row"> <span className="font-medium">Mechanism Of Actions : </span> {data.action}</div>
                         </div>
                     </div>
