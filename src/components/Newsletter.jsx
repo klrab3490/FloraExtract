@@ -27,7 +27,7 @@ function Newsletter() {
                     </div>
                     <div className="flex items-center">
                         <div className="flex items-center justify-center">
-                            <div className="flex mt-4 relative justify-center items-center w-52 z-20">
+                            <div className="flex mt-4 relative justify-center items-center w-52 z-20" onClick={ScrollToTop}>
                                 <NavLink to={'/about'} className="flex justify-center items-center px-3 py-3 w-40 bg-[#fd9b40] hover:bg-[#e88b34] cursor-pointer">
                                     <h1 className='text-xl font-medium text-[#290c06]' onClick={() => ScrollToTop()} >About us</h1>
                                     <IoMdArrowRoundForward size={28} className='text-white' />
