@@ -1,15 +1,15 @@
 // images
-import bread from './assets/bread.jpg'
-import cake from './assets/cake.jpg'
-import beverages from './assets/fruit&beverages.png'
-import hummus from './assets/hummus.png'
-import jam from './assets/jam&jellies.png'
-import mayonnaise from './assets/mayonnaise.png'
-import oil from './assets/oil.png'
-import paprika from './assets/paprika.png'
-import processedmeat from './assets/processedmeat.png'
-import rawmeat from './assets/rawmeat.jpg'
-import sweets from './assets/sweets.png'
+import bread from '../../../assets/NaturalPreservatives/bread.jpg'
+import cake from '../../../assets/NaturalPreservatives/cake.jpg'
+import beverages from '../../../assets/NaturalPreservatives/fruit&beverages.png'
+import hummus from '../../../assets/NaturalPreservatives/hummus.png'
+import jam from '../../../assets/NaturalPreservatives/jam&jellies.png'
+import mayonnaise from '../../../assets/NaturalPreservatives/mayonnaise.png'
+import oil from '../../../assets/NaturalPreservatives/oil.png'
+import paprika from '../../../assets/NaturalPreservatives/paprika.png'
+import processedmeat from '../../../assets/NaturalPreservatives/processedmeat.png'
+import rawmeat from '../../../assets/NaturalPreservatives/rawmeat.jpg'
+import sweets from '../../../assets/NaturalPreservatives/sweets.png'
 
 export default function Food() {
     const food = [

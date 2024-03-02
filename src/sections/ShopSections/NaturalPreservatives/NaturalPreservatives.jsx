@@ -3,16 +3,16 @@ import NaturalPreservativesTable from './NaturalPreservativesTable';
 import Food from './Food';
 
 // image
-import Diary from './assets/Diary.jpg';
-import Beverages from './assets/Beverages.jpg';
-import Confectionery from './assets/Confectionery.jpg';
-import Savoury from './assets/Savoury.jpg';
-import HeatStable from './assets/HeatStable.png';
-import Customized from './assets/Customized.png';
-import CostEffective from './assets/CostEffective.png';
-import LightStable from './assets/LightStable.png';
-import SolubleInWaterOil from './assets/SolubleInWater-Oil.png';
-import Original from './assets/Original.png';
+import Diary from '../../../assets/NaturalPreservatives/Diary.jpg';
+import Beverages from '../../../assets/NaturalPreservatives/Beverages.jpg';
+import Confectionery from '../../../assets/NaturalPreservatives/Confectionery.jpg';
+import Savoury from '../../../assets/NaturalPreservatives/Savoury.jpg';
+import HeatStable from '../../../assets/NaturalPreservatives/HeatStable.png';
+import Customized from '../../../assets/NaturalPreservatives/Customized.png';
+import CostEffective from '../../../assets/NaturalPreservatives/CostEffective.png';
+import LightStable from '../../../assets/NaturalPreservatives/LightStable.png';
+import SolubleInWaterOil from '../../../assets/NaturalPreservatives/SolubleInWater-Oil.png';
+import Original from '../../../assets/NaturalPreservatives/Original.png';
 
 function NaturalPreservatives() {
     const data = [
