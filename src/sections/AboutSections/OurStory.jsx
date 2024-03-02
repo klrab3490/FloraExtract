@@ -8,6 +8,13 @@ import ourstory from '../../assets/ourstory.png';
 import Sep1 from "../../assets/Vector-IMG/sep-1.png";
 import Sep2 from "../../assets/Vector-IMG/sep-2.png";
 
+function ScrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+
 export default function OurStory() {
     return (
         <div>
@@ -38,7 +45,7 @@ export default function OurStory() {
                                     <p>Today, our plant extract trading company stands as a testament to the transformative potential of passion, perseverance, and personal experience. As we continue our journey, we remain committed to empowering individuals to embrace the healing gifts of the earth, one botanical extract at a time.</p>
                                 </div>
                             </div>
-                            <div className='flex items-center text-center text-2xl justify-center mt-5'>
+                            <div className='flex items-center text-center text-2xl justify-center mt-5' onClick={ScrollToTop}>
                                 <NavLink to={'/contact'} className='bg-white rounded-full flex items-center text-2xl justify-center p-3 text-black'>Lets Talk <IoMdArrowRoundForward className='ml-2' size={30} /></NavLink>
                             </div>
                         </div>

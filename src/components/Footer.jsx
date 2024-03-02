@@ -4,6 +4,13 @@ import { NavLink } from 'react-router-dom'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { FaRegRegistered } from 'react-icons/fa6'
 
+function ScrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+
 export default function Footer() {
     return (
         <div>
@@ -32,8 +39,8 @@ export default function Footer() {
                         <div className='flex flex-col items-center p-5'>
                             <div className='text-3xl font-semibold'>Popular</div>
                             <div className='text-xl mt-4'>
-                                <p> <NavLink className='flex items-center justify-center' to={'/product'}></NavLink> </p>
-                                <p> <NavLink className='flex items-center justify-center' to={'/product'}>View All <IoMdArrowRoundForward className='ml-2'/> </NavLink> </p>
+                                <p> <NavLink className='flex items-center justify-center' to={'/shop'} onClick={ScrollToTop}></NavLink> </p>
+                                <p> <NavLink className='flex items-center justify-center' to={'/shop'} onClick={ScrollToTop}>View All <IoMdArrowRoundForward className='ml-2'/> </NavLink> </p>
                             </div>
                         </div>
                         <div className='flex flex-col p-5'>
