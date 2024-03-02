@@ -22,7 +22,7 @@ export default function TalkToUs() {
                         <div className="sm:w-1/2 w-full flex flex-col sm:border-r-[1px] border-t-[1px] border-[#5e1c0e]">
                             <div className="text-5xl sm:text-7xl w-full text-center p-4">Get in Touch with FloraExtracts</div>
                             <div className='flex sm:flex-row flex-col border-y-[1px] border-[#5e1c0e] p-3'>
-                                <div className="flex-col sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/2 w-full">
+                                <div className="flex flex-col justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/3 w-full">
                                     <div className='flex'>
                                         <div className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoMdMail className='mr-2 flex items-center justify-center' /> nutraextracts@gmail.com</div>
                                     </div>
@@ -35,16 +35,18 @@ export default function TalkToUs() {
                                         <div className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp /> </div>                                        
                                     </div>
                                 </div>
-                                <div className="flex justify-center items-center sm:w-1/2 w-full p-3 sm:p-0">
+                                <div className="flex justify-center sm:border-r-[1px] sm:border-[#5e1c0e] items-center sm:w-1/3 w-full p-3 sm:p-0">
                                     <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">Download Contact</div>
+                                </div>
+                                <div className="flex justify-center items-center sm:w-1/3 w-full p-3 sm:p-0">
+                                    <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">Blue Tower ,<br /> Opp. Future of Museum ,<br /> Sheikh Zayed Road ,<br /> Dubai ,<br /> UAE</div>
                                 </div>
                             </div>
                             {/* Map */}
-                            <div className='w-full h-full'>
+                            <div className='w-full h-full p-3'>
                                 <iframe 
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.7795699334706!2d76.2833386748764!3d10.359502389765051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7f83104152d61%3A0x47836d6961e2b979!2sSahrdaya%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1708669672069!5m2!1sen!2sin" 
-                                    className='w-full h-full' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.4661737835536!2d55.280739!3d25.221218999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42f2869516b3%3A0xad7ca6161b149e91!2sHHHR%20Tower%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1709389682177!5m2!1sen!2sin" 
+                                    className='w-full h-full rounded-xl' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                         <div className="sm:w-1/2 w-full flex sm:p-8 p-4 text-xl border-0 sm:border-t-[1px] border-[#5e1c0e]">
