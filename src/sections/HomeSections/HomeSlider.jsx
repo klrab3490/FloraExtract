@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import extract1 from "../../assets/HeroSlider/extract-1.jpg";
 import extract2 from "../../assets/HeroSlider/extract-2.jpg";
-import extract3 from "../../assets/HeroSlider/extract-3.jpg";
+import extract3 from "../../assets/HeroSlider/Extract-3.jpg";
 
 const imagesData = [
     {
@@ -19,10 +19,10 @@ const imagesData = [
         Background: "https://media.istockphoto.com/id/1439452746/photo/closeup-shot-of-the-indian-pennywort-leaves.jpg?s=612x612&w=0&k=20&c=_UI9iR7MYLLsibeh0USFJRVC6-u0VlpmS5w5PMKCC3s=",
         ProductImage: extract2,
     },{
-        ProductName: "Boswellia serratta Extract",
-        Ingredients: "Boswellic Acid 65%-85%.",
-        Benfits: [ "Inhibit the production of inflammatory leukotrienes", "Support joint health and mobility", "Pain relief in various conditions like osteoarthritis and rheumatoid arthritis", ],
-        Background: "https://omniactives.com/wp-content/uploads/2021/05/Boswellia_Serrata.jpg",
+        ProductName: "Cinnamon Extract",
+        Ingredients: "Total Polyphenols 10-30%",
+        Benfits: [ "Help reduce inflammation", "Reduce the risk of chronic diseases like heart disease and cancer", "Help regulate blood sugar levels", ],
+        Background: "https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/52/2048x1024/landscape-1514493588-cinnamon-sticks.jpg?resize=1200:*",
         ProductImage: extract3,
     },
 ];
