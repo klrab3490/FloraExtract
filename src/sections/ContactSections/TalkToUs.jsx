@@ -24,15 +24,15 @@ export default function TalkToUs() {
                             <div className='flex sm:flex-row flex-col border-y-[1px] border-[#5e1c0e] p-3'>
                                 <div className="flex flex-col justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/3 w-full">
                                     <div className='flex'>
-                                        <div className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoMdMail className='mr-2 flex items-center justify-center' /> nutraextracts@gmail.com</div>
+                                        <a href='mailto:' className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoMdMail className='mr-2 flex items-center justify-center' /> nutraextracts@gmail.com</a>
                                     </div>
                                     <div className='flex mt-2'>
-                                        <div className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoIosCall className='mr-2 flex items-center justify-center' /> +1-123-456-7890</div>
+                                        <a href='tel:+971562188822' className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoIosCall className='mr-2 flex items-center justify-center' /> +971 56 218 8822</a>
                                     </div>
                                     <div className='flex mt-2 gap-2'>
-                                        <div className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <FaXTwitter /> </div>
-                                        <div className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoInstagram /> </div>
-                                        <div className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp /> </div>                                        
+                                        <a href='' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <FaXTwitter /> </a>
+                                        <a href='' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoInstagram /> </a>
+                                        <a href='' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp /> </a>                                        
                                     </div>
                                 </div>
                                 <div className="flex justify-center sm:border-r-[1px] sm:border-[#5e1c0e] items-center sm:w-1/3 w-full p-3 sm:p-0">
