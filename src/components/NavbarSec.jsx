@@ -33,7 +33,7 @@ function NavbarSec() {
     };
 
     return (
-        <div className="sticky top-0 z-50 bg-[#1A392D] text-white border-b-4 border-[#290c06]">
+        <div className="sticky top-0 z-50 bg-[#1A392D] text-white">
             <div className="w-[100vw] flex justify-center items-center px-2 py-2 font-semibold ">
                 <div className="px-4 py-2 hidden sm:flex " onClick={ScrollToTop}>
                     <NavLink to={"/shop"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Products </NavLink>
@@ -42,7 +42,7 @@ function NavbarSec() {
                     <NavLink to={"/"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Home </NavLink>
                 </div>
                 <div className="hidden sm:flex flex-col items-center px-4 cursor-pointer">
-                    <img src={Logo} alt="Floral Extracts" className="h-14" />
+                    <img src={Logo} alt="Floral Extracts" className="h-20" />
                 </div>
                 <div className="px-4 py-2 hidden sm:flex" onClick={ScrollToTop}>
                     <NavLink to={"/about"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> About </NavLink>
@@ -53,7 +53,7 @@ function NavbarSec() {
             </div>
             <div className="flex sm:hidden items-center justify-between px-5 relative pb-4">
                 <div className="flex items-center space-x-4 justify-center">
-                    <img src={Logo} alt="Floral Extracts" className="h-14" />
+                    <img src={Logo} alt="Floral Extracts" className="h-16" />
                 </div>
                 <div className="">
                     <MenuButton isOpen={isOpen} onClick={() => setOpen(!isOpen)} strokeWidth={4} width="32" style={menuButtonStyle} />
