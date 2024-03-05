@@ -218,20 +218,18 @@ function ProductJourney() {
             </div>
             <div className="w-full h-auto py-3 bg-[#5ACEA1]">
                 <section className="">
-                    <div className="py-5 px-4 sm:px-14">
-                        <div className="sm:text-5xl text-3xl sm:text-start text-center text-white font-semibold">
-                            Our commitment to quality is showcased by our end to end, in-house
-                            design & manufacturing capabilities.
+                    {/* <div className="py-5 px-4 sm:px-14">
+                        <div className="sm:text-5xl text-3xl sm:text-start text-center text-white font-semibold"> Our commitment to quality is showcased by our end to end, in-house design & manufacturing capabilities.
                         </div>
-                    </div>
+                    </div> */}
                     <div>
                         <div className="mb-5 px-4 sm:px-14">
-                            <div className="bg-[#fdfde1] rounded-xl grid grid-cols-1 sm:grid-cols-5 text-center text-2xl py-5">
-                                <div className={currentIndex === 0 ? 'underline cursor-pointer' : 'cursor-pointer'} onClick={() => setCurrentIndex(0)}>Research</div>
-                                <div className={currentIndex === 1 ? 'underline cursor-pointer' : 'cursor-pointer'} onClick={() => setCurrentIndex(1)}>Clinical Validation</div>
-                                <div className={currentIndex === 2 ? 'underline cursor-pointer' : 'cursor-pointer'} onClick={() => setCurrentIndex(2)}>Manufacturing</div>
-                                <div className={currentIndex === 3 ? 'underline cursor-pointer' : 'cursor-pointer'} onClick={() => setCurrentIndex(3)}>Quality Control</div>
-                                <div className={currentIndex === 4 ? 'underline cursor-pointer' : 'cursor-pointer'} onClick={() => setCurrentIndex(4)}>Global Delivery</div>
+                            <div className="rounded-xl grid grid-cols-1 sm:grid-cols-5 text-center font-semibold  text-2xl py-5">
+                                <div className={currentIndex === 0 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(0)}>Research</div>
+                                <div className={currentIndex === 1 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(1)}>Clinical Validation</div>
+                                <div className={currentIndex === 2 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(2)}>Manufacturing</div>
+                                <div className={currentIndex === 3 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(3)}>Quality Control</div>
+                                <div className={currentIndex === 4 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(4)}>Global Delivery</div>
                             </div>
                             <div className="py-5">
                                 <div className="flex flex-col m-5">
