@@ -6,7 +6,6 @@ import img from "../../assets/gardening.jpg"
 
 // Imports
 import { NavLink } from 'react-router-dom';
-import Slider from "react-slick";
 import { useEffect, useState } from "react";
 
 function HeroSectionSec() {
@@ -30,7 +29,7 @@ function HeroSectionSec() {
                 <div className="absolute top-0 left-0 p-20 text-center h-[75vh] w-full rounded-xl bg-black/70">
                     <div className="flex flex-col items-center justify-center h-full">
                         <h1 className="text-4xl sm:text-7xl p-4 text-white font-bold tracking-wider"> Where Nature Thrives, Cultivating Beauty, One Leaf at a Time. </h1>
-                        <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mx-auto mb-8"> We’ve been the world's leading manufacturer of standardized botanical extracts for over 30 years. And we believe our journey has only begun.</p>
+                        <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mx-auto mb-8"> We&apos;ve been the world&apos;s leading manufacturer of standardized botanical extracts for over 30 years. And we believe our journey has only begun.</p> 
                         <button className="bg-green-500 text-white py-2 px-6 rounded-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hover:bg-green-600 transition duration-300" > Explore Now </button>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Sep1 from "../../assets/Vector-IMG/sep-1.png";
 import Sep2 from "../../assets/Vector-IMG/sep-2.png";
 import ArrowLeft from "../../assets/icons/ArrowLeft.png"
@@ -177,15 +177,31 @@ function ProductJourney() {
         <QualityControl key="qualityControl" />,
         <GlobalDelivery key="globalDelivery" />
     ];
-    const [currentIndex, setCurrentIndex] = useState(0);
 
+    // State Counter + Automatic Incrementer + Button Handlers
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isAutoIncrementing, setIsAutoIncrementing] = useState(true);
     const handleNext = () => {
+        setIsAutoIncrementing(false);
         setCurrentIndex((currentIndex + 1) % contents.length);
     }
-
     const handlePrev = () => {
+        setIsAutoIncrementing(false);
         setCurrentIndex((currentIndex - 1 + contents.length ) % contents.length);
     }
+    useEffect(() => {
+        if (isAutoIncrementing) {
+            const interval = setInterval(() => {
+                setCurrentIndex((prev) => (prev + 1) % contents.length);
+            }, 8000);
+            return () => clearInterval(interval);
+        } else {
+            const interval = setInterval(() => {
+                setIsAutoIncrementing(true);
+            }, 8000);
+            return () => clearInterval(interval);
+        }
+    },[isAutoIncrementing, contents.length]);
 
     return (
         <div className="flex flex-col w-full h-auto justify-center items-center pt-10">
