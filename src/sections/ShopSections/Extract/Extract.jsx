@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // images
 import AndrographisPaniculata from "../../../assets/Extract/AndrographisPaniculata.jpg";
 import Ashwagandha from "../../../assets/Extract/Ashwagandha.png";
@@ -198,19 +200,31 @@ export default function Extracts() {
         // },
     ];
 
+    const [show,setShow] = useState(null);
+    const see = (id) => {
+        setShow(show === id ? null : id);
+    }
+
     return (
-        <div className='grid sm:grid-cols-2 grid-cols-1 py-5'>
+        <div className='grid sm:grid-cols-3 grid-cols-1 py-5'>
             {extracts.map((data,index) => (
                 <div key={index} className='sm:p-5 p-2'>
-                    <div className='flex flex-col 2xl:flex-row border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
+                    <div className='flex flex-col border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
                         <div className='flex justify-center items-center'>
-                            <img src={data.img} className='w-[400px] h-[300px] rounded-xl object-cover' />
+                            <img src={data.img} className='w-full h-[300px] rounded-xl object-cover' />
                         </div>
                         <div className='w-full font-normal text-2xl sm:rpx-4 px-2'>
                             <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
                             <div>{data.desc}</div>
-                            <div className="flex flex-col sm:flow-row"> <span className="font-medium">Ingredients : </span> {data.ingredients}</div>
-                            <div className="flex flex-col sm:flow-row"> <span className="font-medium">Benefits : </span> {data.benefit}</div>
+                            <div className="flex flex-col"> <span className="font-medium">Ingredients : </span> {data.ingredients}</div>
+                            <div className="flex flex-col"> 
+                                <span className="font-medium">Benefits : </span>
+                                {show !== data.id && <div className="flex justify-end cursor-pointer hover:underline" onClick={() => see(data.id)}>See More</div>}
+                                {show === data.id && <div>
+                                    {data.benefit}
+                                    <div className="flex justify-end cursor-pointer hover:underline" onClick={() => setShow(null)}>See Less</div>
+                                </div>}
+                            </div>
                         </div>
                     </div>
                 </div>
