@@ -193,13 +193,13 @@ export default function Extracts() {
                             <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
                             <div className="flex flex-col"> 
                                 <span className="font-medium">Ingredients : </span> 
-                                <span className="pl-2">{data.ingredients}</span>
+                                <span className="pl-3">{data.ingredients}</span>
                             </div>
                             <div className="flex flex-col"> 
                                 <span className="font-medium">Benefits : </span>
                                 {show !== data.id && <div className="flex justify-end cursor-pointer hover:underline" onClick={() => see(data.id)}>See More</div>}
                                 {show === data.id && <div>
-                                    <span className="pl-2">{data.benefit}</span>
+                                    <span className="pl-3">{data.benefit}</span>
                                     <div className="flex justify-end cursor-pointer hover:underline" onClick={() => setShow(null)}>See Less</div>
                                 </div>}
                             </div>

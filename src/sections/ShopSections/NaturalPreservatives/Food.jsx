@@ -97,11 +97,11 @@ export default function Food() {
                         <div className='flex justify-center items-center'>
                             <img src={data.img} className='w-[400px] h-[300px] rounded-xl object-cover' />
                         </div>
-                        <div className='w-full font-normal text-2xl sm:rpx-4 px-2'>
+                        <div className='w-full font-normal text-2xl sm:px-4 px-2'>
                             <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
-                            { data.microbes && <div className="flex flex-col sm:flow-row"> <span className="font-medium">Targeted Microbes : </span> {data.microbes}</div> }
-                            { data.benefits && <div className="flex flex-col sm:flow-row"> <span className="font-medium">Benefits : </span> {data.benefits}</div> }
-                            <div className="flex flex-col sm:flow-row"> <span className="font-medium">Mechanism Of Actions : </span> {data.action}</div>
+                            { data.microbes && <div className="flex flex-col sm:flow-row"> <span className="font-medium">Targeted Microbes : </span> <span className='pl-3'>{data.microbes}</span> </div> }
+                            { data.benefits && <div className="flex flex-col sm:flow-row"> <span className="font-medium">Benefits : </span> <span className='pl-3'>{data.benefits}</span> </div> }
+                            <div className="flex flex-col sm:flow-row"> <span className="font-medium">Mechanism Of Actions : </span> <span className='pl-3'>{data.action}</span> </div>
                         </div>
                     </div>
                 </div>
