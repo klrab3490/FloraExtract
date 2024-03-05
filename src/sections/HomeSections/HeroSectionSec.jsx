@@ -7,11 +7,11 @@ import img from "../../assets/gardening.jpg"
 // Imports
 import { NavLink } from 'react-router-dom';
 import Slider from "react-slick";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function HeroSectionSec() {
     const content = [
-        <div className='w-full h-auto flex flex-col items-center justify-center pt-10 px-5 sm:px-10 pb-10'>
+        <div key="content1" className='w-full h-[75vh] flex flex-col items-center justify-center pt-10 px-5 sm:px-10 pb-10'>
             <h1 className='text-4xl sm:text-8xl text-[#290c06] text-center py-4 font-semibold'>Nurturing Health, <br></br>Enriching Life – Naturally</h1>
             <h1 className='text-lg sm:text-2xl text-center'>Transform your well-being with our exclusive range of natural extracts,<br></br> from raw essences to convenient capsules and innovative soft gels, including patented products that optimize health and elevate your life.</h1>
             <NavLink to={'/shop'} className="flex mt-4 relative justify-center items-center w-full sm:w-52 z-20">
@@ -23,38 +23,33 @@ function HeroSectionSec() {
                     </div>
                 </div>
             </NavLink>
-        </div>
-        , <div className="h-[85vh] w-full bg-black">
-               
-            <div className=" pt-36 text-center w-full z-20">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl p-4 text-white font-bold tracking-wider">
-                Where Nature Thrives, Cultivating Beauty, One Leaf at a Time.
-              </h1>
-              <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mx-auto mb-8">
-                We’ve been the world's leading manufacturer of standardized botanical
-                extracts for over 30 years. And we believe our journey has only begun.
-              </p>
-              <button className="bg-green-500 text-white py-2 px-6 rounded-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hover:bg-green-600 transition duration-300" >
-                Explore Now
-              </button>
+        </div>,
+        <div key="content2" className="w-full">
+            <div className="relative h-[75vh] w-full">
+                <img src={img} alt="hero" className="w-[100vw] h-full object-cover rounded-xl" />
+                <div className="absolute top-0 left-0 p-20 text-center h-[75vh] w-full rounded-xl bg-black/70">
+                    <div className="flex flex-col items-center justify-center h-full">
+                        <h1 className="text-4xl sm:text-7xl p-4 text-white font-bold tracking-wider"> Where Nature Thrives, Cultivating Beauty, One Leaf at a Time. </h1>
+                        <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mx-auto mb-8"> We’ve been the world's leading manufacturer of standardized botanical extracts for over 30 years. And we believe our journey has only begun.</p>
+                        <button className="bg-green-500 text-white py-2 px-6 rounded-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hover:bg-green-600 transition duration-300" > Explore Now </button>
+                    </div>
+                </div>
             </div>
-          </div>
-        ,
+        </div>,
     ];
 
     const [current,setCurrent] = useState(0);
-    const handleNext = () => {
-        setCurrent((current + 1) % content.length);
-    }
+    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrent((prev) => (prev + 1) % content.length);
+        }, 8000);
+        return () => clearInterval(interval);
+    }, [content.length]);
 
-    const handlePrev = () => {
-        setCurrent((current - 1 + content.length ) % content.length);
-    }
     return (
-        <div className='w-full h-auto flex items-center justify-center pt-10 px-5 sm:px-10 pb-10 min-h-[80vh]'>
-            <button type="submit" onClick={handlePrev}>left</button>
+        <div className='w-full h-auto flex items-center justify-center p-10 min-h-[80vh]'>
             <div>{content[current]}</div>
-            <button type="submit" onClick={handleNext}>right</button>
         </div>
     )
 }
