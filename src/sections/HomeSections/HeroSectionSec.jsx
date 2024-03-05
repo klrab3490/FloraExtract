@@ -37,8 +37,8 @@ function HeroSectionSec() {
         </div>,
     ];
 
+    // State Counter + Automatic Incrementer 
     const [current,setCurrent] = useState(0);
-    
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrent((prev) => (prev + 1) % content.length);
