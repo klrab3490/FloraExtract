@@ -42,13 +42,13 @@ function HomeSlider() {
         <>
             <div className="w-full flex justify-start items-center pl-5 sm:pl-10 relative pb-4">
                 <div className="w-auto text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10">
-                    <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Our Extracts
+                    <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">04</span> Our Extracts
                 </div>
                 <div className="w-auto text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13">
-                    <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Our Extracts
+                    <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">04</span> Our Extracts
                 </div>
             </div>
-            <div className="relative overflow-hidden w-auto mx-auto bg-[#5ACEA1] p-2 sm:p-10">
+            <div className="relative overflow-hidden w-auto mx-auto p-2 sm:p-10">
                 <Slider {...settings}>
                     {imagesData.map((data, index) => (
                         <div key={index} className="focus:outline-none relative">

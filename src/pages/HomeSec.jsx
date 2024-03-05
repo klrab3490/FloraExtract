@@ -11,10 +11,10 @@ function HomeSec() {
     return (
         <div>
             <HeroSectionSec/>
-            <HomeSlider/>
             <ProductJourney/>
             <TeamSection/>
             <Exclusive/>
+            <HomeSlider/>
             <WhatSet/>
             <Certifications/>
             <RunningMarquee/>

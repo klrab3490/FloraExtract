@@ -33,7 +33,7 @@ function NavbarSec() {
     };
 
     return (
-        <div className="sticky top-0 z-50 bg-[#1A392D] text-white">
+        <div className="sticky top-0 z-[1000] bg-[#1A392D] text-white">
             <div className="w-[100vw] flex justify-center items-center px-2 py-2 font-semibold ">
                 <div className="px-4 py-2 hidden sm:flex " onClick={ScrollToTop}>
                     <NavLink to={"/shop"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Products </NavLink>

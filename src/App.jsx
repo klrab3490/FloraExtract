@@ -9,8 +9,12 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Shop from "./pages/Shop";
+import { useState } from "react";
+import Loader from "./components/Loader";
 
 function App() {
+    const [loading, setLoading] = useState(false);
+
     return (
         <div className="bg-[#fdfde1]">
             {/* <Navbar /> */}
