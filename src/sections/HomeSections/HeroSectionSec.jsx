@@ -3,10 +3,28 @@ import { MdArrowOutward } from "react-icons/md";
 
 // image
 import img from "../../assets/gardening.jpg"
+import research from "../../assets/research.jpeg"
 
 // Imports
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from "react";
+
+function Counter({ targetNumber }) {
+    const [currentNumber, setCurrentNumber] = useState(0);
+    const duration = 2000;
+
+    useEffect(() => {
+        const increment = Math.ceil(targetNumber/ (duration/100));
+        const interval = setInterval(() => {
+            setCurrentNumber(prevNumber => {
+                const newNumber = prevNumber + increment;
+                return newNumber >= targetNumber ? targetNumber : newNumber;
+            })
+        },100);
+        return() => clearInterval(interval);
+    },[targetNumber]);
+    return <div>{currentNumber}+</div>
+}
 
 function HeroSectionSec() {
     const content = [
@@ -35,6 +53,31 @@ function HeroSectionSec() {
                 </div>
             </div>
         </div>,
+        <div key="content2" className="w-full">
+            <div className="relative h-[75vh]">
+                <img src={research} alt="hero" className="w-[100vw] h-full object-cover rounded-xl" />
+                <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/70 text-white">
+                    <div className="flex flex-col items-center justify-center h-full">
+                        <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">We Provide The Best By <br/> Innovating Naturally</div>
+                        <div className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mx-auto mb-8">An expert nutraceutical manufacturer providing a one-stop solution with<br/> comprehensive project support from ideation to product launch.</div>
+                        <div className="text-xl flex gap-10 justify-center items-center">
+                            <div className="flex flex-col text-left">
+                                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold">
+                                    <Counter targetNumber={100} />
+                                </div>
+                                <div>Safe Health Supplements</div>
+                            </div>
+                            <div className="flex flex-col text-left">
+                                <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold">
+                                    <Counter targetNumber={20} />
+                                </div>
+                                <div>Years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     ];
 
     // State Counter + Automatic Incrementer 
@@ -45,6 +88,7 @@ function HeroSectionSec() {
         }, 8000);
         return () => clearInterval(interval);
     }, [content.length]);
+
 
     return (
         <div className='w-full h-auto flex items-center justify-center p-10 min-h-[80vh]'>
