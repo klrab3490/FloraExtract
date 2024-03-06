@@ -1,15 +1,37 @@
+// imports
 import { useEffect, useState } from "react";
+
+// images
 import Sep1 from "../../assets/Vector-IMG/sep-1.png";
 import Sep2 from "../../assets/Vector-IMG/sep-2.png";
 import ArrowLeft from "../../assets/icons/ArrowLeft.png"
 import ArrowRight from "../../assets/icons/ArrowRight.png"
+
+// icons
+import icon1 from "../../assets/Product Journey/1.svg"
+import icon2 from "../../assets/Product Journey/2.svg"
+import icon3 from "../../assets/Product Journey/3.svg"
+import icon4 from "../../assets/Product Journey/4.svg"
+import icon5 from "../../assets/Product Journey/5.svg"
+import icon6 from "../../assets/Product Journey/6.svg"
+import icon7 from "../../assets/Product Journey/7.svg"
+import icon8 from "../../assets/Product Journey/8.svg"
+import icon9 from "../../assets/Product Journey/9.svg"
+import icon10 from "../../assets/Product Journey/10.svg"
+import icon11 from "../../assets/Product Journey/11.svg"
+import icon12 from "../../assets/Product Journey/12.svg"
+import icon13 from "../../assets/Product Journey/13.svg"
+import icon14 from "../../assets/Product Journey/14.svg"
+import icon15 from "../../assets/Product Journey/15.svg"
 
 const Research = () => {
     return (
         <div className="flex justify-center items-center">
             <div className="flex xl:flex-row flex-col">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl">1</div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon1} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center">Identifying herbs with potential compounds</div>
                     </div>
@@ -18,7 +40,9 @@ const Research = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl">2</div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon2} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center">Determining the potent actives</div>
                     </div>
@@ -27,7 +51,9 @@ const Research = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl">3</div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon3} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center">Creating the product & its process</div>
                     </div>
@@ -42,7 +68,9 @@ const ClinicalValidation = () => {
         <div className="flex justify-center items-center">
             <div className="flex xl:flex-row flex-col">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl">4</div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon4} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center">Designing comprehensive clinical studies</div>
                     </div>
@@ -51,7 +79,9 @@ const ClinicalValidation = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl">5</div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon5} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Undertaking clinical studies worldwide </div>
                     </div>
@@ -60,7 +90,9 @@ const ClinicalValidation = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl">6</div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon6} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Publishing scientific papers after  peer review </div>
                     </div>
@@ -75,7 +107,9 @@ const Manufacturing = () => {
         <div className="flex justify-center items-center">
             <div className="flex xl:flex-row flex-col">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl"> 7 </div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon7} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Obtaining gathering herbs from sustainable sources </div>
                     </div>
@@ -84,7 +118,9 @@ const Manufacturing = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl"> 8 </div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon8} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Extracting actives using gentle processes </div>
                     </div>
@@ -93,7 +129,9 @@ const Manufacturing = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl"> 9 </div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon9} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Customising products as per customers&apos; needs </div>
                     </div>
@@ -108,7 +146,9 @@ const QualityControl = () => {
         <div className="flex justify-center items-center">
             <div className="flex flex-col xl:flex-row px-4">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl"> 10 </div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon10} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Testing to ensure actives&apos; specifications </div>
                     </div>
@@ -117,7 +157,9 @@ const QualityControl = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl"> 11 </div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon11} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Testing to ensure the product&apos;s safety </div>
                     </div>
@@ -126,7 +168,9 @@ const QualityControl = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl"> 12 </div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon12} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Documenting the product&apos;s validations </div>
                     </div>
@@ -141,7 +185,9 @@ const GlobalDelivery = () => {
         <div className="flex justify-center items-center">
             <div className="flex xl:flex-row flex-col">
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl"> 13 </div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon13} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Packaging the product safely </div>
                     </div>
@@ -150,7 +196,9 @@ const GlobalDelivery = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl"> 14 </div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon14} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Collaborating with delivery partners </div>
                     </div>
@@ -159,7 +207,9 @@ const GlobalDelivery = () => {
                     <img src={ArrowLeft} className="xl:rotate-180 xl:py-0 -rotate-90 py-2"/>
                 </div>
                 <div className="sm:w-96 w-80 h-48 p-5 rounded-xl border-[2px] border-black flex flex-col text-center bg-[#f3f3df]">
-                    <div className="flex items-start justify-center text-xl"> 15 </div>
+                    <div className="flex items-start justify-center text-xl">
+                        <img src={icon15} width={50} />
+                    </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
                         <div className="text-2xl flex justify-center items-center text-center"> Delivering the order on time, every time </div>
                     </div>
@@ -224,13 +274,24 @@ function ProductJourney() {
                     </div> */}
                     <div>
                         <div className="mb-5 px-4 sm:px-14">
-                            <div className="rounded-xl grid grid-cols-1 sm:grid-cols-5 text-center font-semibold  text-2xl py-5">
-                                <div className={currentIndex === 0 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(0)}>Research</div>
-                                <div className={currentIndex === 1 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(1)}>Clinical Validation</div>
-                                <div className={currentIndex === 2 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(2)}>Manufacturing</div>
-                                <div className={currentIndex === 3 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(3)}>Quality Control</div>
-                                <div className={currentIndex === 4 ? 'underline cursor-pointer' : 'cursor-pointer' && "hover:scale-105"} onClick={() => setCurrentIndex(4)}>Global Delivery</div>
+                        <div className="rounded-xl grid grid-cols-1 sm:grid-cols-5 gap-8 text-center font-semibold text-2xl py-5">
+                            <div className={currentIndex === 0 ? 'underline cursor-pointer hover:scale-1105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(0)}>
+                                <p className={currentIndex === 0 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Research</p>
                             </div>
+                            <div className={currentIndex === 1 ? 'underline cursor-pointer hover:scale-105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(1)}>
+                                    <p className={currentIndex === 1 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Clinical Validation</p>
+                            </div>
+                            <div className={currentIndex === 2 ? 'underline cursor-pointer hover:scale-105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(2)}>
+                                <p className={currentIndex === 2 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Manufacturing</p>
+                            </div>
+                            <div className={currentIndex === 3 ? 'underline cursor-pointer hover:scale-105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(3)}>
+                                <p className={currentIndex === 3 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Quality Control</p>
+                            </div>
+                            <div className={currentIndex === 4 ? 'underline cursor-pointer hover:scale-105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(4)}>
+                                <p className={currentIndex === 4 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Global Delivery</p>
+                            </div>
+                        </div>
+
                             <div className="py-5">
                                 <div className="flex flex-col m-5">
                                     {contents[currentIndex]}
