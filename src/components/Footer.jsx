@@ -17,7 +17,7 @@ export default function Footer() {
             <footer className=''>
                 {/* Bottom */}
                 <div className='py-7'>
-                    {/* Redirection Links */}
+                    {/* Redirection Links 
                     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-center justify-items-center'>
                         <div className='flex-col p-5'>
                             <div className='text-3xl font-semibold'>About</div>
@@ -57,6 +57,18 @@ export default function Footer() {
                                 <p>Get In Touch</p>
                                 <p>Global Offices</p>
                             </div>
+                        </div>
+                    </div> */}
+                    {/* Social Media */}
+                    <div className='flex flex-col items-center text-center justify-center gap-2'>
+                        <div className='font-semibold text-2xl'>Follow Us On Social Media</div>
+                        <div className='flex flex-col text-xl sm:flex-row items-center text-center justify-center gap-7'>
+                            <div>Email</div>
+                            <div>Instagram</div>
+                            <div>Facebook</div>
+                            <div>Twitter</div>
+                            <div>Twitter</div>
+                            <div>Whatsapp</div>
                         </div>
                     </div>
                     {/* Copyrights Section */}

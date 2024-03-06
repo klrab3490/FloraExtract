@@ -31,8 +31,8 @@ export default function TalkToUs() {
                                     </div>
                                     <div className='flex mt-2 gap-2'>
                                         <a href='' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <FaXTwitter /> </a>
-                                        <a href='' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoInstagram /> </a>
-                                        <a href='' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp /> </a>                                        
+                                        <a href='' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoInstagram size={20}/> </a>
+                                        <a href='https://api.whatsapp.com/send/?phone=971562188822&text=Hi&type=phone_number&app_absent=0' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp size={20}/> </a>                                        
                                     </div>
                                 </div>
                                 <div className="flex justify-center sm:border-r-[1px] sm:border-[#5e1c0e] items-center sm:w-1/3 w-full p-3 sm:p-0">
