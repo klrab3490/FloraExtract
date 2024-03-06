@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import extract1 from "../../assets/HeroSlider/extract-1.jpg";
 import extract2 from "../../assets/HeroSlider/extract-2.jpg";
-import extract3 from "../../assets/HeroSlider/Extract-3.jpg";
+import extract3 from "../../assets/HeroSlider/extract-3.jpg";
 
 const imagesData = [
     {
