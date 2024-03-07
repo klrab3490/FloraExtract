@@ -3,6 +3,7 @@ import Extract from '../sections/ShopSections/Extract/Extract';
 import FinishedProducts from '../sections/ShopSections/FinishedProduct/FinishedProducts';
 import NaturalColors from '../sections/ShopSections/NaturalColors/NaturalColors';
 import NaturalPreservatives from '../sections/ShopSections/NaturalPreservatives/NaturalPreservatives';
+import Spices from '../sections/ShopSections/Spices/Spices';
 
 export default function Shop() {
     const contents = [
@@ -10,6 +11,7 @@ export default function Shop() {
         <FinishedProducts key={'FinishedProducts'} />,
         <NaturalColors key={'NaturalColors'} />,
         <NaturalPreservatives key={'NaturalPreservatives'} />,
+        <Spices key={'Spices'} />,
     ];
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -20,6 +22,7 @@ export default function Shop() {
                 <div className={currentIndex === 1 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(1)}>Finished Products</div>
                 <div className={currentIndex === 2 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(2)}>Natural Food Colours</div>
                 <div className={currentIndex === 3 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(3)}>Natural Preservatives</div>
+                <div className={currentIndex === 4 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(4)}>Spices</div>
             </div>
             <div>
                 {contents[currentIndex]}

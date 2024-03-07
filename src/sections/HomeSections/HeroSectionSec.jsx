@@ -4,6 +4,8 @@ import { MdArrowOutward } from "react-icons/md";
 // image
 import img from "../../assets/gardening.jpg"
 import research from "../../assets/research.jpeg"
+import ocean from "../../assets/HeroSlider/OCEAN.svg"
+import nature from "../../assets/HeroSlider/NATURE.svg"
 
 // Imports
 import { NavLink } from 'react-router-dom';
@@ -28,7 +30,7 @@ function Counter({ targetNumber }) {
 
 function HeroSectionSec() {
     const content = [
-        <div key="content1" className='w-full h-[75vh] flex flex-col items-center justify-center pt-10 px-5 sm:px-10 pb-10'>
+        <div key="content1" className='w-full h-[75vh] flex flex-col items-center justify-center pt-10 px-5 sm:px-10 pb-10 rounded-xl border-4 border-[#290c06]'>
             <h1 className='text-4xl sm:text-8xl text-[#290c06] text-center py-4 font-semibold'>Nurturing Health, <br></br>Enriching Life – Naturally</h1>
             <h1 className='text-lg sm:text-2xl text-center'>Transform your well-being with our exclusive range of natural extracts,<br></br> from raw essences to convenient capsules and innovative soft gels, including patented products that optimize health and elevate your life.</h1>
             <NavLink to={'/shop'} className="flex mt-4 relative justify-center items-center w-full sm:w-52 z-20">
@@ -77,7 +79,17 @@ function HeroSectionSec() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>,
+        <div key="content3" className="w-full">
+            <div className="relative h-[75vh]">
+                <img src={ocean} alt="hero" className="w-[100vw] h-full object-cover rounded-xl" />
+            </div>
+        </div>,
+        <div key="content4" className="w-full">
+            <div className="relative h-[75vh]">
+                <img src={nature} alt="hero" className="w-[100vw] h-full object-cover rounded-xl" />
+            </div>
+        </div>,
     ];
 
     // State Counter + Automatic Incrementer 
