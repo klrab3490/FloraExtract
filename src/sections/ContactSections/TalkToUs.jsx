@@ -18,11 +18,11 @@ export default function TalkToUs() {
                         </div>
                     </div>
 
-                    <div className='flex sm:flex-row flex-col px-4 sm:px-14'>
-                        <div className="sm:w-1/2 w-full flex flex-col sm:border-r-[1px] border-t-[1px] border-[#5e1c0e]">
+                    <div className='flex lg:flex-row flex-col px-4 sm:px-14'>
+                        <div className="lg:w-1/2 w-full flex flex-col lg:border-r-[1px] border-t-[1px] border-[#5e1c0e]">
                             <div className="text-5xl sm:text-7xl w-full text-center p-4">Get in Touch with FloraExtracts</div>
                             <div className='flex sm:flex-row flex-col border-y-[1px] border-[#5e1c0e] p-3'>
-                                <div className="flex flex-col justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/3 w-full">
+                                <div className="flex flex-col sm:items-start items-center justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/3 w-full">
                                     <div className='flex'>
                                         <a href='mailto:' className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoMdMail className='mr-2 flex items-center justify-center' /> nutraextracts@gmail.com</a>
                                     </div>
@@ -49,7 +49,7 @@ export default function TalkToUs() {
                                     className='w-full h-full rounded-xl' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
-                        <div className="sm:w-1/2 w-full flex sm:p-8 p-4 text-xl border-0 sm:border-t-[1px] border-[#5e1c0e]">
+                        <div className="lg:w-1/2 w-full flex sm:p-8 p-4 text-xl border-0 lg:border-t-[1px] border-[#5e1c0e]">
                             <form action="submit" className='w-full bg-[#5ACEA1] rounded-xl sm:p-8 p-4 text-[#5e1c0e]'>
                                 <div className='flex'>
                                     <div className='flex-col w-1/2 mr-4 text-[#5e1c0e]'>
