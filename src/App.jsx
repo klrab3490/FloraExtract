@@ -1,25 +1,32 @@
+import React, { useState, useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import NavbarSec from "./components/NavbarSec";
 import RunningMarquee from "./components/RunningMarque";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 import HomeSec from "./pages/HomeSec";
-import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Shop from "./pages/Shop";
-import { useState, useEffect } from "react";
 import Preloader from "./components/Preload";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
-    setTimeout(() => {
+    setLoading(true);
+
+    const timeoutId = setTimeout(() => {
       setLoading(false);
-    }, 5000); 
-  }, []);
+    }, 5000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [location.key]);
 
   return (
     <div className="bg-[#fdfde1]">
@@ -39,7 +46,6 @@ function App() {
           <Newsletter />
           <Footer />
         </>
-
       )}
     </div>
   );
