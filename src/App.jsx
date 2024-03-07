@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import "./App.css";
 import NavbarSec from "./components/NavbarSec";
 import RunningMarquee from "./components/RunningMarque";
@@ -15,6 +15,7 @@ import Preloader from "./components/Preload";
 function App() {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -41,7 +42,17 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/shop" element={<Shop />} />
-            <Route path="/*" element={<NotFound />} />
+            {/* Callback route for not found paths */}
+            <Route
+              path="/*"
+              element={
+                <NotFound
+                  onNotFound={() => {
+                    navigate("/", { replace: true });
+                  }}
+                />
+              }
+            />
           </Routes>
           <Newsletter />
           <Footer />
