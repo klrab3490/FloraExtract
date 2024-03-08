@@ -168,7 +168,7 @@ export default function Spices() {
                         <div key={data.id} id={data.id} className='p-2 h-full'> 
                             <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
                                 <div className='flex flex-col'>
-                                    <div className='flex items-center justify-center h-[250px] w-[250px]'>
+                                    <div className='flex items-center justify-center h-[300px]'>
                                         <img src={data.productimg} alt={data.name} className='w-full h-full rounded-xl object-cover items-center' />
                                     </div>
                                     <div className='p-5'>

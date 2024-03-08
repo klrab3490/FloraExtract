@@ -35,13 +35,13 @@ function Newsletter() {
                                 <div className="w-40 h-14 -z-10 top-1 right-4 bg-[#290c06] absolute"></div>
                             </div>
                         </div>
-                        <p className="flex items-center ml-10 text-xl">
+                        {/* <p className="flex items-center ml-10 text-xl">
                             <IoIosPlayCircle className="mr-2" size={40} /> Play Video
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 {/* Left */}
-                <div className="flex flex-col justify-end items-center sm:items-end mt-4 sm:mt-0 sm:mr-14">
+                <div className="flex flex-col justify-end items-center lg:items-end mt-4 sm:mt-0 sm:mr-14">
                     <div className="text-xl text-center sm:text-left">
                         Stay updated on the latest happenings!
                     </div>

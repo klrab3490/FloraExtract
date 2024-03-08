@@ -63,7 +63,7 @@ export default function Footer() {
                     <div className='flex flex-col items-center text-center justify-center gap-2'>
                         <div className='font-semibold text-2xl'>Follow Us On Social Media</div>
                         <div className='flex flex-col text-xl sm:flex-row items-center text-center justify-center gap-7'>
-                            <div>Email</div>
+                            <a href='mailto:sales@floraextracts.in' >Email</a>
                             <div>Instagram</div>
                             <div>Facebook</div>
                             <div>Twitter</div>
