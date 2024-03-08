@@ -30,8 +30,8 @@ export default function TalkToUs() {
                                         <a href='tel:+971562188822' className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoIosCall className='mr-2 flex items-center justify-center' /> +971 56 218 8822</a>
                                     </div>
                                     <div className='flex mt-2 gap-2'>
-                                        <a href='' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <FaXTwitter /> </a>
-                                        <a href='' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoInstagram size={20}/> </a>
+                                        <a href='https://twitter.com/FloraExtracts' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <FaXTwitter /> </a>
+                                        <a href='https://www.instagram.com/floraextracts/' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoInstagram size={20}/> </a>
                                         <a href='https://api.whatsapp.com/send/?phone=971562188822&text=Hi&type=phone_number&app_absent=0' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp size={20}/> </a>                                        
                                     </div>
                                 </div>
