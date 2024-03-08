@@ -49,7 +49,7 @@ function HeroSectionSec() {
         <div key="content2" className="w-full">
             <div className="relative h-[75vh] w-full">
                 <img src={img} alt="hero" className="w-[100vw] h-full object-cover rounded-xl" />
-                <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/70">
+                <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/60">
                     <div className="flex flex-col items-center justify-center h-full">
                         <h1 className="text-4xl sm:text-7xl p-4 text-white font-bold tracking-wider"> Where Nature Thrives,<br /> Cultivating Beauty,<br /> One Leaf at a Time. </h1>
                         <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mx-auto mb-8"> We&apos;ve been the world&apos;s leading manufacturer of standardized botanical extracts for over 30 years.<br /> And we believe our journey has only begun.</p> 
@@ -61,7 +61,7 @@ function HeroSectionSec() {
         <div key="content2" className="w-full">
             <div className="relative h-[75vh]">
                 <img src={research} alt="hero" className="w-[100vw] h-full object-cover rounded-xl" />
-                <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/70 text-white">
+                <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/60 text-white">
                     <div className="flex flex-col items-center justify-center h-full">
                         <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">We Provide The Best By <br/> Innovating Naturally</div>
                         <div className="text-white text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mx-auto mb-8">An expert nutraceutical manufacturer providing a one-stop solution with<br/> comprehensive project support from ideation to product launch.</div>
