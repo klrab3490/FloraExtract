@@ -32,8 +32,8 @@ function Counter({ targetNumber }) {
 function HeroSectionSec() {
     const content = [
         <div key="content1" className='w-full h-[75vh] rounded-xl border-4 border-[#290c06]'>
-            <div className="flex flex-col items-center justify-center w-[95vw] h-full">
-                <h1 className='text-4xl sm:text-8xl text-[#290c06] text-center py-4 font-semibold'>Nurturing Health, <br></br>Enriching Life – Naturally</h1>
+            <div className="flex flex-col items-center justify-center h-full w-full sm:w-[94vw]">
+                <h1 className='text-4xl sm:text-8xl text-[#290c06] text-center py-4 font-semibold'>Nurturing Health, <br/>Enriching Life – Naturally</h1>
                 <h1 className='text-lg sm:text-2xl text-center'>Transform your well-being with our exclusive range of natural extracts,<br></br> from raw essences to convenient capsules and innovative soft gels, including patented products that optimize health and elevate your life.</h1>
                 <NavLink to={'/shop'} className="flex mt-4 relative justify-center items-center w-full sm:w-52 z-20">
                     <div className="relative">
@@ -87,7 +87,7 @@ function HeroSectionSec() {
             <div className="relative h-[75vh]">
                 <img src={ocean} alt="hero" className="w-[100vw] h-full object-cover rounded-xl" />
                 <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/30 text-white">
-                    <div className="flex flex-col items-center justify-center h-full">
+                    <div className="flex flex-col items-center justify-center h-full pb-44">
                         <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">Unlock your Inner Energy</div>
                         <div className="text-white items-start text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mx-auto mb-8">Boost your health from within</div>
                     </div>
@@ -97,7 +97,7 @@ function HeroSectionSec() {
         <div key="content4" className="w-full">
             <div className="relative h-[75vh]">
                 <img src={nature} alt="hero" className="w-[100vw] h-full object-cover rounded-xl" />
-                <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/70 text-white">
+                <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/20 text-white">
                     <div className="flex flex-col items-center justify-center h-full pb-36">
                         <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">Unlock your Inner Energy</div>
                         <div className="text-white items-start text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mx-auto mb-15">Boost your health from within</div>
