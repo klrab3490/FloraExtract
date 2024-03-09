@@ -96,11 +96,11 @@ function NaturalPreservatives() {
                 </div>
             </div>
             <div>
-                <h1 className='text-5xl font-bold py-8 text-center'>Discover Our Wide Array Of Applications</h1>
+                <h1 className='text-4xl font-bold py-8 text-center'>Discover Our Wide Array Of Applications</h1>
                 <Food />
             </div>
             <div>
-                <h1 className='text-5xl font-bold py-8 text-center'>Natural Preservatives</h1>
+                <h1 className='text-4xl font-bold py-8 text-center'>Natural Preservatives</h1>
                 <NaturalPreservativesTable />
             </div>
         </div>
