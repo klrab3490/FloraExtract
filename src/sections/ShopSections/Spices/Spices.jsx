@@ -18,7 +18,45 @@ import Cloves from "../../../assets/Spices/Cloves.jpg"
 import StarAnise from "../../../assets/Spices/StarAnise.jpg"
 import GreenCardamom from "../../../assets/Spices/GreenCardamom.jpg"
 
+import Masalas from "../../../assets/Spices/Masalas.jpg"
+import Spice from "../../../assets/Spices/Spices.jpg"
+import WholeSpices from "../../../assets/Spices/WholeSpices.jpg"
+import Customize from "../../../assets/Spices/Customize.png"
+
 export default function Spices() {
+    const SpicesMenu = [
+        {
+            id: 1,
+            title: "Masalas",
+            image: Masalas,
+            list: ["Sambar Powder", "Rasam Powder", "Meat Masala", "Chicken Masala", "Fish Masala", "Garam Masala", "Biriyani Masala"]
+        },
+        {
+            id: 2,
+            title: "Powdered Spices",
+            image: Spice,
+            list: ["Chilli Powder", "Turmeric Powder", "Coriander Powder", "Kashmiri Chilli Powder", "Black Pepper Powder"]
+        },
+        {
+            id: 3,
+            title: "Whole Spices",
+            image: WholeSpices,
+            list: ["Split Cassia (Patta)", "Cloves (Grambu)", "Star Anise (Thakkolam)", "Black Pepper" ,"Green Cardamom"]
+        },
+        {
+            id: 4,
+            title: "Customized Spices",
+            image: Customize,
+            desc: "We offer customized spices option to amp up the your flavour palette."
+        },
+        // {
+        //     id: 1,
+        //     title: "",
+        //     image: "",
+        //     list: []
+        // },
+    ]; 
+
     const SpicesData = [
         {
             id: 1,
@@ -150,35 +188,70 @@ export default function Spices() {
     const filteredContents = value === 'All' ? SpicesData : SpicesData.filter(data => data.category.includes(value.toLocaleLowerCase()));
 
     return (
-        <div className='flex flex-col'>
-            <div className='flex sm:items-end sm:justify-end justify-center items-center'>
-                <div className='flex items-center justify-center gap-2 border-1 mb-6 bg-[#fd9b40] p-2 mt-2 rounded-lg'>
-                    <p className='text-lg'>Category By : </p>
-                    <select id="sortby" name='sortby' className='w-48 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1' onChange={handleChange}>
-                        <option defaultChecked value="All" className='p-2'>All</option>
-                        <option value="masalas" className='p-2'>Masalas</option>
-                        <option value="powdered" className='p-2'>Powdered</option>
-                        <option value="wholespices" className='p-2'>Whole Spices</option>
-                    </select>
+        <div>
+            {/* Product Listing */}
+            <div className='flex flex-col items-center justify-center'>
+                <div className='flex flex-col items-center justify-center'>
+                    <h1 className='text-4xl font-bold py-4 text-center'>Spices Product Listing</h1>
+                    <div className='flex flex-col items-center justify-center'>
+                        <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+                            {SpicesMenu.map((item,index) => (
+                                <div key={index} className='py-2 px-4 text-xl'>
+                                    <div className='flex flex-col sm:flex-row p-2'>
+                                        <div className='flex items-center justify-center h-64 w-64 mr-10'>
+                                            <img src={item.image} alt={item.title} className='h-60 w-60 object-cover rounded-lg' />
+                                        </div>
+                                        <div>
+                                            <h2 className='text-2xl font-semibold text-center '>{item.title}</h2>
+                                            <div className='w-[210px]'>
+                                                {item.list && item.list.length > 0 && (
+                                                    <ul className='list-disc'>
+                                                        {item.list.map((listItems,index) => (
+                                                            <li key={index} className='font-normal'>{listItems}</li>
+                                                        ))}
+                                                    </ul>
+                                                )}
+                                                {item.desc && <div>{item.desc}</div>}
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className='flex sm:flex-row flex-col mt-2'>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-items-center gap-4 mb-5'>
-                    {filteredContents.map((data) => (
-                        <div key={data.id} id={data.id} className='p-2 h-full'> 
-                            <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
-                                <div className='flex flex-col'>
-                                    <div className='flex items-center justify-center h-[300px]'>
-                                        <img src={data.productimg} alt={data.name} className='w-full h-full rounded-xl object-cover items-center' />
-                                    </div>
-                                    <div className='p-5'>
-                                        <div className='font-bold text-xl text-center'>{data.name}</div>
-                                        <div className='text-lg text-left text-[#290c06] mt-2'>{data.desc}</div>
+            {/* Products */}
+            <div className='flex flex-col'>
+                <div className='flex sm:items-end sm:justify-end justify-center items-center'>
+                    <div className='flex items-center justify-center gap-2 border-1 mb-6 bg-[#fd9b40] p-2 mt-2 rounded-lg'>
+                        <p className='text-lg'>Category By : </p>
+                        <select id="sortby" name='sortby' className='w-48 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1' onChange={handleChange}>
+                            <option defaultChecked value="All" className='p-2'>All</option>
+                            <option value="masalas" className='p-2'>Masalas</option>
+                            <option value="powdered" className='p-2'>Powdered</option>
+                            <option value="wholespices" className='p-2'>Whole Spices</option>
+                        </select>
+                    </div>
+                </div>
+                <div className='flex sm:flex-row flex-col mt-2'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-items-center gap-4 mb-5'>
+                        {filteredContents.map((data) => (
+                            <div key={data.id} id={data.id} className='p-2 h-full'> 
+                                <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
+                                    <div className='flex flex-col'>
+                                        <div className='flex items-center justify-center h-[300px]'>
+                                            <img src={data.productimg} alt={data.name} className='w-full h-full rounded-xl object-cover items-center' />
+                                        </div>
+                                        <div className='p-5'>
+                                            <div className='font-bold text-xl text-center'>{data.name}</div>
+                                            <div className='text-lg text-left text-[#290c06] mt-2'>{data.desc}</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

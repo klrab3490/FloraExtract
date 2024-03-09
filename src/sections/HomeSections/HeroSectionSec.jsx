@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion"
 // image
 import img from "../../assets/gardening.jpg"
 import research from "../../assets/research.jpeg"
-import ocean from "../../assets/HeroSlider/OCEAN.jpg"
-import nature from "../../assets/HeroSlider/NATURE.jpg"
+import ocean from "../../assets/HeroSlider/OCEAN.png"
+import nature from "../../assets/HeroSlider/NATURE.png"
 
 // Imports
 import { NavLink } from 'react-router-dom';
