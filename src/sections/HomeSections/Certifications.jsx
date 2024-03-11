@@ -16,10 +16,10 @@ function Certifications() {
                     Certifications
                 </div>
             </div>
-            <div className="flex sm:justify-around justify-center items-center px-5 pt-10">
+            <div className="flex justify-around items-center px-5 py-10">
                 <img src={ISO} alt="" className="sm:h-36 h-16"/>
                 <img src={fasst} alt="" className="sm:h-36 h-16"/>
-                <img src={GDM} alt="" className="sm:h-60 h-32" />
+                <img src={GDM} alt="" className="sm:h-36 h-16" />
             </div>
         </div>
     );

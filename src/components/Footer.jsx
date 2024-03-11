@@ -1,6 +1,7 @@
 
 // icon
 import { FaRegRegistered } from 'react-icons/fa6'
+import { IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter, IoLogoWhatsapp, IoMdCall, IoMdMail } from 'react-icons/io'
 
 function ScrollToTop() {
     window.scrollTo({
@@ -60,7 +61,7 @@ export default function Footer() {
                     {/* Social Media */}
                     <div className='flex flex-col items-center text-center justify-center gap-2'>
                         <div className='font-semibold text-2xl'>Follow Us On Social Media</div>
-                        <div className='flex flex-col text-xl sm:flex-row items-center text-center justify-center gap-7'>
+                        <div className='hidden text-xl sm:flex sm:flex-row items-center text-center justify-center gap-7'>
                             <a href='tel:+971551390166' onClick={ScrollToTop}>Call</a>
                             <a href='mailto:sales@floraextracts.in' onClick={ScrollToTop}>Email</a>
                             <a href='https://www.instagram.com/floraextracts/' onClick={ScrollToTop}>Instagram</a>
@@ -68,6 +69,29 @@ export default function Footer() {
                             <a href='https://twitter.com/FloraExtracts' onClick={ScrollToTop}>Twitter</a>
                             <a href='https://www.linkedin.com/company/flora-extracts/' onClick={ScrollToTop}>LinkedIN</a>
                             <a href='https://api.whatsapp.com/send/?phone=971551390166&text=Hi&type=phone_number&app_absent=0' onClick={ScrollToTop}>Whatsapp</a>
+                        </div>
+                        <div className='flex text-xl sm:hidden items-center text-center justify-center gap-3'>
+                            <a href='tel:+971551390166' onClick={ScrollToTop}>
+                                <IoMdCall size={30} />
+                            </a>
+                            <a href='mailto:sales@floraextracts.in' onClick={ScrollToTop}>
+                                <IoMdMail size={30} />
+                            </a>
+                            <a href='https://www.instagram.com/floraextracts/' onClick={ScrollToTop}>
+                                <IoLogoInstagram size={30} />
+                            </a>
+                            <a href='https://www.facebook.com/profile.php?viewas=100000686899395&id=61556962628775' onClick={ScrollToTop}>
+                                <IoLogoFacebook size={30} />
+                            </a>
+                            <a href='https://twitter.com/FloraExtracts' onClick={ScrollToTop}>
+                                <IoLogoTwitter size={30} />
+                            </a>
+                            <a href='https://www.linkedin.com/company/flora-extracts/' onClick={ScrollToTop}>
+                                <IoLogoLinkedin size={30} />
+                            </a>
+                            <a href='https://api.whatsapp.com/send/?phone=971551390166&text=Hi&type=phone_number&app_absent=0' onClick={ScrollToTop}>
+                                <IoLogoWhatsapp size={30} />
+                            </a>
                         </div>
                     </div>
                     {/* Copyrights Section */}
