@@ -203,7 +203,7 @@ export default function Extracts() {
     };
 
     return (
-        <div classname="flex justify-center">
+        <div className="flex justify-center">
             <div className='grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-5'>
                 {extracts.map((data,index) => (
                     <div key={index} className='sm:p-5 p-2'>

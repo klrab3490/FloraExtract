@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ImageLoader from "../../../components/ImageLoader";
 
 // image
 import SambarPowder from "../../../assets/Spices/SambarPowder.jpg"
@@ -17,7 +18,6 @@ import SplitCassia from "../../../assets/Spices/SplitCassia.jpg"
 import Cloves from "../../../assets/Spices/Cloves.jpg"
 import StarAnise from "../../../assets/Spices/StarAnise.jpg"
 import GreenCardamom from "../../../assets/Spices/GreenCardamom.jpg"
-
 import Masalas from "../../../assets/Spices/Masalas.jpg"
 import Spice from "../../../assets/Spices/Spices.jpg"
 import WholeSpices from "../../../assets/Spices/WholeSpices.jpg"
@@ -187,6 +187,19 @@ export default function Spices() {
 
     const filteredContents = value === 'All' ? SpicesData : SpicesData.filter(data => data.category.includes(value.toLocaleLowerCase()));
 
+    // Image Loader
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    // Function to handle image loading
+    const handleImageLoad = () => {
+        setImageLoaded(false);
+
+        // Simulate a loading time of 5 seconds
+        setTimeout(() => {
+            setImageLoaded(true); // Set imageLoaded to true after 5 seconds
+        }, 3000);
+    };
+
     return (
         <div>
             {/* Product Listing */}
@@ -199,7 +212,8 @@ export default function Spices() {
                                 <div key={index} className='py-2 px-4 text-xl'>
                                     <div className='flex flex-col sm:flex-row p-2'>
                                         <div className='flex items-center justify-center h-64 w-64 mr-10'>
-                                            <img src={item.image} alt={item.title} className='h-60 w-60 object-cover rounded-lg' />
+                                            {!imageLoaded && <ImageLoader />}
+                                            <img src={item.image} onLoad={handleImageLoad} alt={item.title} className={`w-60 h-60 rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
                                         </div>
                                         <div>
                                             <h2 className='text-2xl font-semibold text-center '>{item.title}</h2>
@@ -241,7 +255,8 @@ export default function Spices() {
                                 <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
                                     <div className='flex flex-col'>
                                         <div className='flex items-center justify-center h-[300px]'>
-                                            <img src={data.productimg} alt={data.name} className='w-full h-full rounded-xl object-cover items-center' />
+                                            {!imageLoaded && <ImageLoader />}
+                                            <img src={data.productimg} onLoad={handleImageLoad} alt={data.name} className={`w-full h-full rounded-xl object-cover items-center ${imageLoaded ? 'block' : 'hidden'}`} />
                                         </div>
                                         <div className='p-5'>
                                             <div className='font-bold text-xl text-center'>{data.name}</div>

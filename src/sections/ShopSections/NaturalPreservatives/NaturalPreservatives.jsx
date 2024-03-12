@@ -1,6 +1,9 @@
+import { useState } from 'react';
+import ImageLoader from "../../../components/ImageLoader";
+
 // Table of Contents
-import NaturalPreservativesTable from './NaturalPreservativesTable';
 import Food from './Food';
+import NaturalPreservativesTable from './NaturalPreservativesTable';
 
 // image
 import Diary from '../../../assets/NaturalPreservatives/Diary.jpg';
@@ -39,6 +42,19 @@ function NaturalPreservatives() {
         }
     ];
 
+    // Image Loader
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    // Function to handle image loading
+    const handleImageLoad = () => {
+        setImageLoaded(false);
+
+        // Simulate a loading time of 5 seconds
+        setTimeout(() => {
+            setImageLoaded(true); // Set imageLoaded to true after 5 seconds
+        }, 3000);
+    };
+
     return (
         <div className='flex flex-col items-center justify-center'>
             <div className='flex flex-col items-center justify-center'>
@@ -49,7 +65,8 @@ function NaturalPreservatives() {
                             <div key={index} className='py-2 px-4 text-xl'>
                                 <div className='flex flex-col sm:flex-row p-2'>
                                     <div className='flex items-center justify-center h-64 w-64 mr-10'>
-                                        <img src={item.image} alt={item.title} className='h-60 w-60 object-cover rounded-lg' />
+                                        {!imageLoaded && <ImageLoader />}
+                                        <img src={item.image} onLoad={handleImageLoad} alt={item.title} className={`h-60 w-60 object-cover rounded-lg ${imageLoaded ? 'block' : 'hidden'}`} />
                                     </div>
                                     <div>
                                         <h2 className='text-2xl font-semibold text-center sm:text-start'>{item.title}</h2>
