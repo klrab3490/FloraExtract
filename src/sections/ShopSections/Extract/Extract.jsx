@@ -165,7 +165,13 @@ export default function Extracts() {
             ingredients: "Saponins 40%-90%",
             benefit: "Sports medicine, libido enhancer, suitable for beverages",
             img: Tribulus
-        },
+        },{
+            id: 24,
+            name: "",
+            ingredients: "",
+            benefit: "",
+            img: ""
+        }
         // {
         //   id:,
         //   name:"",
@@ -182,31 +188,33 @@ export default function Extracts() {
     }
 
     return (
-        <div className='grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-5'>
-            {extracts.map((data,index) => (
-                <div key={index} className='sm:p-5 p-2'>
-                    <div className='flex flex-col border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
-                        <div className='flex justify-center items-center'>
-                            <img src={data.img} className='w-full h-[300px] rounded-xl object-cover' />
-                        </div>
-                        <div className='w-full font-normal text-2xl sm:rpx-4 px-2'>
-                            <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
-                            <div className="flex flex-col"> 
-                                <span className="font-medium">Ingredients : </span> 
-                                <span className="pl-3">{data.ingredients}</span>
+        <div classname="flex justify-center">
+            <div className='grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-5'>
+                {extracts.map((data,index) => (
+                    <div key={index} className='sm:p-5 p-2'>
+                        <div className='flex flex-col border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
+                            <div className='flex justify-center items-center'>
+                                <img src={data.img} className='w-full h-[300px] rounded-xl object-cover' />
                             </div>
-                            <div className="flex flex-col"> 
-                                <span className="font-medium">Benefits : </span>
-                                {show !== data.id && <div className="flex justify-end cursor-pointer hover:underline" onClick={() => see(data.id)}>See More</div>}
-                                {show === data.id && <div>
-                                    <span className="pl-3">{data.benefit}</span>
-                                    <div className="flex justify-end cursor-pointer hover:underline" onClick={() => setShow(null)}>See Less</div>
-                                </div>}
+                            <div className='w-full font-normal text-2xl sm:rpx-4 px-2'>
+                                <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
+                                <div className="flex flex-col"> 
+                                    <span className="font-medium">Ingredients : </span> 
+                                    <span className="pl-3">{data.ingredients}</span>
+                                </div>
+                                <div className="flex flex-col"> 
+                                    <span className="font-medium">Benefits : </span>
+                                    {show !== data.id && <div className="flex justify-end cursor-pointer hover:underline" onClick={() => see(data.id)}>See More</div>}
+                                    {show === data.id && <div>
+                                        <span className="pl-3">{data.benefit}</span>
+                                        <div className="flex justify-end cursor-pointer hover:underline" onClick={() => setShow(null)}>See Less</div>
+                                    </div>}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 }

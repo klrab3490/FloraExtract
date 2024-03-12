@@ -31,11 +31,9 @@ function Newsletter() {
                         FLORAEXTRACTS <FaRegRegistered size={25} className="" />
                     </div>
                     <div className="text-xl sm:w-[500px] py-5">
-                        Is the world&apos;s leading manufacturer and innovator of
-                        standardised botanical extracts. Since opening our doors in 1989,
-                        we&apos;ve grown exponentially, serving customers in over 60 countries
+                    At Flora Extracts, we offer a wide range of premium, natural plant extracts that are clinically proven to enhance vitality. With a commitment to ethical sourcing and rigorous quality control, we provide customized solutions for well-being.
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center justify-center sm:justify-start">
                         <div className="flex items-center justify-center">
                             <div className="flex mt-4 relative justify-center items-center w-52 z-20" onClick={ScrollToTop}>
                                 <NavLink to={'/about'} className="flex justify-center items-center px-3 py-3 w-40 bg-[#fd9b40] hover:bg-[#e88b34] cursor-pointer">

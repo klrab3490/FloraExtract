@@ -67,7 +67,7 @@ export default function Footer() {
                             <a href='https://www.instagram.com/floraextracts/' onClick={ScrollToTop}>Instagram</a>
                             <a href='https://www.facebook.com/profile.php?viewas=100000686899395&id=61556962628775' onClick={ScrollToTop}>Facebook</a>
                             <a href='https://twitter.com/FloraExtracts' onClick={ScrollToTop}>Twitter</a>
-                            <a href='https://www.linkedin.com/company/flora-extracts/' onClick={ScrollToTop}>LinkedIN</a>
+                            <a href='https://www.linkedin.com/company/flora-extracts/' onClick={ScrollToTop}>LinkedIn</a>
                             <a href='https://api.whatsapp.com/send/?phone=971551390166&text=Hi&type=phone_number&app_absent=0' onClick={ScrollToTop}>Whatsapp</a>
                         </div>
                         <div className='flex text-xl sm:hidden items-center text-center justify-center gap-3'>
