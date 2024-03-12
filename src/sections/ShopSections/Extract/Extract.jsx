@@ -1,10 +1,12 @@
 import { useState } from "react";
+import ImageLoader from "../../../components/ImageLoader";
 
 // images
 import AndrographisPaniculata from "../../../assets/Extract/AndrographisPaniculata.jpg";
 import Ashwagandha from "../../../assets/Extract/Ashwagandha.png";
 import BoswelliaSerratta from "../../../assets/Extract/BoswelliaSerratta.png";
 import Brahmi from "../../../assets/Extract/Brahmi.jpg";
+import BlackPepper from "../../../assets/Extract/BlackPepper.jpg";
 import Cinnamon from "../../../assets/Extract/Cinnamon.jpg";
 import CurcuminEffervescen from "../../../assets/Extract/CurcuminEffervescen.png";
 import CurcuminEthanol from "../../../assets/Extract/CurcuminEthanol.jpg";
@@ -167,10 +169,10 @@ export default function Extracts() {
             img: Tribulus
         },{
             id: 24,
-            name: "",
-            ingredients: "",
-            benefit: "",
-            img: ""
+            name: "Black Pepper Extract",
+            ingredients: "Caryophyllene(24.42%), Limonene(15.10%)",
+            benefit: "Used for the treatment of epilepsy and pain in traditional medicine",
+            img: BlackPepper
         }
         // {
         //   id:,
@@ -187,14 +189,28 @@ export default function Extracts() {
         setShow(show === id ? null : id);
     }
 
+    // Image Loader
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    // Function to handle image loading
+    const handleImageLoad = () => {
+        setImageLoaded(false);
+
+        // Simulate a loading time of 5 seconds
+        setTimeout(() => {
+            setImageLoaded(true); // Set imageLoaded to true after 5 seconds
+        }, 3000);
+    };
+
     return (
         <div classname="flex justify-center">
             <div className='grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-5'>
                 {extracts.map((data,index) => (
                     <div key={index} className='sm:p-5 p-2'>
                         <div className='flex flex-col border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
-                            <div className='flex justify-center items-center'>
-                                <img src={data.img} className='w-full h-[300px] rounded-xl object-cover' />
+                            <div className='flex justify-center items-center w-full h-[300px]'>
+                                {!imageLoaded && <ImageLoader />}
+                                <img src={data.img} onLoad={handleImageLoad} className={`w-full h-[300px] rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
                             </div>
                             <div className='w-full font-normal text-2xl sm:rpx-4 px-2'>
                                 <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
