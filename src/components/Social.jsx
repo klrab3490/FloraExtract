@@ -41,7 +41,7 @@ function Social() {
     <>
       {people.map((person) => (
         <div key={person.id} className="pb-8 px-24">
-          <div className="px-8 gap-8 rounded-lg flex sm:flex-row flex-col justify-center items-center">
+          <div className="px-8 gap-8 rounded-lg flex xl:flex-row flex-col justify-center items-center">
             <div>
               <div className="h-auto w-80 rounded-lg">
                 <img src={person.image} alt="" className="rounded-xl h-72 w-full object-cover"/>
