@@ -1,3 +1,10 @@
+// Table Image Import
+import { useState } from "react";
+import Table1 from "../../../assets/NaturalPreservatives/Tables/Table1.png"
+import Table2 from "../../../assets/NaturalPreservatives/Tables/Table2.png"
+import Table3 from "../../../assets/NaturalPreservatives/Tables/Table3.png"
+import Table4 from "../../../assets/NaturalPreservatives/Tables/Table4.png"
+
 // Table component
 const Table = ({ headers, rows }) => (
   <table className='table-auto border border-gray-900 border-collapse'>
@@ -25,26 +32,39 @@ const Table = ({ headers, rows }) => (
 );
   
 // TableList component
-const TableList = ({ items }) => (
-  <div>
-    {items.map((item, index) => (
-      <div key={index} className='text-xl py-4'>
-        <div className='px-5'>
-          <div>
-            {item.tables.map((table, index) => (
-              <div key={index} className='py-4'>
-                <div className='font-semibold'>{table.title}</div>
-                <div>
-                  <Table headers={table.headers} rows={table.rows} />
+const TableList = ({ items }) => {
+  const [selectedImage, setSelectedImage] = useState(null);
+  const rotationDegree = useState(0);
+
+  // Function to handle image click and toggle selection
+  const handleImageClick = (index) => {
+    setSelectedImage(selectedImage === index ? null : index);
+  };
+
+  return (
+    <div>
+      {items.map((item, index) => (
+        <div key={index} className='text-xl py-4'>
+          <div className='px-5'>
+            <div>
+              {item.tables.map((table, index) => (
+                <div key={index} className='py-4'>
+                  <div className='font-semibold'>{table.title}</div>
+                  <div className="hidden sm:flex">
+                    <Table headers={table.headers} rows={table.rows} />
+                  </div>
+                  <div className="sm:hidden flex ">
+                    {selectedImage === index ? ( <img src={table.img} className="scale-[2] rotate-90" onClick={() => handleImageClick(index)} /> ) : ( <img src={table.img} onClick={() => handleImageClick(index)} /> )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    ))}
-  </div>
-);
+      ))}
+    </div>
+  );
+}
   
 // Data
 const data = [
@@ -52,6 +72,7 @@ const data = [
     tables: [
       // Table 1
       {
+        img: Table1,
         headers: ['', 'Fruit Juice', 'Bread', 'Cake'],
         rows: [
           // Table 1 rows
@@ -101,6 +122,7 @@ const data = [
       },
       // Table 2
       {
+        img: Table2,
         headers: ['', 'Jams & Jellies', 'Mayonnaise', 'Hummus'],
         rows: [
           // Table 2 rows
@@ -153,6 +175,7 @@ const data = [
       },
       // Table 3
       {
+        img: Table3,
         headers: ['', 'Indian Sweets', 'Raw Meat', 'Processed Meat'],
         rows: [
           // Table 2 rows
@@ -211,6 +234,7 @@ const data = [
       },
       // Table 4
       {
+        img: Table4,
         headers: ['', 'Frying Oils', 'Garlic Paste', 'Spraying Oil'],
         rows: [
           // Table 4 rows

@@ -1,3 +1,25 @@
+// import
+import { useState } from "react"
+
+// image table import
+import ARM103 from "../../../assets/Natural Color/ARM103.png"
+import ARM104 from "../../../assets/Natural Color/ARM104.png"
+import ARM106 from "../../../assets/Natural Color/ARM106.png"
+import AOP401 from "../../../assets/Natural Color/AOP401.png"
+import AOP701 from "../../../assets/Natural Color/AOP701.png"
+import AOP701NG from "../../../assets/Natural Color/AOP701[NG].png"
+import AGC151 from "../../../assets/Natural Color/AGC151.png"
+import AGC152 from "../../../assets/Natural Color/AGC152.png"
+import AAC101 from "../../../assets/Natural Color/AAC101.png"
+import AAC101NY from "../../../assets/Natural Color/AAC101[NY].png"
+import AYT101 from "../../../assets/Natural Color/AYT101.png"
+import AYT203 from "../../../assets/Natural Color/AYT203.png"
+import AYT041 from "../../../assets/Natural Color/AYT041.png"
+import ABC501 from "../../../assets/Natural Color/ABC501.png"
+import ABC101 from "../../../assets/Natural Color/ABC101.png"
+import APB051 from "../../../assets/Natural Color/APB051.png"
+import APB101 from "../../../assets/Natural Color/APB101.png"
+import APA102 from "../../../assets/Natural Color/APA102.png"
 
 // Table component
 const Table = ({ headers, rows }) => (
@@ -26,27 +48,44 @@ const Table = ({ headers, rows }) => (
 );
 
 // TableList component
-const TableList = ({ items }) => (
-  <ol className='list-decimal'>
-    {items.map((item, index) => (
-      <li key={index} className='text-xl py-4'>
-        <div className='font-semibold'>{item.title}</div>
-        <div className='px-5'>
-          <ol className='list-disc'>
-            {item.tables.map((table, index) => (
-              <li key={index} className='py-2'>
-                <div className='font-semibold'>{table.title}</div>
-                <div>
-                  <Table headers={table.headers} rows={table.rows} />
-                </div>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </li>
-    ))}
-  </ol>
-);
+const TableList = ({ items }) => {
+  const [isImageScaled, setIsImageScaled] = useState(false);
+  const [scaledImageIndex, setScaledImageIndex] = useState(null);
+
+  const toggleImageScale = (index) => {
+    if (index === scaledImageIndex) {
+      setIsImageScaled(!isImageScaled);
+    } else {
+      setIsImageScaled(true);
+    }
+    setScaledImageIndex(index);
+  };
+
+  return (
+    <ol className='list-decimal'>
+      {items.map((item, index) => (
+        <li key={index} className='text-xl py-4'>
+          <div className='font-semibold'>{item.title}</div>
+          <div className='px-5'>
+            <ol className='list-disc'>
+              {item.tables.map((table, index) => (
+                <li key={index} className='py-2'>
+                  <div className='font-semibold'>{table.title}</div>
+                  <div className="hidden sm:flex">
+                    <Table headers={table.headers} rows={table.rows} />
+                  </div>
+                  <div className={`sm:hidden flex ${isImageScaled && index === scaledImageIndex ? 'scale-125' : ''}`} onClick={() => toggleImageScale(index)}>
+                    <img src={table.img} />
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
 
 // Data
 const data = [
@@ -54,6 +93,7 @@ const data = [
     title: 'Natural Red Colour',
     tables: [
       {
+        img: ARM103,
         title: 'ARM 103',
         headers: ['Product Code', 'ARM 103', 'Product Form', 'Powder'],
         rows: [
@@ -67,6 +107,7 @@ const data = [
           ['Ingredients', 'Carotenoids And Beet Root Extract, Fermented Rice Extract'],
         ],
       },{
+        img: ARM104,
         title: 'ARM 104',
         headers: ['Product Code', 'ARM 104', 'Product Form', 'Powder'],
         rows: [
@@ -80,6 +121,7 @@ const data = [
           ['Ingredients', 'Black Carrot Extract'],
         ],
       },{
+        img: ARM106,
         title: 'ARM 106',
         headers: ['Product Code', 'ARM 106', 'Product Form', 'Powder'],
         rows: [
@@ -98,6 +140,7 @@ const data = [
     title: 'Natural Orange Colour',
     tables: [
       {
+        img: AOP401,
         title: 'A0P 401',
         headers: ['Product Code', 'A0P 401', 'Product Form', 'Powder'],
         rows: [
@@ -111,6 +154,7 @@ const data = [
           ['Ingredients', 'Paprika Extract'],
         ],
       },{
+        img: AOP701,
         title: 'A0P 701',
         headers: ['Product Code', 'A0P 701', 'Product Form', 'Powder'],
         rows: [
@@ -129,6 +173,7 @@ const data = [
     title: 'Natural Green Colour',
     tables: [
       {
+        img: AOP701NG,
         title: 'A0P 701',
         headers: ['Product Code', 'A0P 701', 'Product Form', 'Powder'],
         rows: [
@@ -142,6 +187,7 @@ const data = [
           ['Ingredients', 'Sodium Magnesium Chlorophyll'],
         ],
       },{
+        img: AGC151,
         title: 'AGC 151',
         headers: ['Product Code', 'AGC 151', 'Product Form', 'Powder'],
         rows: [
@@ -155,6 +201,7 @@ const data = [
           ['Ingredients', 'Sodium Copper Chlorophyll'],
         ],
       },{
+        img: AGC152,
         title: 'AGC 152',
         headers: ['Product Code', 'AGC 152', 'Product Form', 'Powder'],
         rows: [
@@ -173,6 +220,7 @@ const data = [
     title: 'Natural Apple Green Colour',
     tables: [
       {
+        img: AAC101,
         title: 'AAC 101',
         headers: ['Product Code', 'AAC 101', 'Product Form', 'Powder'],
         rows: [
@@ -191,6 +239,7 @@ const data = [
     title: 'Natural Yellow Colour',
     tables: [
       {
+        img: AAC101NY,
         title: 'AAC 101',
         headers: ['Product Code', 'AAC 101', 'Product Form', 'Powder'],
         rows: [
@@ -204,6 +253,7 @@ const data = [
           ['Ingredients', 'Sodium Copper Chlorophyll, Turmeric Extract'],
         ],
       },{
+        img: AYT101,
         title: 'AYT 101',
         headers: ['Product Code', 'AYT 101', 'Product Form', 'Powder'],
         rows: [
@@ -217,6 +267,7 @@ const data = [
           ['Ingredients', 'Turmeric Extract'],
         ],
       },{
+        img: AYT203,
         title: 'AYT 203',
         headers: ['Product Code', 'AYT 203', 'Product Form', 'Powder'],
         rows: [
@@ -230,6 +281,7 @@ const data = [
           ['Ingredients', 'Turmeric Extract'],
         ],
       },{
+        img: AYT041,
         title: 'AYT 041',
         headers: ['Product Code', 'AYT 041', 'Product Form', 'Powder'],
         rows: [
@@ -248,6 +300,7 @@ const data = [
     title: 'Natural Brown Colour',
     tables: [
       {
+        img: ABC501,
         title: 'ABC 501',
         headers: ['Product Code', 'ABC 501', 'Product Form', 'Powder'],
         rows: [
@@ -261,6 +314,7 @@ const data = [
           ['Ingredients', 'Caramel'],
         ],
       },{
+        img: ABC101,
         title: 'ABC 101',
         headers: ['Product Code', 'ABC 101', 'Product Form', 'Powder'],
         rows: [
@@ -279,6 +333,7 @@ const data = [
     title: 'Natural Pink Colour',
     tables: [
       {
+        img: APB051,
         title: 'APB 051',
         headers: ['Product Code', 'APB 051', 'Product Form', 'Powder'],
         rows: [
@@ -292,6 +347,7 @@ const data = [
           ['Ingredients', ''],
         ],
       },{
+        img: APB101,
         title: 'APB 101',
         headers: ['Product Code', 'APB 101', 'Product Form', 'Powder'],
         rows: [
@@ -310,6 +366,7 @@ const data = [
     title: 'Natural Purple Colour',
     tables: [
       {
+        img: APA102,
         title: 'APA 102',
         headers: ['Product Code', 'APA 102', 'Product Form', 'Powder'],
         rows: [
@@ -345,7 +402,7 @@ const data = [
 
 export default function NaturalColourTable() {
   return (
-    <div>
+    <div className="px-5">
       <TableList items={data} />
     </div>
   )

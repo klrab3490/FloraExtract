@@ -98,9 +98,9 @@ export default function Food() {
     const handleImageLoad = () => {
         setImageLoaded(false);
 
-        // Simulate a loading time of 5 seconds
+        // Simulate a loading time of 3 seconds
         setTimeout(() => {
-            setImageLoaded(true); // Set imageLoaded to true after 5 seconds
+            setImageLoaded(true); // Set imageLoaded to true after 3 seconds
         }, 3000);
     };
 
@@ -109,9 +109,9 @@ export default function Food() {
             {food.map((data,index) => (
                 <div key={index} className='sm:p-5 p-2'>
                     <div className='flex flex-col xl:flex-row border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
-                        <div className='flex justify-center items-center w-[400px] h-[300px]'>
+                        <div className='flex justify-center items-center h-[300px] w-auto'>
                             {!imageLoaded && <ImageLoader />}
-                            <img src={data.img} onLoad={handleImageLoad} className={`w-[400px] h-[300px] rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
+                            <img src={data.img} onLoad={handleImageLoad} className={`w-[400px] h-[300px] justify-center rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
                         </div>
                         <div className='w-full font-normal text-2xl sm:px-4 px-2'>
                             <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
