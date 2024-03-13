@@ -5,8 +5,8 @@ import Logo from "../assets/Flora Extract Logo3.svg";
 import { NavLink } from "react-router-dom";
 import { MenuButton } from "./MenuButton";
 import { useInView } from "react-intersection-observer";
-import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence, useAnimation } from "framer-motion";
+import { useState, useCallback } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function ScrollToTop() {
     window.scrollTo({
@@ -61,7 +61,7 @@ function NavbarSec() {
                     <img src={Logo} alt="Floral Extracts" className="h-16" />
                 </div>
                 <div className="">
-                    <MenuButton isOpen={isOpen} onClick={() => setOpen(!isOpen)} strokeWidth={4} width="32" style={menuButtonStyle} />
+                    <MenuButton color="#FFF" isOpen={isOpen} onClick={() => setOpen(!isOpen)} strokeWidth={4} width="32" style={menuButtonStyle} />
                 </div>
             </div>
             <div className={`fixed left-0 w-full z-50 ${isOpen ? "" : "hidden"}`}>

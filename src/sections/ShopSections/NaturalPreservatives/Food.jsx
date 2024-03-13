@@ -1,3 +1,5 @@
+import ImageLoader from "../../../components/ImageLoader";
+
 // images
 import bread from '../../../assets/NaturalPreservatives/bread.jpg'
 import cake from '../../../assets/NaturalPreservatives/cake.jpg'
@@ -6,10 +8,10 @@ import hummus from '../../../assets/NaturalPreservatives/hummus.png'
 import jam from '../../../assets/NaturalPreservatives/jam&jellies.png'
 import mayonnaise from '../../../assets/NaturalPreservatives/mayonnaise.png'
 import oil from '../../../assets/NaturalPreservatives/oil.png'
-import paprika from '../../../assets/NaturalPreservatives/paprika.png'
 import processedmeat from '../../../assets/NaturalPreservatives/processedmeat.png'
 import rawmeat from '../../../assets/NaturalPreservatives/rawmeat.jpg'
 import sweets from '../../../assets/NaturalPreservatives/sweets.png'
+import { useState } from "react";
 
 export default function Food() {
     const food = [
@@ -89,13 +91,27 @@ export default function Food() {
         // },
     ];
 
+    // Image Loader
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    // Function to handle image loading
+    const handleImageLoad = () => {
+        setImageLoaded(false);
+
+        // Simulate a loading time of 5 seconds
+        setTimeout(() => {
+            setImageLoaded(true); // Set imageLoaded to true after 5 seconds
+        }, 3000);
+    };
+
     return (
         <div className='grid sm:grid-cols-2 grid-cols-1 py-5'>
             {food.map((data,index) => (
                 <div key={index} className='sm:p-5 p-2'>
                     <div className='flex flex-col xl:flex-row border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
-                        <div className='flex justify-center items-center'>
-                            <img src={data.img} className='w-[400px] h-[300px] rounded-xl object-cover' />
+                        <div className='flex justify-center items-center w-[400px] h-[300px]'>
+                            {!imageLoaded && <ImageLoader />}
+                            <img src={data.img} onLoad={handleImageLoad} className={`w-[400px] h-[300px] rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
                         </div>
                         <div className='w-full font-normal text-2xl sm:px-4 px-2'>
                             <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>

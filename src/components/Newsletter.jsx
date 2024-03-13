@@ -1,7 +1,9 @@
+// imports
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 // icons
-import { IoIosPlayCircle, IoMdArrowRoundForward } from 'react-icons/io'
+import { IoMdArrowRoundForward } from 'react-icons/io'
 import { FaRegRegistered } from 'react-icons/fa6'
 
 function ScrollToTop() {
@@ -12,6 +14,14 @@ function ScrollToTop() {
 }
 
 function Newsletter() {
+    const [EmailID, setEmailID] = useState(null);
+    const handleEmail = (e) => {
+        e.preventDefault();
+        console.log(EmailID);
+        setEmailID("");
+    }
+
+
     return (
         <div>
             <div className="bg-[#5ACEA1] text-[#290c06] grid grid-cols-1 lg:grid-cols-2 py-7">
@@ -21,11 +31,9 @@ function Newsletter() {
                         FLORAEXTRACTS <FaRegRegistered size={25} className="" />
                     </div>
                     <div className="text-xl sm:w-[500px] py-5">
-                        Is the world&apos;s leading manufacturer and innovator of
-                        standardised botanical extracts. Since opening our doors in 1989,
-                        we&apos;ve grown exponentially, serving customers in over 60 countries
+                    At Flora Extracts, we offer a wide range of premium, natural plant extracts that are clinically proven to enhance vitality. With a commitment to ethical sourcing and rigorous quality control, we provide customized solutions for well-being.
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center justify-center sm:justify-start">
                         <div className="flex items-center justify-center">
                             <div className="flex mt-4 relative justify-center items-center w-52 z-20" onClick={ScrollToTop}>
                                 <NavLink to={'/about'} className="flex justify-center items-center px-3 py-3 w-40 bg-[#fd9b40] hover:bg-[#e88b34] cursor-pointer">
@@ -35,25 +43,25 @@ function Newsletter() {
                                 <div className="w-40 h-14 -z-10 top-1 right-4 bg-[#290c06] absolute"></div>
                             </div>
                         </div>
-                        <p className="flex items-center ml-10 text-xl">
+                        {/* <p className="flex items-center ml-10 text-xl">
                             <IoIosPlayCircle className="mr-2" size={40} /> Play Video
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 {/* Left */}
-                <div className="flex flex-col justify-end items-center sm:items-end mt-4 sm:mt-0 sm:mr-14">
+                <div className="flex flex-col justify-end items-center lg:items-end mt-4 sm:mt-0 sm:mr-14">
                     <div className="text-xl text-center sm:text-left">
                         Stay updated on the latest happenings!
                     </div>
                     <div className="mt-3">
                         <div className="flex items-center justify-center">
-                            <input type="email" placeholder="Email Adddress" className="w-[225px] sm:w-[300px] text-xl h-12 rounded-l-xl text-[#290c06] border-2 border-[#290c06] px-5 bg-[#fdfde1] focus:outline-none focus:ring-2 focus:ring-[#fd9b40] focus:border-transparent" />
-                            <button className="font-semibold bg-[#fd9b40] text-[#290c06] h-12 w-32 rounded-r-xl text-xl border-[#290c06] border-2 border-l-0">
+                            <input type="email" id="email" value={EmailID} onChange={(e) => setEmailID(e.target.value)} placeholder="Email Adddress" className="w-[225px] sm:w-[300px] text-xl h-12 rounded-l-xl text-[#290c06] border-2 border-[#290c06] px-5 bg-[#fdfde1] focus:outline-none focus:ring-2 focus:ring-[#fd9b40] focus:border-transparent" />
+                            <button onClick={handleEmail} type='submit' className="font-semibold bg-[#fd9b40] text-[#290c06] h-12 w-32 rounded-r-xl text-xl border-[#290c06] border-2 border-l-0">
                                 Subscribe
                             </button>
                         </div>
                         <div className="text-xl text-[#290c06] mt-3 w-full p-2 sm:w-[428px] text-center sm:text-left">
-                            {" "} For sales related enquires please email us at sales@something.com{" "}
+                            {" "} For sales related enquires please email us at sales@floraextracts.in{" "}
                         </div>
                     </div>
                 </div>

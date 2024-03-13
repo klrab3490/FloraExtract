@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import ImageLoader from "../../../components/ImageLoader";
 
 // image
 import bcm95 from "../../../assets/Finished Product/BCM95.png";
@@ -190,6 +191,19 @@ export default function FinishedProducts() {
 
     const filteredContents = value === 'All' ? FinishedProductsData : FinishedProductsData.filter(data => data.cateogory === value);
 
+    // Image Loader
+    const [imageLoaded, setImageLoaded] = useState(false);
+
+    // Function to handle image loading
+    const handleImageLoad = () => {
+        setImageLoaded(false);
+
+        // Simulate a loading time of 5 seconds
+        setTimeout(() => {
+            setImageLoaded(true); // Set imageLoaded to true after 5 seconds
+        }, 3000);
+    };
+
     return (
         <div className='flex flex-col'>
             <div className='flex sm:items-end sm:justify-end justify-center items-center'>
@@ -208,8 +222,9 @@ export default function FinishedProducts() {
                         <div key={data.id} className='p-2 h-full'> 
                             <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
                                 <div className='flex flex-col'>
-                                    <div className='flex items-center justify-center'>
-                                        <img src={data.productimg || bcm95} alt={data.name} className='h-[250px] w-[250px] object-contain items-center' />
+                                    <div className='flex items-center justify-center h-[250px]'>
+                                        {!imageLoaded && <ImageLoader />}
+                                        <img src={data.productimg || bcm95} alt={data.name} onLoad={handleImageLoad} className={`h-[250px] w-[250px] object-contain items-center ${imageLoaded ? 'block' : 'hidden'}`} />
                                     </div>
                                     <div className='p-5'>
                                         <div className='font-bold text-xl text-center'>{data.name}</div>
