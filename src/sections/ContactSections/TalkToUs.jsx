@@ -71,7 +71,6 @@ export default function TalkToUs() {
                                     </div>
                                 </div>
                                 <div className="flex justify-center sm:border-r-[1px] sm:border-[#5e1c0e] items-center sm:w-1/3 w-full p-3 sm:p-0">
-                                    <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">Download Contact</div>
                                 </div>
                                 <div className="flex justify-center items-center sm:w-1/3 w-full p-3 sm:p-0">
                                     <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">HHHR Tower ,<br /> Opp. Future of Museum ,<br /> Sheikh Zayed Road ,<br /> Dubai ,<br /> UAE</div>
@@ -88,81 +87,33 @@ export default function TalkToUs() {
                                 <div className="flex flex-wrap justify-between">
                                     <div className="mb-4 flex-grow mr-4">
                                         <label htmlFor="FirstName" className="block mb-2">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            id="FirstName" 
-                                            value={FirstName} 
-                                            onChange={(e) => setFirstName(e.target.value)} 
-                                            placeholder="Your First Name" 
-                                            className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" 
-                                        />
+                                        <input autoComplete='on' type="text" id="FirstName" value={FirstName} onChange={(e) => setFirstName(e.target.value)} placeholder="Your First Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
                                     </div>
                                     <div className="mb-4 flex-grow">
                                         <label htmlFor="LastName" className="block mb-2">Last Name</label>
-                                        <input 
-                                            type="text" 
-                                            id="LastName" 
-                                            value={LastName} 
-                                            onChange={(e) => setLastName(e.target.value)} 
-                                            placeholder="Your Last Name" 
-                                            className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" 
-                                        />
+                                        <input autoComplete='on' type="text" id="LastName" value={LastName} onChange={(e) => setLastName(e.target.value)} placeholder="Your Last Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
                                     </div>
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="Email" className="block mb-2">Email</label>
-                                    <input 
-                                        type="email" 
-                                        id="Email" 
-                                        value={Email} 
-                                        onChange={(e) => setEmail(e.target.value)} 
-                                        placeholder="Your Email" 
-                                        className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]"  
-                                    />
+                                    <input autoComplete='on' type="email" id="Email" value={Email} onChange={(e) => setEmail(e.target.value)} placeholder="Your Email" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="Contact" className="block mb-2">Contact</label>
-                                    <input 
-                                        type="text" 
-                                        id="Contact" 
-                                        value={Contact} 
-                                        onChange={(e) => setContact(e.target.value)} 
-                                        placeholder="Your Contact Number" 
-                                        className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]"  
-                                    />
+                                    <input autoComplete='on' type="text" 
+                                        id="Contact" value={Contact} onChange={(e) => setContact(e.target.value)} placeholder="Your Contact Number" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="Company" className="block mb-2">Company</label>
-                                    <input 
-                                        type="text" 
-                                        id="Company" 
-                                        value={Company} 
-                                        onChange={(e) => setCompany(e.target.value)} 
-                                        placeholder="Your Company Name" 
-                                        className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]"  
-                                    />
+                                    <input autoComplete='on' type="text" id="Company" value={Company} onChange={(e) => setCompany(e.target.value)} placeholder="Your Company Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="Country" className="block mb-2">Country</label>
-                                    <input 
-                                        type="text" 
-                                        id="Country" 
-                                        value={Country} 
-                                        onChange={(e) => setCountry(e.target.value)} 
-                                        placeholder="Your Country Name" 
-                                        className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]"  
-                                    />
+                                    <input autoComplete='on' type="text" id="Country" value={Country} onChange={(e) => setCountry(e.target.value)} placeholder="Your Country Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="Message" className="block mb-2">Message</label>
-                                    <textarea 
-                                        id="Message" 
-                                        value={Message} 
-                                        onChange={(e) => setMessage(e.target.value)} 
-                                        placeholder="Your Message" 
-                                        className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]"  
-                                        rows="5"
-                                    ></textarea>
+                                    <textarea id="Message" value={Message} onChange={(e) => setMessage(e.target.value)} placeholder="Your Message" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" rows="5"></textarea>
                                 </div>
                                 <button type="submit" className="w-full p-3 rounded-xl border-0 bg-[#fd9b40] hover:scale-105 shadow-black">Submit</button>
                             </form>

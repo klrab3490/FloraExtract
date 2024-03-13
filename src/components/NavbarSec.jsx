@@ -4,7 +4,6 @@ import Logo from "../assets/Flora Extract Logo3.svg";
 // import
 import { NavLink } from "react-router-dom";
 import { MenuButton } from "./MenuButton";
-import { useInView } from "react-intersection-observer";
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -17,7 +16,7 @@ function ScrollToTop() {
 
 function NavbarSec() {
     // Navabr Animation Mobile View : Framer Motion
-    const [isOpen, setOpen] = useState(false);
+    const [isOpen, setOpen] = useState(false);  
     const handleClose = useCallback(() => {
         setOpen(!isOpen);
     }, [isOpen]);
@@ -34,12 +33,9 @@ function NavbarSec() {
         marginLeft: "2rem",
     };
 
-    // Navbar Animation In Destop : Framer Motion
-    const [navRef, navInView] = useInView();    
-
     return (
         <div className="sticky top-0 z-[1000] bg-[#1A392D] text-white">
-            <motion.div ref={navRef} initial={{ y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{ type: "spring", damping: 30,duration:500 , stiffness: 200, ease: "easeOut" }} className="w-[100vw] flex justify-center items-center px-2 py-2 font-semibold ">
+            <motion.div initial={{ y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{ type: "spring", damping: 30,duration:500 , stiffness: 200, ease: "easeOut" }} className="w-[100vw] flex justify-center items-center px-2 py-2 font-semibold ">
                 <div className="px-4 py-2 hidden sm:flex " onClick={ScrollToTop}>
                     <NavLink to={"/shop"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Products </NavLink>
                 </div>

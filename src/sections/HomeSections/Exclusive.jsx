@@ -32,7 +32,7 @@ function Exclusive() {
                     {/* Text in the banner */}
                     <marquee className="w-full z-30 h-20 flex items-center justify-center">
                         <h2 className="text-3xl font-mono">
-                        "We Provide You With a Wide Variety of Products, Ranging from Exotic Plant Extracts to Premium Spices."
+                        &quot;We Provide You With a Wide Variety of Products, Ranging from Exotic Plant Extracts to Premium Spices.&quot;
                         </h2>
                     </marquee>
                 </div>

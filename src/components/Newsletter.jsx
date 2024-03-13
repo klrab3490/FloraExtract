@@ -14,7 +14,7 @@ function ScrollToTop() {
 }
 
 function Newsletter() {
-    const [EmailID, setEmailID] = useState(null);
+    const [EmailID, setEmailID] = useState("");
     const handleEmail = (e) => {
         e.preventDefault();
         console.log(EmailID);
@@ -55,7 +55,7 @@ function Newsletter() {
                     </div>
                     <div className="mt-3">
                         <div className="flex items-center justify-center">
-                            <input type="email" id="email" value={EmailID} onChange={(e) => setEmailID(e.target.value)} placeholder="Email Adddress" className="w-[225px] sm:w-[300px] text-xl h-12 rounded-l-xl text-[#290c06] border-2 border-[#290c06] px-5 bg-[#fdfde1] focus:outline-none focus:ring-2 focus:ring-[#fd9b40] focus:border-transparent" />
+                            <input autoComplete='on' type="email" id="email" value={EmailID} onChange={(e) => setEmailID(e.target.value)} placeholder="Email Adddress" className="w-[225px] sm:w-[300px] text-xl h-12 rounded-l-xl text-[#290c06] border-2 border-[#290c06] px-5 bg-[#fdfde1] focus:outline-none focus:ring-2 focus:ring-[#fd9b40] focus:border-transparent" />
                             <button onClick={handleEmail} type='submit' className="font-semibold bg-[#fd9b40] text-[#290c06] h-12 w-32 rounded-r-xl text-xl border-[#290c06] border-2 border-l-0">
                                 Subscribe
                             </button>

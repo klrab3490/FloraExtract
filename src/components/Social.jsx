@@ -2,12 +2,7 @@
 import { MdOutlineEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import {
-  RiFacebookBoxFill,
-  RiFacebookFill,
-  RiFacebookLine,
-  RiTwitterXFill,
-} from "react-icons/ri";
+import { RiFacebookFill, } from "react-icons/ri";
 
 // image
 import Nixon from "../assets/Team/Nixon.JPG";

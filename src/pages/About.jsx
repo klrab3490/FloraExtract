@@ -1,5 +1,3 @@
-// Components
-
 // Sections
 import OurMission from '../sections/AboutSections/OurMission'
 import OurVision from '../sections/AboutSections/OurVision'

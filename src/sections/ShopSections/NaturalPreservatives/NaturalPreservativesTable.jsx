@@ -33,10 +33,9 @@ const Table = ({ headers, rows }) => (
   
 // TableList component
 const TableList = ({ items }) => {
-  const [selectedImage, setSelectedImage] = useState(null);
-  const rotationDegree = useState(0);
-
+  
   // Function to handle image click and toggle selection
+  const [selectedImage, setSelectedImage] = useState(null);
   const handleImageClick = (index) => {
     setSelectedImage(selectedImage === index ? null : index);
   };
