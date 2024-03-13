@@ -19,9 +19,9 @@ function Exclusive() {
             <div className="w-full h-[65vh] relative pt-10 flex justify-center items-center bg-[#5ACEA1]">
                 {/* Images behind the banner */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                    <img src={EX1} alt="" className="" />
+                    <img src={EX1} alt="" className="h-[400px]" />
                 </div>
-                <div className="absolute top-1/2 left-20  -translate-y-1/2 z-0">
+                <div className="absolute top-1/2 left-20 -translate-y-1/2 z-0">
                     <img src={EX1} alt="" className="h-64" />
                 </div>
                 <div className="absolute top-1/2 right-20  -translate-y-1/2 z-0">
@@ -32,7 +32,7 @@ function Exclusive() {
                     {/* Text in the banner */}
                     <marquee className="w-full z-30 h-20 flex items-center justify-center">
                         <h2 className="text-3xl font-mono">
-                            Visit our store Now For Brand and Exclusive Finished Products
+                        "We Provide You With a Wide Variety of Products, Ranging from Exotic Plant Extracts to Premium Spices."
                         </h2>
                     </marquee>
                 </div>
