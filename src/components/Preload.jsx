@@ -86,13 +86,7 @@ function Loader() {
         />
       </svg>
       {/* <FloraExtractsAnimation/> */}
-      <svg
-        width="500"
-        height=""
-        viewBox="0 0 94 17"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg height="" viewBox="0 0 94 17" className="sm:w-[500px] w-[300px]" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
           fill-rule="evenodd"
           clip-rule="evenodd"
