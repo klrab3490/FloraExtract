@@ -20,7 +20,7 @@ function Loader() {
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimationCount((prevCount) => prevCount + 1);
-    }, 9000); // Adjust this interval to control the timing of each animation cycle
+    }, 2000); // Adjust this interval to control the timing of each animation cycle
 
     return () => clearInterval(interval);
   }, []);
