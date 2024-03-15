@@ -9,8 +9,14 @@ import ocean from "../../assets/HeroSlider/OCEAN.png"
 import nature from "../../assets/HeroSlider/NATURE.png"
 
 // Imports
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from "react";
+
+// Add prop validation for 'targetNumber'
+Counter.propTypes = {
+    targetNumber: PropTypes.number.isRequired,
+};
 
 function Counter({ targetNumber }) {
     const [currentNumber, setCurrentNumber] = useState(0);

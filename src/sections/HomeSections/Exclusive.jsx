@@ -31,9 +31,7 @@ function Exclusive() {
                 <div className="w-full z-10 h-20 bg-[#fd9b40] border-y-2 border-[#290c06] relative">
                     {/* Text in the banner */}
                     <marquee className="w-full z-30 h-20 flex items-center justify-center">
-                        <h2 className="text-3xl font-mono">
-                        &quot;We Provide You With a Wide Variety of Products, Ranging from Exotic Plant Extracts to Premium Spices.&quot;
-                        </h2>
+                        <h2 className="text-3xl font-mono"> &quot;We Provide You With a Wide Variety of Products, Ranging from Exotic Plant Extracts to Premium Spices&quot; </h2>
                     </marquee>
                 </div>
             </div>

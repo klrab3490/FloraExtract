@@ -26,7 +26,7 @@ export default function OurVision() {
                     <div className='flex flex-col sm:flex-row px-4 sm:px-14'>
                         <img src={ourvision} className='rounded-xl sm:w-1/2 w-full' />
                         <div className='flex items-center justify-center text-2xl sm:text-5xl px-5 font-bold'>
-                            <div>“To pioneer in providing high-quality, ethically sourced natural plant extracts to enrich human well-being and vitality.“</div>
+                            <div>“To pioneer in providing high-quality, ethically sourced natural plant extracts for enriching human well-being and vitality.“</div>
                         </div>
                     </div>
                 </div>

@@ -44,7 +44,7 @@ const Research = () => {
                         <img src={icon2} width={50} />
                     </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
-                        <div className="text-2xl flex justify-center items-center text-center">Determining the potent actives</div>
+                        <div className="text-2xl flex justify-center items-center text-center">Determining the active component</div>
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
@@ -122,7 +122,7 @@ const Manufacturing = () => {
                         <img src={icon8} width={50} />
                     </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
-                        <div className="text-2xl flex justify-center items-center text-center"> Extracting actives using gentle processes </div>
+                        <div className="text-2xl flex justify-center items-center text-center"> Extracting active component using gentle processes </div>
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">
@@ -150,7 +150,7 @@ const QualityControl = () => {
                         <img src={icon10} width={50} />
                     </div>
                     <div className="flex w-full h-full flex-col justify-center items-center text-center">
-                        <div className="text-2xl flex justify-center items-center text-center"> Testing to ensure actives&apos; specifications </div>
+                        <div className="text-2xl flex justify-center items-center text-center"> Testing to ensure the component efficacy </div>
                     </div>
                 </div>
                 <div className="flex justify-center items-center m-2">

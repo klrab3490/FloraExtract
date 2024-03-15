@@ -11,14 +11,14 @@ function Social() {
   const people = [
     {
       id: 1,
-      name: "Dr. Nixon Kuruvilla",
+      name: "Dr. Nixon Kuruvila",
       position: "CEO",
       image: Nixon,
       email: "nixonkuruvilak@gmail.com",
       phone: "+919446229344",
       linkedin: "https://www.linkedin.com/in/dr-nixon-kuruvila-5105b5274/",
       facebook: "https://m.facebook.com/nixonkuruvilaofficial/",
-      desc: "Dr. Nixon Kuruvila, Principal of Sahrdaya College of Engineering and Technology. He has over 20 years of teaching experience and is also a Member of the Board of Studies at APJ Abdul Kalam Technological University. Dr.Nixon Kuruvila is well-known for his commitment to excellence in education and research. He has held important roles in academia, shaping the educational landscape. At Flora Extracts, Dr.Nixon Kuruvila leads a team dedicated to offering premium, natural plant extracts that enhance vitality. They focus on ethical sourcing and quality control to meet customers' unique needs. Dr.Nixon Kuruvila and his team were inspired by personal experiences with the adverse effects of chemical-laden foods. They believe in the power of natural remedies for well-being. Their mission is to provide innovative solutions for enhancing vitality and wellness."
+      desc: "Dr. Nixon Kuruvila, Principal of Sahrdaya College of Engineering and Technology. He has over 20 years of teaching experience and is also a Member of the Board of Studies at APJ Abdul Kalam Technological University. Dr. Kuruvila is well-known for his commitment to excellence in education and research. He has held important roles in academia, shaping the educational landscape. At Flora Extracts, Dr. Kuruvila leads a team dedicated to offering premium, natural plant extracts that enhance vitality. They focus on ethical sourcing and quality control to meet customers' unique needs. Dr. Kuruvila and his team were inspired by personal experiences with the adverse effects of chemical-laden foods. They believe in the power of natural remedies for well-being. Their mission is to provide innovative solutions for enhancing vitality and wellness."
     },
     // {
     //   id: 1,

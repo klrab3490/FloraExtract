@@ -73,7 +73,7 @@ export default function TalkToUs() {
                                 <div className="flex justify-center sm:border-r-[1px] sm:border-[#5e1c0e] items-center sm:w-1/3 w-full p-3 sm:p-0">
                                 </div>
                                 <div className="flex justify-center items-center sm:w-1/3 w-full p-3 sm:p-0">
-                                    <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">HHHR Tower ,<br /> Opp. Future of Museum ,<br /> Sheikh Zayed Road ,<br /> Dubai ,<br /> UAE</div>
+                                    <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">Blue Tower ,<br /> Opp. Future of Museum ,<br /> Sheikh Zayed Road ,<br /> Dubai ,<br /> UAE</div>
                                 </div>
                             </div>
                             {/* Map */}
