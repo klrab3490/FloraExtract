@@ -3,32 +3,32 @@ import ImageLoader from "../../../components/ImageLoader";
 
 // image
 import bcm95 from "../../../assets/Finished Product/BCM95.png";
-import AMLA from "../../../assets/Finished Product/AMLA.jpg";
-import ASHWAGANDHA from "../../../assets/Finished Product/ASHWAGANDHA.jpg";
-import BOSWELLIA from "../../../assets/Finished Product/BOSWELLIA.jpg";
-import BRAHMI from "../../../assets/Finished Product/BRAHMI.jpg";
-import defence from "../../../assets/Finished Product/defence.jpg";
-import FLAXNCUMIN from "../../../assets/Finished Product/FLAX-N-CUMIN.jpg";
-import GLUCOBALANCE from "../../../assets/Finished Product/GLUCO-BALANCE.jpg";
-import GREENTEA from "../../../assets/Finished Product/GREEN-TEA.jpg";
-import GUTEAZE from "../../../assets/Finished Product/GUT-EAZE.jpg";
-import JOINTRECUE from "../../../assets/Finished Product/JOINT-RECUE.jpg";
-import MORINGA from "../../../assets/Finished Product/MORINGA.jpg";
-import ndurance from "../../../assets/Finished Product/n-durance.jpg";
-import omegadouble from "../../../assets/Finished Product/ASHWAGANDHA.jpg";
-import OMEGAFLAX from "../../../assets/Finished Product/OMEGA-FLAX.jpg";
-import omegatriple from "../../../assets/Finished Product/omega-triple.jpg";
-import POMEGRANATE from "../../../assets/Finished Product/POMEGRANATE.jpg";
-import rhulief from "../../../assets/Finished Product/rhulief.jpg";
-import SLEEPNREST from "../../../assets/Finished Product/SLEEP-N-REST.jpg";
-import TRIPHALA from "../../../assets/Finished Product/TRIPHALA.jpg";
+import AMLA from "../../../assets/Finished Product/AMLA.png";
+import ASHWAGANDHA from "../../../assets/Finished Product/ASHWAGANDHA.png";
+import BOSWELLIA from "../../../assets/Finished Product/BOSWELLIA.png";
+import BRAHMI from "../../../assets/Finished Product/BRAHMI.png";
+import defence from "../../../assets/Finished Product/defence.png";
+import FLAXNCUMIN from "../../../assets/Finished Product/FLAX-N-CUMIN.png";
+import GLUCOBALANCE from "../../../assets/Finished Product/GLUCO-BALANCE.png";
+import GREENTEA from "../../../assets/Finished Product/GREEN-TEA.png";
+import GUTEAZE from "../../../assets/Finished Product/GUT-EAZE.png";
+import JOINTRECUE from "../../../assets/Finished Product/JOINT-RECUE.png";
+import MORINGA from "../../../assets/Finished Product/MORINGA.png";
+import ndurance from "../../../assets/Finished Product/n-durance.png";
+import omegadouble from "../../../assets/Finished Product/omega-double.png";
+import OMEGAFLAX from "../../../assets/Finished Product/OMEGA-FLAX.png";
+import omegatriple from "../../../assets/Finished Product/omega-triple.png";
+import POMEGRANATE from "../../../assets/Finished Product/POMEGRANATE.png";
+import rhulief from "../../../assets/Finished Product/rhulief.png";
+import SLEEPNREST from "../../../assets/Finished Product/SLEEP-N-REST.png";
+import TRIPHALA from "../../../assets/Finished Product/TRIPHALA.png";
 
 export default function FinishedProducts() {
     const FinishedProductsData = [
         {
             id:1,
             cateogory:"capsules",
-            name:"DAILY DEFENSE",
+            name:"DAILY GUARD",
             ingredients:"Purified turmeric Extract",
             benfits:"Strengthen body’s defence system naturally, Protect body from detrimental free radicals, Build strong immunity from inside out",
             extrainfor:"each vegetable contains purified turmeric extract",
@@ -36,7 +36,7 @@ export default function FinishedProducts() {
         },{
             id:2,
             cateogory:"softgels",
-            name:"FAST RHULIEF",
+            name:"JOINT RELIEF",
             ingredients:"Blend of Turmeric, Boswellia and Sesame oil",
             benfits:"Supports pain relief, helps reduce inflammation, Help improve flexibility, Supports Musculoskeletal mobility",
             extrainfor:"each softgel contains Turmeric & Boswellia extract with Sesame oil",
@@ -44,7 +44,7 @@ export default function FinishedProducts() {
         },{
             id:3,
             cateogory:"softgels",
-            name:"OMEGA – 3 DOUBLE",
+            name:"OMEGA DOUBLE ACTION",
             ingredients:"Omega 3 Fish oil",
             benfits:"Improve overall heart health, Boost overall immunity, Boost eye, Brain and Nerve function, Promote Liver health",
             extrainfor:"each softgel contains fish oil",
@@ -52,7 +52,7 @@ export default function FinishedProducts() {
         },{
             id:4,
             cateogory:"softgels",
-            name:"OMEGA – 3 TRIPLE",
+            name:"OMEGA TRIPLE ACTION",
             ingredients:"Omega 3 Fish oil",
             benfits:"Improve overall heart health, Boost overall immunity, Boost eye, Brain and Nerve function, Promote Liver health",
             extrainfor:"each softgel contains vitamin D, E & K",
@@ -60,7 +60,7 @@ export default function FinishedProducts() {
         },{
             id:5,
             cateogory:"softgels",
-            name:"OMEGA FLAX",
+            name:"FLAX OMEGA",
             ingredients:"Omega 3 Flaxseed oil",
             benfits:"Supports overall health, Anti-oxidant and anti-inflammatory, Helps to maintain liver & heart health, Helps Brain, Join, Skin & Hair Health",
             extrainfor:"each softgel contains flaxseed oil",
@@ -68,7 +68,7 @@ export default function FinishedProducts() {
         },{
             id:6,
             cateogory:"capsules",
-            name:"JOINT RESCUE",
+            name:"JOINT COMFORT",
             ingredients:"Boswellia Serrata Extract",
             benfits:"Supports joint health, Improve joint mobility & flexibility, Supports Healthy Cartilage function, Helps reduce inflammation",
             extrainfor:"each Vegetarian capsule contains Turmeric and Boswellia extract",
@@ -76,7 +76,7 @@ export default function FinishedProducts() {
         },{
             id:7,
             cateogory:"capsules",
-            name:"GUT EAZE 365",
+            name:"BELLY HEALTH",
             ingredients:"Potent combination of Herbs",
             benfits:"Helps promote overall gut health, Helps reduce abdominal bloating, Helps improve gut microbiome, Supports Healthy Digestion ",
             extrainfor:"Each vegetarian capsules contains blend of 14 different herbs",
@@ -84,7 +84,7 @@ export default function FinishedProducts() {
         },{
             id:8,
             cateogory:"capsules",
-            name:"DAILY ASHWAGANDHA",
+            name:"DAILY SLUMBER",
             ingredients:"Ashwagandha Extract",
             benfits:"Helps improve sleep quality, Helps in reducing Strss & Anxiety, Helps in mood regulation, Helps in rejuvenate mind & body, Helps enhance alertness",
             extrainfor:"Each vegetarian capsules contains pure Ashwagandha Extract",
@@ -92,7 +92,7 @@ export default function FinishedProducts() {
         },{
             id:9,
             cateogory:"capsules",
-            name:"SLEEP ‘N’ REST",
+            name:"FORTY WINKS POWER NAP",
             ingredients:"Ashwagandha Extract",
             benfits:"Restful sleep, Helps manage stress, Wake-Up Refreshed",
             extrainfor:"Each vegetarian capsules contains Ashwagandha Extract",
@@ -100,7 +100,7 @@ export default function FinishedProducts() {
         },{
             id:10,
             cateogory:"capsules",
-            name:"DAILY N-DURANCE",
+            name:"EVERYDAY STAMINA",
             ingredients:"Red Spinach Extract",
             benfits:"Supports enhanced nitric oxide level in the body, Improved Athletic performance, Enhanced Blood Circulation",
             extrainfor:"Each vegetarian capsules contains Red Spinach Extract",
@@ -108,7 +108,7 @@ export default function FinishedProducts() {
         },{
             id:11,
             cateogory:"capsules",
-            name:"DAILY POMEGRANATE",
+            name:"DAILY GRENADE",
             ingredients:"Pomegranate Extract",
             benfits:"Supports overall heart health, Helps manage blood pressure, Helps slow arterial wall thickening, Powerfull anti-oxidant",
             extrainfor:"Each vegetarian capsules contains Pomegranate Extract",
@@ -116,7 +116,7 @@ export default function FinishedProducts() {
         },{
             id:12,
             cateogory:"capsules",
-            name:"DAILY BOSWELLIA",
+            name:"DAILY BREATH",
             ingredients:"Boswellia Serrata Extract",
             benfits:"Support respiratory health, Helps improve overall lung health, Helps in reducing coughing and wheezing, Regulate chest tightness and breathlessness",
             extrainfor:"each Vegetarian capsule contains Pure Boswellia extract",
@@ -124,7 +124,7 @@ export default function FinishedProducts() {
         },{
             id:13,
             cateogory:"capsules",
-            name:"DAILY GREEN TEA",
+            name:"EVERDAY GREEN TEA",
             ingredients:"Green Tea Extraxt",
             benfits:"Helps in weight management,Support cardiovascular health, Support healthy metabolism, Pwerfull antioxidant",
             extrainfor:"Each vegetarian capsules contains Green Tea Extract",
@@ -132,7 +132,7 @@ export default function FinishedProducts() {
         },{
             id:14,
             cateogory:"capsules",
-            name:"DAILY MORINGA",
+            name:"EVERDAY MORINGA",
             ingredients:"Moringa leaf Extraxt",
             benfits:"Supports eye health, Supports skin and hair care, supports in weiht management, Supports overall health, metabolism and immunity",
             extrainfor:"Each vegetarian capsules contains Moringa Extract",
@@ -140,7 +140,7 @@ export default function FinishedProducts() {
         },{
             id:15,
             cateogory:"capsules",
-            name:"DAILY BRAHMI",
+            name:"EVERYDAY BRAHMI",
             ingredients:"Brahmi Extraxt (Bacopa)",
             benfits:"Supports cognitive Health, Helps in reducing stress & anxiety, Helps to promote mind welness",
             extrainfor:"Each vegetarian capsules contains pure Brahmi Extract",
@@ -148,7 +148,7 @@ export default function FinishedProducts() {
         },{
             id:16,
             cateogory:"capsules",
-            name:"DAILY TRIPHALA",
+            name:"EVERYDAY TRIPHALA",
             ingredients:"Amla Extraxt",
             benfits:"Promote overall gut health, Helps promote bowel wellness, Helps to promote metabolism",
             extrainfor:"Each vegetarian capsules contains Triphala Extract",
@@ -156,7 +156,7 @@ export default function FinishedProducts() {
         },{
             id:17,
             cateogory:"softgels",
-            name:"FLAX ‘N’ CUMIN",
+            name:"OMEGA & CUMIN",
             ingredients:"Omega 3 Flaxseed oil",
             benfits:"Improve immunity, supports skin & hair health, supports brain health, anti-oxidant &anti-inflammatory",
             extrainfor:"Each softgel contains Flaxseed oil and black cumin seed extract",
@@ -164,7 +164,7 @@ export default function FinishedProducts() {
         },{
             id:18,
             cateogory:"capsules",
-            name:"GLUCO BALANCE",
+            name:"SUGAR CONTROL",
             ingredients:"Amla Extraxt",
             benfits:"Promote healthy blood sugar metabolism, regulate blood sugar levels, support normal insulin response",
             extrainfor:"Each vegetarian capsules contains turmeric, amla and pterocarpus marsupium extract",
@@ -172,7 +172,7 @@ export default function FinishedProducts() {
         },{
             id:19,
             cateogory:"capsules",
-            name:"DAILY AMLA",
+            name:"EVERYDAY AMLA",
             ingredients:"Amla Extraxt",
             benfits:"Maintain a healthy triglycerides level, Improve overall heart health, Helps reduce visceral fat, Reduce the risk of cardiac disease",
             extrainfor:"Each vegetarian capsules contains Amla Extract",
