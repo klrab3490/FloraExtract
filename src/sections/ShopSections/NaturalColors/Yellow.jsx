@@ -19,17 +19,17 @@ export default function Yellow() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="flex flex-col justify-center items-center mb-4 sm:mb-14" >
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-4xl font-bold text-[#FDAE17]" > Yellow </motion.div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="flex flex-col gap-4 p-2" >
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} className="flex flex-wrap justify-center items-center gap-4 h-52 sm:h-auto" >
-          <div className="w-40 h-[140px]" >
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} className="flex flex-wrap justify-center items-center gap-4" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={Curcumin} alt='Curcumin' className='w-full h-full object-cover' />
           </div>
-          <div className="w-40 h-[140px]" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={Marigold} alt='Marigold' className='w-full h-full object-cover' />
           </div>
-          <div className="w-40 h-[140px]" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={img_4} alt='img_4' className='w-full h-full object-cover' />
           </div>
-          <div className="w-40 h-[140px]" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={Safflower} alt='Safflower' className='w-full h-full object-cover' />
           </div>
         </motion.div>

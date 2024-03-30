@@ -19,20 +19,20 @@ export default function Pink() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="flex flex-col justify-center items-center mb-4 sm:mb-14" >
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-4xl font-bold text-[#EE3E88]" > Pink </motion.div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="flex flex-col gap-4 p-2" >
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} className="flex flex-wrap justify-center items-center gap-4 h-52 sm:h-auto" >
-          <div className="w-40 h-[140px]" >
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} className="flex flex-wrap justify-center items-center gap-4" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={Beetroot} alt='Beetroot' className='w-full h-full object-cover' />
           </div>
-          <div className="w-40 h-[140px]" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={BlackCarrot} alt='Black Carrot' className='w-full h-full object-cover' />
           </div>
-          <div className="w-40 h-[140px]" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={Carmine} alt='Carmine' className='w-full h-full object-cover' />
           </div>
-          <div className="w-40 h-[140px]" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={RedRadish} alt='Red Radish' className='w-full h-full object-cover' />
           </div>
-          <div className="w-40 h-[140px]" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={SweetPotato} alt='Sweet Potato' className='w-full h-full object-cover' />
           </div>
         </motion.div>

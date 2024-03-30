@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { MenuButton } from "./MenuButton";
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer"
 
 function ScrollToTop() {
     window.scrollTo({

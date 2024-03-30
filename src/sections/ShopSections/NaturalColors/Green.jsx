@@ -16,11 +16,11 @@ export default function Green() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="flex flex-col justify-center items-center mb-4 sm:mb-14" >
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="text-4xl font-bold text-[#38AA50]" > Green </motion.div>
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="flex flex-col gap-4 p-2" >
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} className="flex justify-center items-center gap-4 h-52 sm:h-auto" >
-          <div className="w-40 h-[140px]" >
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }} className="flex justify-center items-center gap-4" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={pinch} alt='pinch' className='w-full h-full object-cover' />
           </div>
-          <div className="w-40 h-[140px]" >
+          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={greeenextracts} alt='greeen-extracts' className='w-full h-full object-cover' />
           </div>
         </motion.div>
