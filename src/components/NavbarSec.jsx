@@ -59,7 +59,7 @@ function NavbarSec() {
                     <img src={Logo} alt="Floral Extracts" className="h-16" />
                 </div>
                 <div className="">
-                    <MenuButton color="#FFF" isOpen={isOpen} onClick={() => setOpen(!isOpen)} strokeWidth={4} width="32" style={menuButtonStyle} />
+                    <MenuButton color="#FFF" isOpen={isOpen} onClick={() => {ScrollToTop();setOpen(!isOpen)}} strokeWidth={4} width="32" style={menuButtonStyle} />
                 </div>
             </div>
             <div className={`fixed left-0 w-full z-50 ${isOpen ? "" : "hidden"}`}>

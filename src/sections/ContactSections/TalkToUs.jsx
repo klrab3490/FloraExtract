@@ -62,12 +62,12 @@ export default function TalkToUs() {
                                         <a href='mailto:sales@floraextracts.in' className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoMdMail className='mr-2 flex items-center justify-center' />sales@floraextracts.in</a>
                                     </div>
                                     <div className='flex mt-2'>
-                                        <a href='tel:+971551390166' className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoIosCall className='mr-2 flex items-center justify-center' />+971 55 139 0166</a>
+                                        <a href='tel:+919446229344' className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoIosCall className='mr-2 flex items-center justify-center' />+91 94462 29344</a>
                                     </div>
                                     <div className='flex mt-2 gap-2'>
                                         <a href='https://twitter.com/FloraExtracts' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <FaXTwitter /> </a>
                                         <a href='https://www.instagram.com/floraextracts/' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoInstagram size={20}/> </a>
-                                        <a href='https://api.whatsapp.com/send/?phone=971551390166&text=Hi&type=phone_number&app_absent=0' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp size={20}/> </a>                                        
+                                        <a href='https://api.whatsapp.com/send/?phone=919446229344&text=Hi&type=phone_number&app_absent=0' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp size={20}/> </a>                                        
                                     </div>
                                 </div>
                                 <div className="flex justify-center sm:border-r-[1px] sm:border-[#5e1c0e] items-center sm:w-1/3 w-full p-3 sm:p-0">
