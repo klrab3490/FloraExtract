@@ -49,13 +49,14 @@ export default function Spices() {
             image: Customize,
             desc: "We offer customized spices option to amp up the your flavour palette."
         },
-        // {
-        //     id: 1,
-        //     title: "",
-        //     image: "",
-        //     list: []
-        // },
     ]; 
+    
+    const groundSpices = [
+        {
+            title: "Ground Spices other Blends & Seasonings",
+            list: ["Black Pepper", "Calamus", "Cardamom", "Celery Seed", "Cinnamon Leaf", "Clove Bud", "Clove Leaf", "Coriander Seed", "Cumin Seed", "Curcuma Aromatica", "Davana", "Fennel Seed", "Galangal", "Ginger", "Mace", "Nutmeg", "Parsley Seed", "Pimento", "Rosemary", "Turmeric", "Vetiver"]
+        }
+    ];
 
     const SpicesData = [
         {
@@ -228,6 +229,18 @@ export default function Spices() {
                                                 {item.desc && <div>{item.desc}</div>}
                                                 </div>
                                         </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className='w-full'>
+                            {groundSpices.map((item,index) => (
+                                <div key={index} className='py-2 px-4 text-xl'>
+                                    <h2 className='text-2xl font-semibold text-center'>{item.title}</h2>
+                                    <div className="flex flex-wrap list-disc">
+                                        {item.list.map((listItems,index) => (
+                                            <li key={index} className="pl-4 space-y-2">{listItems}</li>
+                                        ))}
                                     </div>
                                 </div>
                             ))}

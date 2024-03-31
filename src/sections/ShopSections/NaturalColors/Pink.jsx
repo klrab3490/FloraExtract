@@ -1,4 +1,3 @@
-import Modal from 'react-modal'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
@@ -13,7 +12,7 @@ import SweetPotato from "../../../assets/Natural Color/Pink/Sweet Potato.jpg"
 import table from "../../../assets/Natural Color/Table/PinkTable.png"
 
 export default function Pink() {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="flex flex-col justify-center items-center mb-4 sm:mb-14" >
@@ -117,16 +116,15 @@ export default function Pink() {
             </table>
           </motion.div>
         </div>
-        <div>
-            <div className='flex sm:hidden' onClick={() => setModalIsOpen(true)}>
-                <img src={table} alt='table' className='w-full object-cover' />
-            </div>
-            <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} contentLabel="Image Modal" >
-                <img src={table} alt='table' className='w-full object-cover ' style={{ transform: 'rotate(90deg)' }} />
-            </Modal>
-        </div>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3 }} className="sm:hidden flex flex-col gap-10">
+          <div className="flex justify-center items-center pb-2" >
+            <button onClick={() => setSelectedImage(!selectedImage)} className="bg-slate-500 text-white py-2 px-4 rounded-md">{selectedImage ? <div>Close Table</div> : <div>View Table</div>}</button>
+          </div>
+          {selectedImage && (
+            <img src={table} alt="table" className="w-full h-full object-cover scale-105" />
+          )}
+        </motion.div>
       </motion.div>
     </motion.div>
   )
 }
-

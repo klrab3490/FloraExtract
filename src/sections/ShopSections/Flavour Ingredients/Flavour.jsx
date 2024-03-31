@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 // Essential Oils data
 const essentialOils = [
@@ -12,7 +13,7 @@ const oleoresins = [
 
 // Spray Dried Products data
 const sprayDriedProducts = [
-  "All our Essential Oils", "Oleoresins", "Green Extractives & Natural Food Colours"
+  "All our Essential Oils", "Oleoresins", "Green Extractives", "Natural Food Colours"
 ];
 
 // Clean Label data
@@ -21,75 +22,53 @@ const cleanLabels = [
 ];
 
 export default function Flavour() {
+  const [animateMainDiv, setAnimateMainDiv] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAnimateMainDiv(true);
+    }, 0);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div className="container mx-auto p-10">
+    <motion.div initial={{ opacity: 0 }} animate={animateMainDiv ? { opacity: 1 } : {}} transition={{ duration: 0.5 }}>
       <div className="text-center text-4xl font-bold mb-8">Flavours</div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        <div>
+      <div>
+        <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, }} className="mb-4">
           <h1 className="text-2xl font-bold mb-4">Essential Oil</h1>
-          <ol className="list-decimal pl-4 space-y-2">
+          <div className="flex flex-wrap text-lg">
             {essentialOils.map((oil, index) => (
-              <motion.li
-                key={index}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-lg"
-              >
-                {oil}
-              </motion.li>
+              <motion.li key={index} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }} className="pl-4 space-y-2">{oil}</motion.li>
             ))}
-          </ol>
-        </div>
-        <div>
+          </div>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length) * 0.1 }} className="mb-4">
           <h1 className="text-2xl font-bold mb-4">Oleoresins</h1>
-          <ol className="list-decimal pl-4 space-y-2">
+          <div className="flex flex-wrap text-lg">
             {oleoresins.map((resin, index) => (
-              <motion.li
-                key={index}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-lg"
-              >
-                {resin}
-              </motion.li>
+              <motion.li key={index} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + index + 1) * 0.1 }} className="pl-4 space-y-2">{resin}</motion.li>
             ))}
-          </ol>
-        </div>
-        <div>
+          </div>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + oleoresins.length) * 0.1 }} className="mb-4">
           <h1 className="text-2xl font-bold mb-4">Spray Dried Products</h1>
-          <ol className="list-decimal pl-4 space-y-2">
+          <div className="flex flex-wrap text-lg">
             {sprayDriedProducts.map((product, index) => (
-              <motion.li
-                key={index}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-lg"
-              >
-                {product}
-              </motion.li>
+              <motion.li key={index} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + oleoresins.length + index + 1) * 0.1 }} className="pl-4 space-y-2">{product}</motion.li>
             ))}
-          </ol>
-        </div>
-        <div>
+          </div>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + oleoresins.length + sprayDriedProducts.length) * 0.1 }} className="mb-4">
           <h1 className="text-2xl font-bold mb-4">Clean Label</h1>
-          <ol className="list-decimal pl-4 space-y-2">
+          <div className="flex flex-wrap text-lg">
             {cleanLabels.map((label, index) => (
-              <motion.li
-                key={index}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="text-lg"
-              >
-                {label}
-              </motion.li>
+              <motion.li key={index} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + oleoresins.length + sprayDriedProducts.length + index + 1) * 0.1 }} className="pl-4 space-y-2">{label}</motion.li>
             ))}
-          </ol>
-        </div>
+          </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
