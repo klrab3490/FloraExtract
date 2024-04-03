@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
                 <div className='w-full h-auto' >
                     <div className='mb-5 font-bold'>
                         <div className='sm:text-5xl text-4xl text-center p-4 font-semibold '>Powered By Nature, Driven By Science</div>
-                        <div className='text-xl p-4'>Discover the harmony that comes with natural products that actually work! We&apos;ve crafted formulas fortified with active botanicals that not only improve general health, but specific conditions as well. This is made possible by our unique strength of being a subsidiary of Arjuna Natural Ltd, India&apos;s leading manufacturer and exporter of standardised botanical extracts for over 30 years.</div>
+                        <div className='text-xl p-4'>Discover the harmony that comes with natural products that actually work! We&apos;ve crafted formulas fortified with active botanicals that not only improve general health but specific conditions as well. This is made possible by our unique strength as one of India&apos;s leading manufacturers and exporters of standardized botanical extracts over the years.</div>
                         <div className='bg-[#fdfde1] flex sm:flex-row flex-col justify-center items-center p-4 sm:px-14'>
                             <div className='p-5 '>
                                 <div className='border-[2px] border-[#290c06] rounded-xl h-[300px] flex-col text-center justify-center p-5'>
@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
                             <div className='p-5'>
                                 <div className='border-[2px] border-[#290c06] rounded-xl h-[300px] flex-col text-center justify-center p-5'>
                                     {/* Icon */} <div className='flex items-center justify-center'> <img src={jar} /> </div>
-                                    {/* Text */} <div>Curegarden&apos;s natural supplements can help me overcome this challenge.</div>
+                                    {/* Text */} <div>Flora Extracts&apos; natural supplements can help me overcome this challenge.</div>
                                 </div>
                             </div>
                             <div className='p-5'>

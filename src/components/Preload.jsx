@@ -91,6 +91,7 @@ function Loader() {
           fill="#325313"
         />
       </svg>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 2, ease: "easeInOut" }} className="text-xl text-[#325313]" > Empowering Health, Naturally </motion.div>
     </div>
   );
 }

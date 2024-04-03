@@ -70,7 +70,8 @@ export default function TalkToUs() {
                                         <a href='https://api.whatsapp.com/send/?phone=919446229344&text=Hi&type=phone_number&app_absent=0' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp size={20}/> </a>                                        
                                     </div>
                                 </div>
-                                <div className="flex justify-center sm:border-r-[1px] sm:border-[#5e1c0e] items-center sm:w-1/3 w-full p-3 sm:p-0">
+                                <div className="flex flex-col items-center justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/3 w-full">
+                                    <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">2289 Grand Pointe Trail ,<br /> Aurora ,<br /> IL 60503 ,<br /> United States <br/> <a href='tel:+18723023816' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+18723023816</a> </div>
                                 </div>
                                 <div className="flex justify-center items-center sm:w-1/3 w-full p-3 sm:p-0">
                                     <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">Blue Tower ,<br /> Opp. Future of Museum ,<br /> Sheikh Zayed Road ,<br /> Dubai ,<br /> UAE</div>
