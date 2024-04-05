@@ -1,15 +1,15 @@
-import { useState, useEffect, lazy } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import "./App.css";
 import NavbarSec from "./components/NavbarSec";
 import RunningMarquee from "./components/RunningMarque";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
-const HomeSec = lazy(() => import("./pages/HomeSec"));
-const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
-const NotFound = lazy(() => import("./pages/NotFound"));
-const Shop = lazy(() => import("./pages/Shop"));
+import HomeSec from "./pages/HomeSec";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import Shop from "./pages/Shop";
 import Preloader from "./components/Preload";
 
 function App() {
