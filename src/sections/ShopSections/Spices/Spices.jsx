@@ -217,7 +217,7 @@ export default function Spices() {
                                             <img src={item.image} onLoad={handleImageLoad} alt={item.title} className={`w-60 h-60 rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
                                         </div>
                                         <div>
-                                            <h2 className='text-2xl font-bold text-center text-[#413f91]  '>{item.title}</h2>
+                                            <h2 className='text-2xl font-bold text-center text-[#413f91] underline'>{item.title}</h2>
                                             <div className='w-[210px]'>
                                                 {item.list && item.list.length > 0 && (
                                                     <ul className='list-disc'>
