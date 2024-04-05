@@ -69,7 +69,7 @@ function NaturalPreservatives() {
                                         <img src={item.image} onLoad={handleImageLoad} alt={item.title} className={`h-60 w-60 object-cover rounded-lg ${imageLoaded ? 'block' : 'hidden'}`} />
                                     </div>
                                     <div>
-                                        <h2 className='text-2xl font-semibold text-center sm:text-start'>{item.title}</h2>
+                                        <h2 className='text-2xl font-bold text-center sm:text-start text-[#413f91] underline'>{item.title}</h2>
                                         <ul className='list-disc'>
                                             {item.list.map((listItem,index) => (
                                                 <li key={index} className='font-normal'>{listItem}</li>

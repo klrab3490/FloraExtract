@@ -22,24 +22,24 @@ export default function WhyChooseUs() {
                 <div className='w-full h-auto' >
                     <div className='mb-5 font-bold'>
                         <div className='sm:text-5xl text-4xl text-center p-4 font-semibold '>Powered By Nature, Driven By Science</div>
-                        <div className='text-xl p-4'>Discover the harmony that comes with natural products that actually work! We&apos;ve crafted formulas fortified with active botanicals that not only improve general health but specific conditions as well. This is made possible by our unique strength as one of India&apos;s leading manufacturers and exporters of standardized botanical extracts over the years.</div>
-                        <div className='bg-[#fdfde1] flex sm:flex-row flex-col justify-center items-center p-4 sm:px-14'>
+                        <div className='text-xl p-4'>Experience the benefits of effective natural products! Our company specializes in creating formulas enhanced with powerful plant extracts. These products not only promote overall health but also address specific conditions. With years of expertise as one of India&apos;s top manufacturers and exporters of standardized botanical extracts, we bring you the perfect harmony of nature and efficacy.</div>
+                        <div className='text-xl bg-[#fdfde1] flex sm:flex-row flex-col justify-center items-center p-4 sm:px-14'>
                             <div className='p-5'>
                                 <div className='border-[2px] border-[#290c06] rounded-xl h-[300px] flex flex-col text-center justify-center p-5'>
-                                    {/* Icon */} <div className='flex items-center justify-center'> <img src={food} className='h-[12git0px]' /> </div>
-                                    {/* Text */} <div>Chances are that I&apos;m missing essential nutrients through the food I eat.</div>
+                                    {/* Icon */} <div className='flex items-center justify-center'> <img src={food} className='h-[120px]' /> </div>
+                                    {/* Text */} <div className='p-5'>Chances are that I&apos;m missing essential nutrients through the food I eat.</div>
                                 </div>
                             </div>
                             <div className='p-5'>
                                 <div className='border-[2px] border-[#290c06] rounded-xl h-[300px] flex flex-col text-center justify-center p-5'>
                                     {/* Icon */} <div className='flex items-center justify-center'> <img src={jar} className='h-[120px]' /> </div>
-                                    {/* Text */} <div>Flora Extracts&apos; natural supplements can help me overcome this challenge.</div>
+                                    {/* Text */} <div className='p-5'>Flora Extracts&apos; natural supplements can help me overcome this challenge.</div>
                                 </div>
                             </div>
                             <div className='p-5'>
                                 <div className='border-[2px] border-[#290c06] rounded-xl h-[300px] flex flex-col text-center justify-center p-5'>
                                     {/* Icon */} <div className='flex items-center justify-center'> <img src={family} className='h-[120px]' /> </div>
-                                    {/* Text */} <div>I get the ultimate benefit of a longer and healthier life with my loved ones!</div>
+                                    {/* Text */} <div className='p-5'>I get the ultimate benefit of a longer and healthier life with my loved ones!</div>
                                 </div>
                             </div>
                         </div>

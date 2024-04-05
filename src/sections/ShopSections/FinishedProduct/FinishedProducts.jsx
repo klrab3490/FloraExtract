@@ -233,7 +233,7 @@ export default function FinishedProducts() {
                                         <img src={data.productimg || bcm95} alt={data.name} onLoad={handleImageLoad} className={`h-[250px] w-[250px] object-contain items-center ${imageLoaded ? 'block' : 'hidden'}`} />
                                     </div>
                                     <div className='p-5'>
-                                        <div className='font-bold text-xl text-center'>{data.name}</div>
+                                        <div className='font-bold text-2xl text-center text-[#413f91]'>{data.name}</div>
                                         <div className='text-lg text-center text-[#39160f]'>{data.ingredients}</div>
                                         <div className='text-sm text-left text-[#290c06] mt-2'>{data.benfits}</div>
                                         <div className='text-sm font-medium text-left text-[#4a2017] mt-2'>{data.extrainfor}</div>

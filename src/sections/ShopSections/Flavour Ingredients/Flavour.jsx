@@ -37,7 +37,7 @@ export default function Flavour() {
       <div className="text-center text-4xl font-bold mb-8">Flavours</div>
       <div>
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, }} className="mb-4">
-          <h1 className="text-2xl font-bold mb-4">Essential Oil</h1>
+          <h1 className="text-2xl font-bold mb-4 text-[#413f91] underline">Essential Oil</h1>
           <div className="flex flex-wrap text-lg">
             {essentialOils.map((oil, index) => (
               <motion.li key={index} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }} className="pl-4 space-y-2">{oil}</motion.li>
@@ -45,7 +45,7 @@ export default function Flavour() {
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length) * 0.1 }} className="mb-4">
-          <h1 className="text-2xl font-bold mb-4">Oleoresins</h1>
+          <h1 className="text-2xl font-bold mb-4 text-[#413f91] underline">Oleoresins</h1>
           <div className="flex flex-wrap text-lg">
             {oleoresins.map((resin, index) => (
               <motion.li key={index} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + index + 1) * 0.1 }} className="pl-4 space-y-2">{resin}</motion.li>
@@ -53,7 +53,7 @@ export default function Flavour() {
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + oleoresins.length) * 0.1 }} className="mb-4">
-          <h1 className="text-2xl font-bold mb-4">Spray Dried Products</h1>
+          <h1 className="text-2xl font-bold mb-4 text-[#413f91] underline">Spray Dried Products</h1>
           <div className="flex flex-wrap text-lg">
             {sprayDriedProducts.map((product, index) => (
               <motion.li key={index} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + oleoresins.length + index + 1) * 0.1 }} className="pl-4 space-y-2">{product}</motion.li>
@@ -61,7 +61,7 @@ export default function Flavour() {
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + oleoresins.length + sprayDriedProducts.length) * 0.1 }} className="mb-4">
-          <h1 className="text-2xl font-bold mb-4">Clean Label</h1>
+          <h1 className="text-2xl font-bold mb-4 text-[#413f91] underline">Clean Label</h1>
           <div className="flex flex-wrap text-lg">
             {cleanLabels.map((label, index) => (
               <motion.li key={index} initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: (essentialOils.length + oleoresins.length + sprayDriedProducts.length + index + 1) * 0.1 }} className="pl-4 space-y-2">{label}</motion.li>

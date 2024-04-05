@@ -212,8 +212,8 @@ export default function Extracts() {
                                 {!imageLoaded && <ImageLoader />}
                                 <img src={data.img} onLoad={handleImageLoad} className={`w-full h-[300px] rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
                             </div>
-                            <div className='w-full font-normal text-2xl sm:rpx-4 px-2'>
-                                <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
+                            <div className='w-full font-normal text-2xl sm:rpx-4 px-2 mt-2'>
+                                <div className="text-4xl font-bold mt-2 mb-2 text-center text-[#413f91]">{data.name}</div>
                                 <div className="flex flex-col"> 
                                     <span className="font-medium">Ingredients : </span> 
                                     <span className="pl-3">{data.ingredients}</span>

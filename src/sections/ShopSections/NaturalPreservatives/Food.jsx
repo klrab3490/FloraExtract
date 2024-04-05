@@ -114,7 +114,7 @@ export default function Food() {
                             <img src={data.img} onLoad={handleImageLoad} className={`w-[400px] h-[300px] justify-center rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
                         </div>
                         <div className='w-full font-normal text-2xl sm:px-4 px-2'>
-                            <div className="text-4xl font-bold mb-2 text-center">{data.name}</div>
+                            <div className="text-3xl font-bold mb-2 text-center text-[#413f91]">{data.name}</div>
                             { data.microbes && <div className="flex flex-col sm:flow-row"> <span className="font-medium">Targeted Microbes : </span> <span className='pl-3'>{data.microbes}</span> </div> }
                             { data.benefits && <div className="flex flex-col sm:flow-row"> <span className="font-medium">Benefits : </span> <span className='pl-3'>{data.benefits}</span> </div> }
                             <div className="flex flex-col sm:flow-row"> <span className="font-medium">Mechanism Of Actions : </span> <span className='pl-3'>{data.action}</span> </div>

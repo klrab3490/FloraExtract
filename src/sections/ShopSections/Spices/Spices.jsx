@@ -217,7 +217,7 @@ export default function Spices() {
                                             <img src={item.image} onLoad={handleImageLoad} alt={item.title} className={`w-60 h-60 rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
                                         </div>
                                         <div>
-                                            <h2 className='text-2xl font-semibold text-center '>{item.title}</h2>
+                                            <h2 className='text-2xl font-bold text-center text-[#413f91]  '>{item.title}</h2>
                                             <div className='w-[210px]'>
                                                 {item.list && item.list.length > 0 && (
                                                     <ul className='list-disc'>
@@ -236,7 +236,7 @@ export default function Spices() {
                         <div className='w-full'>
                             {groundSpices.map((item,index) => (
                                 <div key={index} className='py-2 px-4 text-xl'>
-                                    <h2 className='text-2xl font-semibold text-center'>{item.title}</h2>
+                                    <h2 className='text-2xl font-bold text-center text-[#413f91] underline'>{item.title}</h2>
                                     <div className="flex flex-wrap list-disc">
                                         {item.list.map((listItems,index) => (
                                             <li key={index} className="pl-4 space-y-2">{listItems}</li>
@@ -272,7 +272,7 @@ export default function Spices() {
                                             <img src={data.productimg} onLoad={handleImageLoad} alt={data.name} className={`w-full h-full rounded-xl object-cover items-center ${imageLoaded ? 'block' : 'hidden'}`} />
                                         </div>
                                         <div className='p-5'>
-                                            <div className='font-bold text-xl text-center'>{data.name}</div>
+                                            <div className='font-bold text-2xl text-center text-[#413f91]'>{data.name}</div>
                                             <div className='text-lg text-left text-[#290c06] mt-2'>{data.desc}</div>
                                         </div>
                                     </div>
