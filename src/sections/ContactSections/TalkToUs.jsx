@@ -56,8 +56,8 @@ export default function TalkToUs() {
                     <div className='flex lg:flex-row flex-col px-4 sm:px-14'>
                         <div className="lg:w-1/2 w-full flex flex-col lg:border-r-[1px] border-t-[1px] border-[#5e1c0e]">
                             <div className="text-5xl sm:text-7xl w-full text-center p-4">Get in Touch with FloraExtracts</div>
-                            <div className='flex sm:flex-row flex-col border-y-[1px] border-[#5e1c0e] p-3'>
-                                <div className="flex flex-col sm:items-start items-center justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/3 w-full">
+                            <div className='flex flex-wrap border-y-[1px] border-[#5e1c0e] p-3 items-center justify-center'>
+                                <div className="flex flex-col items-center justify-center px-2 w-full mb-2">
                                     <div className='flex'>
                                         <a href='mailto:sales@floraextracts.in' className="text-l flex items-center justify-center rounded-xl p-1 px-2 bg-[#5ACEA1]"> <IoMdMail className='mr-2 flex items-center justify-center' />sales@floraextracts.in</a>
                                     </div>
@@ -70,16 +70,18 @@ export default function TalkToUs() {
                                         <a href='https://api.whatsapp.com/send/?phone=919446229344&text=Hi&type=phone_number&app_absent=0' className="text-l flex items-center justify-center rounded-xl p-2 bg-[#5ACEA1]"> <IoLogoWhatsapp size={20}/> </a>                                        
                                     </div>
                                 </div>
-                                <div className="flex flex-col items-center justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-1/3 w-full">
-                                    <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">2289 Grand Pointe Trail ,<br /> Aurora ,<br /> IL 60503 ,<br /> United States <br/> <a href='tel:+18723023816' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+18723023816</a> </div>
-                                </div>
-                                <div className="flex justify-center items-center sm:w-1/3 w-full p-3 sm:p-0">
-                                    <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">Blue Tower ,<br /> Opp. Future of Museum ,<br /> Sheikh Zayed Road ,<br /> Dubai ,<br /> UAE</div>
+                                <div className="flex sm:flex-row flex-col items-center justify-center sm:border-t-[1px] sm:border-[#5e1c0e]">
+                                    <div className="flex flex-col items-center justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-auto px-2 w-full my-2">
+                                        <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">2289 Grand Pointe Trail ,<br /> Aurora ,<br /> IL 60503 ,<br /> United States <br/> <a href='tel:+18723023816' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+18723023816</a> </div>
+                                    </div>
+                                    <div className="flex flex-col items-center justify-center sm:w-auto px-2 w-full my-2">
+                                        <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">Blue Tower ,<br /> Opp. Future of Museum ,<br /> Sheikh Zayed Road ,<br /> Dubai ,<br /> UAE</div>
+                                    </div>
                                 </div>
                             </div>
                             {/* Map */}
                             <div className='w-full h-full p-3'>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.4661737835536!2d55.280739!3d25.221218999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42f2869516b3%3A0xad7ca6161b149e91!2sHHHR%20Tower%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1709389682177!5m2!1sen!2sin" className='w-full h-full rounded-xl' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.4661737835536!2d55.280739!3d25.221218999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42f2869516b3%3A0xad7ca6161b149e91!2sHHHR%20Tower%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1709389682177!5m2!1sen!2sin" className='w-full h-full min-h-[250px] rounded-xl' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                         {/* form */}
