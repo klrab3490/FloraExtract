@@ -72,10 +72,23 @@ export default function TalkToUs() {
                                 </div>
                                 <div className="flex sm:flex-row flex-col items-center justify-center sm:border-t-[1px] sm:border-[#5e1c0e]">
                                     <div className="flex flex-col items-center justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-auto px-2 w-full my-2">
-                                        <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">2289 Grand Pointe Trail ,<br /> Aurora ,<br /> IL 60503 ,<br /> United States <br/> <a href='tel:+18723023816' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+18723023816</a> </div>
+                                        <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">
+                                            2289 Grand Pointe Trail, <br /> Aurora, <br />IL 60503, <br />United States <br/> 
+                                            <a href='tel:+18723023816' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+1 8723023816</a> 
+                                        </div>
                                     </div>
+                                    <div className="flex flex-col items-center justify-center sm:border-r-[1px] sm:border-[#5e1c0e] sm:w-auto px-2 w-full my-2">
+                                        <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">
+                                            <p>Blue Tower,<br />Opp. Future of Museum,<br />Sheikh Zayed Road,<br />Dubai, UAE</p>
+                                            <a href='tel:+18723023816' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+1 8723023816</a> 
+                                        </div>
+                                    </div>
+
                                     <div className="flex flex-col items-center justify-center sm:w-auto px-2 w-full my-2">
-                                        <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">Blue Tower ,<br /> Opp. Future of Museum ,<br /> Sheikh Zayed Road ,<br /> Dubai ,<br /> UAE</div>
+                                        <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1]">
+                                            <p>3/709, Kodakara<br />Thrissur,<br />Kerala,<br />India</p>
+                                            <a href='tel:+919446229344' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+91 94462 29344</a> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>

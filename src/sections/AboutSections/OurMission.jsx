@@ -25,7 +25,7 @@ export default function OurMission() {
                     </div>
                     <div className='w-full h-auto py-3 font-bold'>
                         <div className='text-5xl px-4 sm:px-14 text-center'>It All Started With A Mission</div>
-                        <div className='mt-3 text-xl mb-3 px-4 sm:px-14'>To meticulously source premium natural plant extracts, adhering to strict ethical standards and employing rigorous quality control measures that exceed expectations in efficacy and purity to ensure the well-being and vitality of our customers. We strive to cultivate strong relationships with trusted suppliers and partners, at every stage of the process to deliver quality products.</div>
+                        <div className='mt-3 text-xl mb-3 px-4 sm:px-14'>To meticulously source premium natural plant extracts, adhering to strict ethical standards and employing rigorous quality control measures that exceed customer expectations in efficacy and purity to ensure their well-being and vitality. We strive to cultivate strong relationships with trusted suppliers and partners, monitoring every stage of the process to deliver quality products.</div>
                     </div>
                 </div>
                 <div className="">
