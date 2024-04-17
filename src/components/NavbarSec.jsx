@@ -1,5 +1,5 @@
 // icon
-import Logo from "../assets/Flora Extract Logo3.svg";
+import Logo from "../assets/Flora Logo.svg";
 
 // import
 import { NavLink } from "react-router-dom";

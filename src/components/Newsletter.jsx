@@ -43,13 +43,22 @@ function Newsletter() {
                                 <div className="w-40 h-14 -z-10 top-1 right-4 bg-[#290c06] absolute"></div>
                             </div>
                         </div>
+                        <div className="flex items-center justify-center">
+                            <div className="flex mt-4 relative justify-center items-center w-52 z-20" onClick={ScrollToTop}>
+                                <NavLink to={'/brochure'} className="flex justify-center items-center px-3 py-3 w-40 bg-[#fd9b40] hover:bg-[#e88b34] cursor-pointer">
+                                    <h1 className='text-xl font-medium text-[#290c06]' onClick={() => ScrollToTop()} >Brochure</h1>
+                                    <IoMdArrowRoundForward size={28} className='text-white' />
+                                </NavLink>
+                                <div className="w-40 h-14 -z-10 top-1 right-4 bg-[#290c06] absolute"></div>
+                            </div>
+                        </div>
                         {/* <p className="flex items-center ml-10 text-xl">
                             <IoIosPlayCircle className="mr-2" size={40} /> Play Video
                         </p> */}
                     </div>
                 </div>
                 {/* Left */}
-                <div className="flex flex-col justify-end items-center lg:items-end mt-4 sm:mt-0 sm:mr-14">
+                <div className="flex flex-col justify-end items-center lg:items-end mt-4 sm:mt-6 sm:mr-14">
                     <div className="text-xl text-center sm:text-left">
                         Stay updated on the latest happenings!
                     </div>
