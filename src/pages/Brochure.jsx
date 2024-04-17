@@ -1,13 +1,20 @@
 import { useState } from 'react';
-import { Document, Page } from '@react-pdf/renderer';
 import { FaEye, FaDownload } from 'react-icons/fa';
 import CompanyBrousher from "../assets/Brochure/Company Brochure.pdf";
 import EssentialOils from "../assets/Brochure/Essential Oils.pdf";
 import Extracts from "../assets/Brochure/Extracts.pdf";
 import FinishedProducts from "../assets/Brochure/Finished Products.pdf";
 import Masalas from "../assets/Brochure/Masala.pdf";
+import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
 export default function Brochure() {
+  const docs = [
+    { uri: CompanyBrousher },
+    { uri: EssentialOils },
+    { uri: Extracts },
+    { uri: FinishedProducts },
+    { uri: Masalas },
+  ]
   const [pdfUrl, setPdfUrl] = useState(null);
 
   const handleDownload = (pdf) => {
@@ -22,19 +29,12 @@ export default function Brochure() {
   return (
     <div className="py-5 px-4 sm:px-14">
       <h1 className="text-4xl font-semibold text-center">Brochure</h1>
-      {pdfUrl && (
-        <div style={{ width: "100%", height: "600px" }}>
-          <Document file={pdfUrl}>
-            <Page pageNumber={1} width={600} />
-          </Document>
-        </div>
-      )}
-      <ul className="text-xl">
+      <ul className="text-xl p-4">
         <li className="flex justify-start items-center">
           Company Main Brochure{" "}
           <FaEye
             className="ml-5 mr-2 cursor-pointer"
-            onClick={() => setPdfUrl(CompanyBrousher)}
+            onClick={() => setPdfUrl(docs[0])}
           />
           <FaDownload
             className="cursor-pointer"
@@ -45,7 +45,7 @@ export default function Brochure() {
           Essential Oils{" "}
           <FaEye
             className="ml-5 mr-2 cursor-pointer"
-            onClick={() => setPdfUrl(EssentialOils)}
+            onClick={() => setPdfUrl(docs[1])}
           />
           <FaDownload
             className="cursor-pointer"
@@ -56,7 +56,7 @@ export default function Brochure() {
           Extracts{" "}
           <FaEye
             className="ml-5 mr-2 cursor-pointer"
-            onClick={() => setPdfUrl(Extracts)}
+            onClick={() => setPdfUrl(docs[2])}
           />
           <FaDownload
             className="cursor-pointer"
@@ -67,7 +67,7 @@ export default function Brochure() {
           Finished Products{" "}
           <FaEye
             className="ml-5 mr-2 cursor-pointer"
-            onClick={() => setPdfUrl(FinishedProducts)}
+            onClick={() => setPdfUrl(docs[3])}
           />
           <FaDownload
             className="cursor-pointer"
@@ -78,7 +78,7 @@ export default function Brochure() {
           Masalas{" "}
           <FaEye
             className="ml-5 mr-2 cursor-pointer"
-            onClick={() => setPdfUrl(Masalas)}
+            onClick={() => setPdfUrl(docs[4])}
           />
           <FaDownload
             className="cursor-pointer"
@@ -86,6 +86,15 @@ export default function Brochure() {
           />
         </li>
       </ul>
+      {pdfUrl && (
+        <div style={{ width: "100%"}}>
+        <DocViewer
+          documents={docs}
+          activeDocument={pdfUrl}
+          renderers={DocViewerRenderers}
+        />
+        </div>
+      )}
     </div>
   );
 }

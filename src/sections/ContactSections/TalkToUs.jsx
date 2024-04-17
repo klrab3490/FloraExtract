@@ -93,8 +93,16 @@ export default function TalkToUs() {
                                 </div>
                             </div>
                             {/* Map */}
-                            <div className='w-full h-full p-3'>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.4661737835536!2d55.280739!3d25.221218999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42f2869516b3%3A0xad7ca6161b149e91!2sHHHR%20Tower%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1709389682177!5m2!1sen!2sin" className='w-full h-full min-h-[250px] rounded-xl' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            <div className='w-full h-full p-3 gap-4 flex flex-col sm:flex-row'>
+                                <div className='w-1/2 flex flex-col justify-center items-center'>
+                                    <p className='text-xl p-2'>Location Of Our Office in United States</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2978.347299187368!2d-88.27447892392382!3d41.71302407126043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDQyJzQ2LjkiTiA4OMKwMTYnMTguOSJX!5e0!3m2!1sen!2sin!4v1713372170647!5m2!1sen!2sin" className='w-full h-full min-h-[250px] rounded-xl' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div className='w-1/2 flex flex-col justify-center items-center'>
+                                    <p className='text-xl p-2'>Location Of Our Office in Dubai</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.4661737835536!2d55.280739!3d25.221218999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42f2869516b3%3A0xad7ca6161b149e91!2sHHHR%20Tower%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1709389682177!5m2!1sen!2sin" className='w-full h-full min-h-[250px] rounded-xl' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                
                             </div>
                         </div>
                         {/* form */}
