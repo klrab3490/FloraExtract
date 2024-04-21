@@ -1,19 +1,23 @@
 import { useState } from 'react';
 import { FaEye, FaDownload } from 'react-icons/fa';
 import CompanyBrousher from "../assets/Brochure/Company Brochure.pdf";
-import EssentialOils from "../assets/Brochure/Essential Oils.pdf";
 import Extracts from "../assets/Brochure/Extracts.pdf";
 import FinishedProducts from "../assets/Brochure/Finished Products.pdf";
-import Masalas from "../assets/Brochure/Masala.pdf";
+import FlavourIngredients from "../assets/Brochure/Flavour Ingredients.pdf";
+import NaturalFoodColour from "../assets/Brochure/Natural Food Colour.pdf";
+import NaturalPreservatives from "../assets/Brochure/Natural Preservatives.pdf";
+import Spices from "../assets/Brochure/Spices.pdf";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
 
 export default function Brochure() {
   const docs = [
     { uri: CompanyBrousher },
-    { uri: EssentialOils },
     { uri: Extracts },
     { uri: FinishedProducts },
-    { uri: Masalas },
+    { uri: FlavourIngredients },
+    { uri: NaturalFoodColour },
+    { uri: NaturalPreservatives },
+    { uri: Spices },
   ]
   const [pdfUrl, setPdfUrl] = useState(null);
 
@@ -42,21 +46,10 @@ export default function Brochure() {
           />
         </li>
         <li className="flex justify-start items-center">
-          Essential Oils{" "}
-          <FaEye
-            className="ml-5 mr-2 cursor-pointer"
-            onClick={() => setPdfUrl(docs[1])}
-          />
-          <FaDownload
-            className="cursor-pointer"
-            onClick={() => handleDownload(EssentialOils)}
-          />
-        </li>
-        <li className="flex justify-start items-center">
           Extracts{" "}
           <FaEye
             className="ml-5 mr-2 cursor-pointer"
-            onClick={() => setPdfUrl(docs[2])}
+            onClick={() => setPdfUrl(docs[1])}
           />
           <FaDownload
             className="cursor-pointer"
@@ -67,7 +60,7 @@ export default function Brochure() {
           Finished Products{" "}
           <FaEye
             className="ml-5 mr-2 cursor-pointer"
-            onClick={() => setPdfUrl(docs[3])}
+            onClick={() => setPdfUrl(docs[2])}
           />
           <FaDownload
             className="cursor-pointer"
@@ -75,14 +68,47 @@ export default function Brochure() {
           />
         </li>
         <li className="flex justify-start items-center">
-          Masalas{" "}
+          Flavour Ingredients{" "}
+          <FaEye
+            className="ml-5 mr-2 cursor-pointer"
+            onClick={() => setPdfUrl(docs[3])}
+          />
+          <FaDownload
+            className="cursor-pointer"
+            onClick={() => handleDownload(FlavourIngredients)}
+          />
+        </li>
+        <li className="flex justify-start items-center">
+          Natural Food Colour{" "}
           <FaEye
             className="ml-5 mr-2 cursor-pointer"
             onClick={() => setPdfUrl(docs[4])}
           />
           <FaDownload
             className="cursor-pointer"
-            onClick={() => handleDownload(Masalas)}
+            onClick={() => handleDownload(NaturalFoodColour)}
+          />
+        </li>
+        <li className="flex justify-start items-center">
+          Natural Preservatives{" "}
+          <FaEye
+            className="ml-5 mr-2 cursor-pointer"
+            onClick={() => setPdfUrl(docs[5])}
+          />
+          <FaDownload
+            className="cursor-pointer"
+            onClick={() => handleDownload(NaturalPreservatives)}
+          />
+        </li>
+        <li className="flex justify-start items-center">
+          Spices{" "}
+          <FaEye
+            className="ml-5 mr-2 cursor-pointer"
+            onClick={() => setPdfUrl(docs[6])}
+          />
+          <FaDownload
+            className="cursor-pointer"
+            onClick={() => handleDownload(Spices)}
           />
         </li>
       </ul>
