@@ -4,6 +4,7 @@ import Table1 from "../../../assets/NaturalPreservatives/Tables/Table1.png"
 import Table2 from "../../../assets/NaturalPreservatives/Tables/Table2.png"
 import Table3 from "../../../assets/NaturalPreservatives/Tables/Table3.png"
 import Table4 from "../../../assets/NaturalPreservatives/Tables/Table4.png"
+import PropTypes from 'prop-types'; // Import PropTypes
 
 // Table component
 const Table = ({ headers, rows }) => (
@@ -30,10 +31,9 @@ const Table = ({ headers, rows }) => (
     </tbody>
   </table>
 );
-  
+
 // TableList component
 const TableList = ({ items }) => {
-  
   // Function to handle image click and toggle selection
   const [selectedImage, setSelectedImage] = useState(null);
   const handleImageClick = (index) => {
@@ -64,7 +64,16 @@ const TableList = ({ items }) => {
     </div>
   );
 }
-  
+
+// PropTypes validation
+Table.propTypes = {
+  headers: PropTypes.array.isRequired,
+  rows: PropTypes.array.isRequired,
+};
+
+TableList.propTypes = {
+  items: PropTypes.array.isRequired,
+};
 // Data
 const data = [
   {

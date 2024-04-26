@@ -33,13 +33,13 @@ function Social() {
   ];
 
   return (
-    <>
+    <div>
       {people.map((person) => (
-        <div key={person.id} className="pb-8 px-24">
+        <div key={person.id} className="pb-8 px-0 sm:px-24">
           <div className="px-8 gap-8 rounded-lg flex xl:flex-row flex-col justify-center items-center">
             <div>
-              <div className="h-auto w-80 rounded-lg">
-                <img src={person.image} alt="" className="rounded-xl h-72 w-full object-cover"/>
+              <div className="sm:h-72 sm:w-80 w-60 h-60 rounded-lg">
+                <img src={person.image} alt="" className="rounded-xl h-full w-full object-cover"/>
               </div>
             </div>
             <div className="text-justify pt-2">
@@ -72,7 +72,7 @@ function Social() {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 }
 

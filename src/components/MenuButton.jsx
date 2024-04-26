@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PropTypes from 'prop-types';
 
 const MenuButton = ({ isOpen = false, width = 24, height = 24, strokeWidth = 1, color = "#000", transition = null, lineProps = null, ...props }) => {
     const variant = isOpen ? "opened" : "closed";
@@ -25,6 +26,16 @@ const MenuButton = ({ isOpen = false, width = 24, height = 24, strokeWidth = 1, 
             <motion.line x1="0" x2={unitWidth} y1="4" y2="4" variants={bottom} {...lineProps} />
         </svg>
     );
+};
+
+MenuButton.propTypes = {
+    isOpen: PropTypes.bool.isRequired,
+    width: PropTypes.number.isRequired,
+    height: PropTypes.number.isRequired,
+    strokeWidth: PropTypes.number.isRequired,
+    color: PropTypes.string.isRequired,
+    transition: PropTypes.string.isRequired,
+    lineProps: PropTypes.object.isRequired,
 };
 
 export { MenuButton };
