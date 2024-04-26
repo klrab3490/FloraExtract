@@ -82,7 +82,7 @@ export default function TalkToUs() {
                                         <div className="text-l rounded-xl p-1 px-2 bg-[#5ACEA1] w-full">
                                             <p>Blue Tower,<br />Opp. Future of Museum,<br />Sheikh Zayed Road,<br />Dubai, UAE</p>
                                             <a href='tel:+971562188822' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+971 56 2188822</a> 
-                                            <a href='tel:+9715 ' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+971 xx xxxxxxx</a> 
+                                            <a href='tel:+971551390166' className="text-l flex items-center justify-start rounded-xl px-2 bg-[#5ACEA1]"><IoIosCall className='mr-2 flex items-center justify-center' />+971 55 1390166</a> 
                                         </div>
                                     </div>
                                     <div className="flex flex-col items-center justify-center px-2 sm:w-1/3 w-full my-2">
@@ -106,9 +106,8 @@ export default function TalkToUs() {
                                 </div>
                                 <div className='sm:w-1/3 w-full flex flex-col justify-center items-center p-2'>
                                     <p className='text-xl p-2 text-center'>Location Of Our Office in India</p>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.4661737835536!2d55.280739!3d25.221218999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42f2869516b3%3A0xad7ca6161b149e91!2sHHHR%20Tower%20-%20Trade%20Centre%20-%20Trade%20Centre%201%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1709389682177!5m2!1sen!2sin" className='w-full h-full min-h-[250px] rounded-xl' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3924.630503386577!2d76.30591967503622!3d10.371399889753802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDIyJzE3LjAiTiA3NsKwMTgnMzAuNiJF!5e0!3m2!1sen!2sin!4v1714150830255!5m2!1sen!2sin" className='w-full h-full min-h-[250px] rounded-xl' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
-                                
                             </div>
                         </div>
                         {/* form */}
