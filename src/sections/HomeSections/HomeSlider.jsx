@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import extract1 from "../../assets/HeroSlider/extract-1.jpg";
 import extract2 from "../../assets/HeroSlider/extract-2.jpg";
 import extract3 from "../../assets/HeroSlider/extract-3.jpg";
-import file from "../../assets/Brochure/Extracts.pdf"
 
 const imagesData = [
     {
@@ -40,7 +39,7 @@ function HomeSlider() {
     };
 
     return (
-        <>
+        <div>
             <div className="w-full flex justify-start items-center pl-5 sm:pl-10 relative pb-4">
                 <div className="w-auto text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#fd9b40] rounded-full flex justify-center items-center text-[#290c06] font-medium z-10">
                     <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">04</span> Our Extracts
@@ -48,11 +47,6 @@ function HomeSlider() {
                 <div className="w-auto text-2xl sm:text-3xl px-3 sm:px-5 py-2 h-16 sm:h-20 bg-[#290c06] rounded-full flex justify-center items-center text-[#290c06] font-medium absolute top-2 left-13">
                     <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">04</span> Our Extracts
                 </div>    
-            </div>
-            <div className="px-5 sm:px-10 py-2">
-                <a href={file} download className="p-2 border border-gray-900 rounded-xl">
-                    <button type="button">Download Brochure</button>
-                </a>
             </div>
             <div className="relative overflow-hidden w-auto mx-auto p-2 sm:px-10">
                 <Slider {...settings}>
@@ -81,7 +75,7 @@ function HomeSlider() {
                     ))}
                 </Slider>
             </div>
-        </>
+        </div>
     );
 }
 
