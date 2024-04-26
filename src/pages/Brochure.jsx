@@ -32,7 +32,7 @@ export default function Brochure() {
 
   return (
     <div className="py-5 px-4 sm:px-14">
-      <h1 className="text-4xl font-semibold text-center">Brochure</h1>
+      <h1 className="text-4xl font-semibold text-center">Brochures</h1>
       <ul className="text-xl p-4">
         <li className="flex justify-start items-center">
           Company Main Brochure{" "}
