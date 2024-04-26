@@ -33,7 +33,7 @@ function Newsletter() {
                     <div className="text-xl sm:w-[500px] py-5">
                     At Flora Extracts, we offer a wide range of premium, natural plant extracts that are clinically proven to enhance vitality. With a commitment to ethical sourcing and rigorous quality control, we provide customized solutions for well-being.
                     </div>
-                    <div className="flex items-center justify-center sm:justify-start">
+                    <div className="flex flex-col items-center justify-center sm:justify-start sm:flex-row">
                         <div className="flex items-center justify-center">
                             <div className="flex mt-4 relative justify-center items-center w-52 z-20" onClick={ScrollToTop}>
                                 <NavLink to={'/about'} className="flex justify-center items-center px-3 py-3 w-40 bg-[#fd9b40] hover:bg-[#e88b34] cursor-pointer">
@@ -63,9 +63,21 @@ function Newsletter() {
                         Stay updated on the latest happenings!
                     </div>
                     <div className="mt-3">
-                        <div className="flex items-center justify-center">
-                            <input autoComplete='on' type="email" id="email" value={EmailID} onChange={(e) => setEmailID(e.target.value)} placeholder="Email Adddress" className="w-[225px] sm:w-[300px] text-xl h-12 rounded-l-xl text-[#290c06] border-2 border-[#290c06] px-5 bg-[#fdfde1] focus:outline-none focus:ring-2 focus:ring-[#fd9b40] focus:border-transparent" />
-                            <button onClick={handleEmail} type='submit' className="font-semibold bg-[#fd9b40] text-[#290c06] h-12 w-32 rounded-r-xl text-xl border-[#290c06] border-2 border-l-0">
+                        <div className="flex flex-col items-center justify-center sm:flex-row">
+                            <input 
+                                autoComplete='on' 
+                                type="email" 
+                                id="email" 
+                                value={EmailID} 
+                                onChange={(e) => setEmailID(e.target.value)} 
+                                placeholder="Email Address" 
+                                className="w-[225px] sm:w-[300px] text-xl h-12 rounded-t-xl sm:rounded-l-xl sm:rounded-t-none text-[#290c06] border-2 border-[#290c06]  bg-[#fdfde1] focus:outline-none focus:ring-2 focus:ring-[#fd9b40] focus:border-transparent text-center" 
+                            />
+                            <button 
+                                onClick={handleEmail} 
+                                type='submit' 
+                                className="font-semibold bg-[#fd9b40] text-[#290c06] h-12 w-[225px] sm:w-32 rounded-b-xl sm:rounded-r-xl sm:rounded-b-none text-xl border-[#290c06] border-2 border-t-0 sm:border-l-0 sm:border-2"
+                            >
                                 Subscribe
                             </button>
                         </div>
