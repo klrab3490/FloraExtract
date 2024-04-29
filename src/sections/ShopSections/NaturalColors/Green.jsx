@@ -25,7 +25,7 @@ export default function Green() {
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }} className="flex flex-col w-full justify-center items-center" >
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5 }} >
-            <p className="py-2">Green shades are all around us in nature from a light green apple to a deep mint colour, which are naturally suited for a wide range of applications in the food and beverage industry. The raw ingredients used by Plant Lipids to achieve these green hues are derived from a variety of sources including Chlorophyll and Copper Chlorophyllin. These ingredients are used to create a range of products, from Oil Soluble Liquids to Water Soluble Liquids and Powders by using Plant LipidsSuper-Sol Concept Technology.</p>
+            <p className="py-2">Green shades are all around us in nature from a light green apple to a deep mint colour, which are naturally suited for a wide range of applications in the food and beverage industry. The raw ingredients used by Flora Extracts to achieve these green hues are derived from a variety of sources including Chlorophyll and Copper Chlorophyllin. These ingredients are used to create a range of products, from Oil Soluble Liquids to Water Soluble Liquids and Powders by using Flora Extracts Super-Sol Concept Technology.</p>
             <p className="py-2">These formulations are designed with you, the customer in mind, so whatever your application – savoury, ready meals, sauces, beverages, confectionery or dairy, we have the perfect, tailor-made products, to deliver these shades.</p>
           </motion.div>
         </motion.div>

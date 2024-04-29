@@ -49,131 +49,137 @@ export default function Extracts() {
             img: BoswelliaSerratta
         },{
             id: 4,
+            name: "Black Pepper Extract",
+            ingredients: "Caryophyllene(24.42%), Limonene(15.10%)",
+            benefit: "Used for the treatment of epilepsy and pain in traditional medicine",
+            img: BlackPepper
+        },{
+            id: 5,
             name: "Brahmi Extract",
             ingredients: "Bacosides 25%",
             benefit: "Memory Booster",
             img: Brahmi
         },{
-            id: 5,
-            name: "Curcumin – Stain Free",
-            ingredients: "Curcuminiods 95%",
-            benefit: "Easy free flowing Stain Free granules",
-            img: CurcuminStainFree
-        },{
             id: 6,
-            name: "Curcumin Powder",
-            ingredients: "Curcuminiods 95%",
-            benefit: "Powder",
-            img: CurcuminPowder
-        },{
-            id: 7,
-            name: "Curcumin Powder(Water Dispersible)",
-            ingredients: "Curcuminiods 45%",
-            benefit: "Water dispersible powder",
-            img: CurcuminPowderWaterDispersible
-        },{
-            id: 8,
-            name: "Curcumin - High Density",
-            ingredients: "Curcuminiods 95%",
-            benefit: "Easy to fill in capsules, maximum loading ensured. Low wastage during encapsulation.",
-            img: CurcuminHighDensity
-        },{
-            id: 9,
-            name: "Curcumin - Effervescent",
-            ingredients: "Curcuminiods 37.5%",
-            benefit: "Free flowing effervescent granules",
-            img: CurcuminEffervescen
-        },{
-            id: 10,
-            name: "Curcumin Oil Soluble",
-            ingredients: "Curcuminiods 28.5%",
-            benefit: "Easily soluble with MCT oil or Hemp oil",
-            img: CurcuminOilSoluble
-        },{
-            id: 11,
-            name: "Curcumin Ethanol",
-            ingredients: "Curcuminiods 95%",
-            benefit: "Extraction Solvent- Ethanol",
-            img: CurcuminEthanol
-        },{
-            id: 12,
             name: "Cinnamon Extract",
             ingredients: "Total Polyphenols 10-30%",
             benefit: "Memory Booster",
             img: Cinnamon
         },{
+            id: 7,
+            name: "Curcumin - Effervescent",
+            ingredients: "Curcuminiods 37.5%",
+            benefit: "Free flowing effervescent granules",
+            img: CurcuminEffervescen
+        },{
+            id: 8,
+            name: "Curcumin Ethanol",
+            ingredients: "Curcuminiods 95%",
+            benefit: "Extraction Solvent- Ethanol",
+            img: CurcuminEthanol
+        },{
+            id: 9,
+            name: "Curcumin Oil Soluble",
+            ingredients: "Curcuminiods 28.5%",
+            benefit: "Easily soluble with MCT oil or Hemp oil",
+            img: CurcuminOilSoluble
+        },{
+            id: 10,
+            name: "Curcumin Powder",
+            ingredients: "Curcuminiods 95%",
+            benefit: "Powder",
+            img: CurcuminPowder
+        },{
+            id: 11,
+            name: "Curcumin Powder(Water Dispersible)",
+            ingredients: "Curcuminiods 45%",
+            benefit: "Water dispersible powder",
+            img: CurcuminPowderWaterDispersible
+        },{
+            id: 12,
+            name: "Curcumin – Stain Free",
+            ingredients: "Curcuminiods 95%",
+            benefit: "Easy free flowing Stain Free granules",
+            img: CurcuminStainFree
+        },{
             id: 13,
+            name: "Curcumin - High Density",
+            ingredients: "Curcuminiods 95%",
+            benefit: "Easy to fill in capsules, maximum loading ensured. Low wastage during encapsulation.",
+            img: CurcuminHighDensity
+        },{
+            id: 14,
             name: "Essential Oil of Mustard",
             ingredients: "AITC 95% , BITC 85%",
             benefit: "Flavouring Agent",
             img: Mustard
         },{
-            id: 14,
+            id: 15,
             name: "Fenugreek Extract",
             ingredients: "Saponins 30-60%",
             benefit: "Supports immune system, lowers blood glucose, Supports healthy cholesterol levels",
             img: Fenugreek
         },{
-            id: 15,
+            id: 16,
             name: "Garcinia Cambogia Extract",
             ingredients: "HCA 50-60% powder, granules",
             benefit: "Weight control, obesity satiety",
             img: GarciniaCambogia
         },{
-            id: 16,
+            id: 17,
             name: "Ginger Extract",
             ingredients: "Gingerol 5-10%",
             benefit: "Supports Healthy Inflammatory Response, improves digestion, anti-emetic",
             img: Ginger
         },{
-            id: 17,
+            id: 18,
             name: "Green Coffee Extract",
             ingredients: "Chlorogenic acid 45%-50%",
             benefit: "Weight loss agent, effective antioxidant reduces the risk of diabetes",
             img: GreenCoffee
         },{
-            id: 18,
+            id: 19,
             name: "Green Tea Extract",
             ingredients: "30% EGCG, 75% polyphenols,15% EGCG & 50% polyphenols(water soluble)",
             benefit: "Weight control, antioxidant, anti-carcinogenic",
             img: GreenTea
         },{
-            id: 19,
+            id: 20,
             name: "Guggul Lipid Extract",
             ingredients: "Guggul Sterones 2.5-10%",
             benefit: "Inhibits platelet aggregation",
             img: Guggul
         },{
-            id: 20,
+            id: 21,
             name: "Gymnema Sylvestre Extract",
             ingredients: "Gymnemic Acid 25% & 75%",
             benefit: "Support healthy blood glucose levels",
             img: Gymnema
         },{
-            id: 21,
+            id: 22,
+            name: "Mustard Seed Extract",
+            ingredients: "Total lignans 70%",
+            benefit: "Antioxidant, healthy blood glucose, enhances the metabolism of omega-3 fatty acids, protects liver from alcohol toxicity, reduces hangover",
+            img: Mustard
+        },{
+            id: 23,
             name: "Pterocarpus Marsupium Extract",
             ingredients: "Pterostilbene 5%",
             benefit: "Support healthy blood glucose levels",
             img: Pterocarpus
         },{
-            id: 22,
+            id: 24,
             name: "Sesame Seed Extract",
             ingredients: "Total lignans 70%",
             benefit: "Antioxidant, healthy blood glucose, enhances the metabolism of omega-3 fatty acids, protects liver from alcohol toxicity, reduces hangover",
             img: Sesame
         },{
-            id: 23,
+            id: 25,
             name: "Tribulus Terrestris",
             ingredients: "Saponins 40%-90%",
             benefit: "Sports medicine, libido enhancer, suitable for beverages",
             img: Tribulus
-        },{
-            id: 24,
-            name: "Black Pepper Extract",
-            ingredients: "Caryophyllene(24.42%), Limonene(15.10%)",
-            benefit: "Used for the treatment of epilepsy and pain in traditional medicine",
-            img: BlackPepper
-        }
+        },        
         // {
         //   id:,
         //   name:"",
@@ -183,6 +189,8 @@ export default function Extracts() {
         //   img:bcm95
         // },
     ];
+
+    extracts.sort((a, b) => a.name.localeCompare(b.name));
 
     const [show,setShow] = useState(null);
     const see = (id) => {

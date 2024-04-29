@@ -41,7 +41,7 @@ export default function Red() {
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }} className="flex flex-col w-full justify-center items-center" >
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5 }} >
-            <p className="py-2">Red shades vary from a deep pink to an intense deep red hue which are naturally suited for a wide range of applications in the food and beverage industry. The raw ingredients used by Plant Lipids to achieve these red hues are derived from a variety of sources including Beetroot, Carmine, Monascus, & Anthocyanin based products including  Black Carrot, Red Radish and Purple Sweet potato.</p>
+            <p className="py-2">Red shades vary from a deep pink to an intense deep red hue which are naturally suited for a wide range of applications in the food and beverage industry. The raw ingredients used by Flora Extracts to achieve these red hues are derived from a variety of sources including Beetroot, Carmine, Monascus, & Anthocyanin based products including  Black Carrot, Red Radish and Purple Sweet potato.</p>
             <p className="py-2">Our formulations are designed with you, the customer in mind, so whatever your application – savoury, ready meals, sauces, beverages, confectionery or dairy, we have the perfect, tailor-made products, to deliver these shades.</p>
           </motion.div>
           

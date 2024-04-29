@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 
 // Image
 import Curcumin from "../../../assets/Natural Color/Yellow/Curcumin.jpg"
-import img_4 from "../../../assets/Natural Color/Yellow/img_4.jpg"
 import Marigold from "../../../assets/Natural Color/Yellow/Marigold.png"
 import Safflower from "../../../assets/Natural Color/Yellow/Safflower.png"
 
@@ -25,16 +24,13 @@ export default function Yellow() {
             <img src={Marigold} alt='Marigold' className='w-full h-full object-cover' />
           </div>
           <div className="sm:w-40 w-32 h-[140px]" >
-            <img src={img_4} alt='img_4' className='w-full h-full object-cover' />
-          </div>
-          <div className="sm:w-40 w-32 h-[140px]" >
             <img src={Safflower} alt='Safflower' className='w-full h-full object-cover' />
           </div>
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }} className="flex flex-col w-full justify-center items-center" >
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5 }} >
-            <p className="py-2">Yellow shades vary from a pastel yellow to an intense deep lemon hue which are naturally suited for a wide range of applications in the food and beverage industry. The raw ingredients used by Plant Lipids to achieve these yellow hues are derived from a variety of sources including Curcumin, Marigold, Beta Carotene & Safflower.</p>
-            <p className="py-2">These ingredients are used to create a range of products, from Oil Soluble Liquids to Powders and Water Dispersible Liquids by using Plant Lipids Super-Sol Concept Technology.</p>
+            <p className="py-2">Yellow shades vary from a pastel yellow to an intense deep lemon hue which are naturally suited for a wide range of applications in the food and beverage industry. The raw ingredients used by Flora Extracts to achieve these yellow hues are derived from a variety of sources including Curcumin, Marigold, Beta Carotene & Safflower.</p>
+            <p className="py-2">These ingredients are used to create a range of products, from Oil Soluble Liquids to Powders and Water Dispersible Liquids by using Flora Extracts Super-Sol Concept Technology.</p>
             <p className="py-2">These formulations are designed with you, the customer in mind, so whatever your application – savoury, ready meals, sauces, beverages, confectionery or dairy, we have the perfect tailor-made products to deliver these shades.</p>
           </motion.div>
           

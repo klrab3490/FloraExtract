@@ -91,6 +91,8 @@ export default function Food() {
         // },
     ];
 
+    food.sort((a, b) => a.name.localeCompare(b.name));
+
     // Image Loader
     const [imageLoaded, setImageLoaded] = useState(false);
 

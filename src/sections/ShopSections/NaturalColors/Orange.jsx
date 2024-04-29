@@ -33,7 +33,7 @@ export default function Orange() {
         </motion.div>
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2 }} className="flex flex-col w-full justify-center items-center" >
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.5 }} >
-            <p className="py-2">Orange shades conjure images from pale orange to deep intense Orange hues which are naturally suited for a wide range of applications in the food and beverage industry. The raw ingredients used by Plant Lipids to achieve these orange hues are derived from a variety of sources including Annatto, Beta Carotene & Paprika. These ingredients are used to create a range of products, from Oil Soluble Liquids to Powders and Water Dispersible Liquids by using Plant Lipids Super-Sol Concept Technology.</p>
+            <p className="py-2">Orange shades conjure images from pale orange to deep intense Orange hues which are naturally suited for a wide range of applications in the food and beverage industry. The raw ingredients used by Flora Extracts to achieve these orange hues are derived from a variety of sources including Annatto, Beta Carotene & Paprika. These ingredients are used to create a range of products, from Oil Soluble Liquids to Powders and Water Dispersible Liquids by using Flora Extracts Super-Sol Concept Technology.</p>
             <p className="py-2">These formulations are designed with you, the customer in mind, so whatever your application – savoury, ready meals, sauces, beverages, confectionery, or dairy, we have the perfect, tailor-made products, to deliver these shades.</p>
           </motion.div>
         </motion.div>
