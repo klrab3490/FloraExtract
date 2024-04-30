@@ -45,7 +45,7 @@ function Social() {
       phone: "+1 (872) 302 3816",
       twitter: "https://twitter.com/PaulKundukulam",
       facebook: "https://www.facebook.com/anto.paul.735",
-      desc: "Anto Paul, our business development manager, is responsible for identifying new business opportunities and building strategic partnerships. With a keen eye for market trends and a passion for connecting with clients, he is dedicated to driving the growth of Flora Extracts and steering the business in the right direction. Ensuring and focusing on client satisfaction is a crucial metric in securing success of Flora Extracts and Anto keeps it his top priority. His expertise at networking has been detrimental in growing client base for this forward moving (or thriving) company.  Being performance driven, with more than 6 years of extensive experience in generating sales and creating and implementing new marketing initiaves, he is one of the leading forces of Flora Extracts."
+      desc: "Anto Paul, our business development manager, is responsible for identifying new business opportunities and building strategic partnerships. With a keen eye for market trends and a passion for connecting with clients, he is dedicated to driving the growth of Flora Extracts and steering the business in the right direction. Ensuring and focusing on client satisfaction is a crucial metric in securing success of Flora Extracts and Anto keeps it his top priority. His expertise at networking has been detrimental in growing client base for this thriving company.  Being performance driven, with more than 6 years of extensive experience in generating sales and creating and implementing new marketing initiatives, he is one of the leading forces of Flora Extracts."
     },
     {
       id: 2,
@@ -56,7 +56,7 @@ function Social() {
       linkedin: "https://www.linkedin.com/",
       phone: "+1 (872) 203 2872",
       facebook: "https://www.facebook.com/ashlin.thomas.33",
-      desc: "Ashlin T Antony serves as our Operations Manager for the US region. With extensive experience in managing manufacturing operations, Ashlin oversees our production processes, supply chain, and logistics to ensure efficiency, quality, and compliance."
+      desc: "Ashlin serves as our Operations Manager for US region. Adept at managing manufacturing operations, Ashlin oversees our production processes, supply chain and logistics to ensure efficiency, quality and compliance. As a crucial player in the growth of Flora Extracts, he holds the key to unlocking operational excellence through managing teams and resources. He analyzes and and improves operational processes, identifies areas of enhancement and implements strategies to increase productivity and efficiency of Flora Extracts. Highly skilled and with a sharp business mind, he manages multiple departments at Flora Extracts enhancing productivity and thereby accelerating company’s growth. Ashlin, with his unwavering desire and determination to always maintain top-notch quality of products and services, is truly an asset to Flora Extracts."
     },
   ];
   
