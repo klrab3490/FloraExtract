@@ -34,9 +34,9 @@ export default function OurStory() {
                     <hr className='my-5' />
                     <div className='relative flex flex-col justify-center items-center font-bold'>
                         <div className='absolute z-10 top-10 left-10 right-10 flex-col text-2xl sm:text-5xl text-white'>
-                            <div className='flex items-center justify-center'>Our story is more than just the extracts we&apos;ve built.</div>
+                            <div className='flex items-center justify-center text-center'>Our story is more than just the extracts we&apos;ve built.</div>
                             <div className='flex items-center justify-center'> 
-                                <div className='mt-5 text-center text-xl sm:w-2/3 w-full p-2 h-[150px] sm:h-[300px] overflow-y-auto py-2'>
+                                <div className='mt-5 text-center text-xl sm:w-2/3 w-full p-2 h-[200px] sm:h-[300px] overflow-y-auto py-2'>
                                     <p>Once upon a time, nestled in the heart of a vibrant city, a group of passionate individuals came together with a shared vision inspired by our struggles with the adverse effects of chemical-laden foods on our health. From digestive discomforts to mysterious ailments, we experienced first-hand the toll of modern diets on our well-being. Having struggled with health issues ourselves, we understood the profound impact that natural remedies could have on one&apos;s well-being. Drawing from our diverse backgrounds in herbalism, nutrition, and business, we decided to embark on a journey to make high-quality plant extracts more accessible to all.</p>
                                     <p>Our journey began with a pivotal moment—an encounter with a local farmer who shared the ancient wisdom of herbal remedies passed down through generations. Inspired by the farmer&apos;s commitment to organic practices and sustainable farming methods, we realized the untapped potential of these natural treasures.</p>  
                                     <p>With unwavering determination, we set out to establish our company, guided by principles of ethical sourcing, transparency, and integrity. We scoured the globe in search of the finest botanicals, forging partnerships with trusted suppliers and partners who shared our commitment to quality and sustainability.</p>
@@ -49,7 +49,7 @@ export default function OurStory() {
                                 <NavLink to={'/contact'} className='bg-white rounded-full flex items-center text-2xl justify-center p-3 text-black'>Lets Talk <IoMdArrowRoundForward className='ml-2' size={30} /></NavLink>
                             </div>
                         </div>
-                        <img src={ourstory} className='rounded-xl w-full object-cover h-[70vh]' style={{flexGrow: 1}} />
+                        <img src={ourstory} className='rounded-xl w-full object-cover lg:h-[85vh] md:h-[90vh] sm:h-[90vh] h-[70vh]' style={{flexGrow: 1}} />
                     </div>
                 </div>
                 <div className="">

@@ -56,7 +56,7 @@ function Social() {
       linkedin: "https://www.linkedin.com/",
       phone: "+1 (872) 203 2872",
       facebook: "https://www.facebook.com/ashlin.thomas.33",
-      desc: "Ashlin serves as our Operations Manager for US region. Adept at managing manufacturing operations, Ashlin oversees our production processes, supply chain and logistics to ensure efficiency, quality and compliance. As a crucial player in the growth of Flora Extracts, he holds the key to unlocking operational excellence through managing teams and resources. He analyzes and improves operational processes, identifies areas of enhancement and implements strategies to increase productivity and efficiency of Flora Extracts. Highly skilled and with a sharp business mind, he manages multiple departments at Flora Extracts enhancing productivity and thereby accelerating company’s growth. Ashlin, with his unwavering desire and determination to always maintain top-notch quality of products and services, is truly an asset to Flora Extracts."
+      desc: "Ashlin serves as our Operations Manager for the US region. Adept at managing manufacturing operations, Ashlin oversees our production processes, supply chain, and logistics to ensure efficiency, quality, and compliance. As a crucial player in the growth of Flora Extracts, he holds the key to unlocking operational excellence through managing teams and resources. He analyzes and improves operational processes, identifies areas of enhancement, and implements strategies to increase the productivity and efficiency of Flora Extracts. Highly skilled and with a sharp business mind, he manages multiple departments at Flora Extracts enhancing productivity and thereby accelerating the company’s growth. Ashlin, with his unwavering desire and determination to always maintain top-notch quality of products and services, is truly an asset to Flora Extracts"
     },
   ];
   
@@ -64,8 +64,8 @@ function Social() {
   return (
     <div>
       {people.map((person) => (
-        <div key={person.id} className="pb-8 px-0 sm:px-24">
-          <div className="px-8 gap-8 rounded-lg flex xl:flex-row flex-col justify-center items-center">
+        <div key={person.id} className="pb-8 px-0 sm:px-2 lg:px-24">
+          <div className=" gap-8 rounded-lg flex xl:flex-row flex-col justify-center items-center">
             <div>
               <div className="sm:h-72 sm:w-80 w-60 h-60 rounded-lg">
                 <img src={person.image} alt="" className="rounded-xl h-full w-full object-cover"/>
@@ -101,7 +101,7 @@ function Social() {
           </div>
         </div>
       ))}
-      <div className="pb-8 px-0 sm:px-24 flex md:flex-row justify-center items-center md:items-start flex-col gap-4">
+      <div className="pb-8 px-0 sm:px-2 lg:px-24 flex md:flex-row justify-center items-center md:items-start flex-col gap-4">
         {team.map((person) => (
           <div key={person.id} className="md:w-1/2 w-full">
             <div className="px-8 rounded-lg flex flex-col justify-center items-center">

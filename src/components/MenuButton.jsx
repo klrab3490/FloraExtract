@@ -29,13 +29,13 @@ const MenuButton = ({ isOpen = false, width = 24, height = 24, strokeWidth = 1, 
 };
 
 MenuButton.propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    width: PropTypes.number.isRequired,
-    height: PropTypes.number.isRequired,
-    strokeWidth: PropTypes.number.isRequired,
-    color: PropTypes.string.isRequired,
-    transition: PropTypes.string.isRequired,
-    lineProps: PropTypes.object.isRequired,
+    isOpen: PropTypes.bool,
+    width: PropTypes.number,
+    height: PropTypes.number,
+    strokeWidth: PropTypes.number,
+    color: PropTypes.string,
+    transition: PropTypes.string,
+    lineProps: PropTypes.object,
 };
 
 export { MenuButton };

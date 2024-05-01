@@ -38,7 +38,7 @@ function Counter({ targetNumber }) {
 function HeroSectionSec() {
     const content = [
         <div key="content1" className='w-full h-[75vh] rounded-xl border-4 border-[#290c06]'>
-            <div className="flex flex-col items-center justify-center h-full w-full sm:w-[94vw]">
+            <div className="flex flex-col items-center justify-center h-full w-full sm:w-[94vw] p-2">
                 <h1 className='text-4xl sm:text-8xl text-[#290c06] text-center py-4 font-semibold'>Nurturing Health, <br/>Enriching Life – Naturally</h1>
                 <h1 className='text-lg sm:text-2xl text-center'>Transform your well-being with our exclusive range of natural extracts,<br></br> from raw essences to convenient capsules and innovative soft gels, including patented products that optimize health and elevate your life.</h1>
                 <NavLink to={'/shop'} className="flex mt-4 relative justify-center items-center w-full sm:w-52 z-20">
@@ -124,7 +124,7 @@ function HeroSectionSec() {
 
 
     return (
-        <div className='w-full flex items-center justify-center p-10 h-[80vh]'>
+        <div className='w-full flex items-center justify-center md:p-10 p-4 h-[80vh]'>
             <div className="flex">
                 <AnimatePresence initial={false}>
                     {content.map((item, index) => (
