@@ -12,10 +12,10 @@ function HomeSec() {
         <div>
             <HeroSectionSec/>
             <ProductJourney/>
-            <TeamSection/>
+            <WhatSet/>
             <Exclusive/>
             <HomeSlider/>
-            <WhatSet/>
+            <TeamSection/>
             <Certifications/>
             <RunningMarquee/>
         </div>
