@@ -16,22 +16,22 @@ function Exclusive() {
             <div className="bg-[#fdfde1]">
                 <img src={Sep1} alt="" className="w-[100vw] h-20" />
             </div>
-            <div className="w-full h-[65vh] relative pt-10 flex justify-center items-center bg-[#5ACEA1]">
+            <div className="w-full sm:h-[65vh] h-[45vh] relative pt-10 flex justify-center items-center bg-[#5ACEA1]">
                 {/* Images behind the banner */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                    <img src={EX1} alt="" className="h-[400px]" />
+                    <img src={EX1} alt="" className="sm:h-[400px] h-[200px]" />
                 </div>
                 <div className="absolute top-1/2 left-20 -translate-y-1/2 z-0">
-                    <img src={EX1} alt="" className="h-64" />
+                    <img src={EX1} alt="" className="sm:h-64 h-40" />
                 </div>
-                <div className="absolute top-1/2 right-20  -translate-y-1/2 z-0">
-                    <img src={EX1} alt="" className="h-64" />
+                <div className="absolute top-1/2 right-20 -translate-y-1/2 z-0">
+                    <img src={EX1} alt="" className="sm:h-64 h-40" />
                 </div>
                 {/* Banner */}
-                <div className="w-full z-10 h-20 bg-[#fd9b40] border-y-2 border-[#290c06] relative">
+                <div className="w-full z-10 sm:h-20 h-13 bg-[#fd9b40] border-y-2 border-[#290c06] relative">
                     {/* Text in the banner */}
                     <marquee className="w-full z-30 h-20 flex items-center justify-center">
-                        <h2 className="text-3xl font-mono"> &quot;We Provide You With a Wide Variety of Products, Ranging from Exotic Plant Extracts to Premium Spices&quot; </h2>
+                        <h2 className="text-3xl sm:font-mono"> &quot;We Provide You With a Wide Variety of Products, Ranging from Exotic Plant Extracts to Premium Spices&quot; </h2>
                     </marquee>
                 </div>
             </div>

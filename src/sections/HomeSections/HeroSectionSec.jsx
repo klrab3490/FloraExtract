@@ -196,7 +196,7 @@ function HeroSectionSec() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % content.length);
-    }, 8000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [content.length]);
 
