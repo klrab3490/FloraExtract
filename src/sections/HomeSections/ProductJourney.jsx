@@ -263,7 +263,7 @@ function ProductJourney() {
                     <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">01</span> Product Journey
                 </div>
             </div>
-            <div className="bg-[#fdfde1]">
+            <div className="bg-[#fff]">
                 <img src={Sep1} alt="" className="w-[100vw] h-20" />
             </div>
             <div className="w-full h-auto py-3 bg-[#5ACEA1]">
@@ -276,19 +276,19 @@ function ProductJourney() {
                         <div className="mb-5 px-4 sm:px-14">
                         <div className="rounded-xl grid grid-cols-1 sm:grid-cols-5 gap-8 text-center font-semibold text-2xl py-5">
                             <div className={currentIndex === 0 ? 'cursor-pointer hover:scale-105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(0)}>
-                                <p className={currentIndex === 0 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Research</p>
+                                <p className={currentIndex === 0 ? "bg-[#fff] py-4 rounded-xl" : "py-4" }>Research</p>
                             </div>
                             <div className={currentIndex === 1 ? 'cursor-pointer hover:scale-105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(1)}>
-                                    <p className={currentIndex === 1 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Clinical Validation</p>
+                                    <p className={currentIndex === 1 ? "bg-[#fff] py-4 rounded-xl" : "py-4" }>Clinical Validation</p>
                             </div>
                             <div className={currentIndex === 2 ? 'cursor-pointer hover:scale-105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(2)}>
-                                <p className={currentIndex === 2 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Manufacturing</p>
+                                <p className={currentIndex === 2 ? "bg-[#fff] py-4 rounded-xl" : "py-4" }>Manufacturing</p>
                             </div>
                             <div className={currentIndex === 3 ? 'cursor-pointer hover:scale-105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(3)}>
-                                <p className={currentIndex === 3 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Quality Control</p>
+                                <p className={currentIndex === 3 ? "bg-[#fff] py-4 rounded-xl" : "py-4" }>Quality Control</p>
                             </div>
                             <div className={currentIndex === 4 ? 'cursor-pointer hover:scale-105' : 'cursor-pointer hover:scale-105' } onClick={() => setCurrentIndex(4)}>
-                                <p className={currentIndex === 4 ? "bg-[#fdfde1] py-4 rounded-xl" : "py-4" }>Global Delivery</p>
+                                <p className={currentIndex === 4 ? "bg-[#fff] py-4 rounded-xl" : "py-4" }>Global Delivery</p>
                             </div>
                         </div>
 

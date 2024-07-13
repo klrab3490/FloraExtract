@@ -31,7 +31,7 @@ function App() {
   }, [location.key]);
 
   return (
-    <div id="root" className="bg-[#fdfde1]">
+    <div id="root" className="bg-[#fff]">
       {loading ? (
         <Preloader />
       ) : (

@@ -36,7 +36,7 @@ function NavbarSec() {
     };
 
     return (
-        <div className="sticky top-0 z-[1000] bg-[#1A392D] text-white">
+        <div className="sticky top-0 z-[1000] bg-[#004812] text-white">
             <motion.div ref={navRef} initial={{ y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{ type: "spring", damping: 30,duration:500 , stiffness: 200, ease: "easeOut" }} className="w-[100vw] flex justify-center items-center px-2 py-2 font-semibold ">
                 <div className="px-4 py-2 hidden sm:flex " onClick={ScrollToTop}>
                     <NavLink to={"/shop"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Products </NavLink>
@@ -66,7 +66,7 @@ function NavbarSec() {
                 <div className="w-full px-5 h-full flex items-center justify-center">
                     <AnimatePresence>
                         {isOpen && (
-                            <motion.div key="menu" initial="closed" animate="open" exit="closed" variants={variants} className="xl:hidden border-[1px] border-[#290c06] w-full p-5 space-y-4 rounded-xl text-2xl flex-col items-center justify-center bg-[#1A392D] text-center z-30">
+                            <motion.div key="menu" initial="closed" animate="open" exit="closed" variants={variants} className="xl:hidden border-[1px] border-[#290c06] w-full p-5 space-y-4 rounded-xl text-2xl flex-col items-center justify-center bg-[#004812] text-center z-30">
                                 <motion.div onClick={handleClose} variants={itemVariants} className="border-[1px] border-[#290c06] py-2 rounded-xl">
                                     <NavLink to={"/"} onClick={ScrollToTop}>Home</NavLink>
                                 </motion.div>

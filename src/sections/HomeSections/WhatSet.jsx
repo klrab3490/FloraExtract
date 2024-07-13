@@ -13,7 +13,7 @@ function WhatSet() {
                     <span className="text-4xl sm:text-6xl font-semibold px-1 sm:px-2 text-[#5e1c0e]">02</span> What Sets Us Apart
                 </div>
             </div>
-            {/*<div className="bg-[#fdfde1]">
+            {/*<div className="bg-[#fff]">
                 <img src={Sep1} alt="" className="w-[100vw] h-20" />
             </div>
             <div className="w-full h-auto py-3 bg-[#5ACEA1] flex justify-center items-center flex-col gap-3 px-4 sm:px-8">

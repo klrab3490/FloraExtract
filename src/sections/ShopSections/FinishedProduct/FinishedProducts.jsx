@@ -225,7 +225,7 @@ export default function FinishedProducts() {
             <div className='flex sm:items-end sm:justify-end justify-center items-center'>
                 <div className='flex items-center justify-center gap-2 border-1 mb-6 bg-[#fd9b40] p-2 mt-2 rounded-lg'>
                     <p className='text-lg'>Category By : </p>
-                    <select id="sortby" name='sortby' className='w-48 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1] rounded-xl p-1' onChange={handleChange}>
+                    <select id="sortby" name='sortby' className='w-48 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fff] rounded-xl p-1' onChange={handleChange}>
                         <option defaultChecked value="All" className='p-2'>All</option>
                         <option value="capsules" className='p-2'>Capsules</option>
                         <option value="softgels" className='p-2'>Softgels</option>
@@ -236,7 +236,7 @@ export default function FinishedProducts() {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center justify-items-center gap-4 mb-5'>
                     {filteredContents.map((data) => (
                         <div key={data.id} className='p-2 h-full'> 
-                            <div key={data.id} className='p-4 bg-[#fdfde1] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
+                            <div key={data.id} className='p-4 bg-[#fff] border-2 rounded-xl border-[#5e1c0e] h-full group transition-transform transform hover:scale-105'>
                                 <div className='flex flex-col'>
                                     <div className='flex items-center justify-center h-[250px]'>
                                         {!imageLoaded && <ImageLoader />}

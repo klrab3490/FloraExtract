@@ -13,7 +13,7 @@ function Exclusive() {
                     <span className="text-6xl font-semibold px-2 text-[#5e1c0e]">03</span> Exclusives
                 </div>
             </div>
-            <div className="bg-[#fdfde1]">
+            <div className="bg-[#fff]">
                 <img src={Sep1} alt="" className="w-[100vw] h-20" />
             </div>
             <div className="w-full sm:h-[65vh] h-[45vh] relative pt-10 flex justify-center items-center bg-[#5ACEA1]">
@@ -35,7 +35,7 @@ function Exclusive() {
                     </marquee>
                 </div>
             </div>
-            <div className="bg-[#fdfde1]">
+            <div className="bg-[#fff]">
                 <img src={Sep2} alt="" className="w-[100vw] h-20" />
             </div>
         </div>
