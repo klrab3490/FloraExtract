@@ -37,16 +37,22 @@ function NavbarSec() {
 
     return (
         <div className="sticky top-0 z-[1000] bg-[#004812] text-white">
-            <motion.div ref={navRef} initial={{ y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{ type: "spring", damping: 30,duration:500 , stiffness: 200, ease: "easeOut" }} className="w-[100vw] flex justify-center items-center px-2 py-2 font-semibold ">
+            <motion.div ref={navRef} initial={{ y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{ type: "spring", damping: 30,duration:500 , stiffness: 200, ease: "easeOut" }} className="w-[100vw] flex justify-center items-center px-2 py-2 font-semibold ">    
+                <div className="hidden sm:flex flex-col items-center cursor-pointer">
+                    <img src={Logo} alt="Floral Extracts" className="h-20" />
+                </div>
+            </motion.div>
+            <motion.div ref={navRef} initial={{ y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{ type: "spring", damping: 30,duration:500 , stiffness: 200, ease: "easeOut" }} className="w-[100vw] flex justify-center items-center px-2 pb-2 font-semibold ">
                 <div className="px-4 py-2 hidden sm:flex " onClick={ScrollToTop}>
                     <NavLink to={"/shop"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Products </NavLink>
+                </div>
+                <div className="px-4 py-2 hidden sm:flex " onClick={ScrollToTop}>
+                    <NavLink to={"/gallery"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Gallery </NavLink>
                 </div>
                 <div className="px-4 py-2 hidden sm:flex" onClick={ScrollToTop}>
                     <NavLink to={"/"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Home </NavLink>
                 </div>
-                <div className="hidden sm:flex flex-col items-center px-4 cursor-pointer">
-                    <img src={Logo} alt="Floral Extracts" className="h-20" />
-                </div>
+                
                 <div className="px-4 py-2 hidden sm:flex" onClick={ScrollToTop}>
                     <NavLink to={"/about"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> About </NavLink>
                 </div>
@@ -75,6 +81,9 @@ function NavbarSec() {
                                 </motion.div>
                                 <motion.div onClick={handleClose} variants={itemVariants} className="border-[1px] border-[#290c06] py-2 rounded-xl">
                                     <NavLink to={"/about"} onClick={ScrollToTop}>About</NavLink>
+                                </motion.div>
+                                <motion.div onClick={handleClose} variants={itemVariants} className="border-[1px] border-[#290c06] py-2 rounded-xl">
+                                    <NavLink to={"/gallery"} onClick={ScrollToTop}>Gallery</NavLink>
                                 </motion.div>
                                 <motion.div onClick={handleClose} variants={itemVariants} className="border-[1px] border-[#290c06] py-2 rounded-xl">
                                     <NavLink to={"/contact"} onClick={ScrollToTop}>Contact</NavLink>

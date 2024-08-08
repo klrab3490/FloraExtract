@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound";
 import Shop from "./pages/Shop";
 import Brochure from "./pages/Brochure";
 import Preloader from "./components/Preload";
+import Gallery from "./pages/Gallery";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
             <Route path="/" element={<HomeSec />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/brochure" element={<Brochure />} />
             {/* Callback route for not found paths */}
