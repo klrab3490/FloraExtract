@@ -1,5 +1,6 @@
 // imports
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com';
 
 // icons
 import { FaXTwitter } from 'react-icons/fa6';
@@ -10,15 +11,18 @@ export default function TalkToUs() {
     const [LastName, setLastName] = useState('');
     const [Email, setEmail] = useState('');
     const [Contact, setContact] = useState('');
+    const [Position, setPosition] = useState('');
     const [Company, setCompany] = useState('');
     const [Country, setCountry] = useState('');
     const [Message, setMessage] = useState(''); 
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const clearForm = () => {
         setFirstName('');
         setLastName('');
         setEmail('');
         setContact('');
+        setPosition('');
         setCompany('');
         setCountry('');
         setMessage('');
@@ -30,13 +34,47 @@ export default function TalkToUs() {
             Name: ${FirstName} ${LastName}
             Email: ${Email}
             Contact: ${Contact}
-            Company: ${Company}
+            Position: ${Position} at ${Company}
             Country: ${Country}
             Message: ${Message}
-        `
+        `;
         console.log(Messages);
-        clearForm();
-    };
+    
+        const templateParams = {
+            first_name: FirstName,
+            last_name: LastName,
+            email: Email,
+            contact: Contact,
+            position: Position,
+            company: Company,
+            country: Country,
+            message: Message,
+        };
+    
+        emailjs.send(
+            import.meta.env.REACT_APP_EMAILJS_SERVICE_ID,
+            import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            templateParams,
+            import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            setIsSubmitted(true);
+            clearForm();
+        }, (error) => {
+            console.log('FAILED...', error);
+        });
+    };    
+
+    useEffect(() => {
+        if (isSubmitted) {
+            const timer = setTimeout(() => {
+                setIsSubmitted(false);
+            }, 3000); // Hide after 3 seconds
+
+            return () => clearTimeout(timer); // Cleanup the timer on component unmount
+        }
+    }, [isSubmitted]);
 
     return (
         <div>
@@ -116,35 +154,47 @@ export default function TalkToUs() {
                                 <div className="flex flex-wrap justify-between">
                                     <div className="mb-4 flex-grow mr-4">
                                         <label htmlFor="FirstName" className="block mb-2">First Name</label>
-                                        <input autoComplete='on' type="text" id="FirstName" value={FirstName} onChange={(e) => setFirstName(e.target.value)} placeholder="Your First Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
+                                        <input autoComplete='on' type="text" id="FirstName" value={FirstName} onChange={(e) => setFirstName(e.target.value)} placeholder="First Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" required />
                                     </div>
                                     <div className="mb-4 flex-grow">
                                         <label htmlFor="LastName" className="block mb-2">Last Name</label>
-                                        <input autoComplete='on' type="text" id="LastName" value={LastName} onChange={(e) => setLastName(e.target.value)} placeholder="Your Last Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
+                                        <input autoComplete='on' type="text" id="LastName" value={LastName} onChange={(e) => setLastName(e.target.value)} placeholder="Last Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" required />
                                     </div>
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="Email" className="block mb-2">Email</label>
-                                    <input autoComplete='on' type="email" id="Email" value={Email} onChange={(e) => setEmail(e.target.value)} placeholder="Your Email" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
+                                    <input autoComplete='on' type="email" id="Email" value={Email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" required />
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="Contact" className="block mb-2">Contact</label>
-                                    <input autoComplete='on' type="text" 
-                                        id="Contact" value={Contact} onChange={(e) => setContact(e.target.value)} placeholder="Your Contact Number" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
-                                </div>
-                                <div className="mb-4">
-                                    <label htmlFor="Company" className="block mb-2">Company</label>
-                                    <input autoComplete='on' type="text" id="Company" value={Company} onChange={(e) => setCompany(e.target.value)} placeholder="Your Company Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
+                                    <input autoComplete='on' type="text" id="Contact" value={Contact} onChange={(e) => setContact(e.target.value)} placeholder="Contact Number" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" required />
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="Country" className="block mb-2">Country</label>
                                     <input autoComplete='on' type="text" id="Country" value={Country} onChange={(e) => setCountry(e.target.value)} placeholder="Your Country Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" />
                                 </div>
+                                <div className="flex flex-wrap justify-between">
+                                    <div className="mb-4 flex-grow mr-4">
+                                    <label htmlFor="Company" className="block mb-2">Company</label>
+                                    <input autoComplete='on' type="text" id="Company" value={Company} onChange={(e) => setCompany(e.target.value)} placeholder="Company Name" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" required />
+                                    </div>
+                                    <div className="mb-4 flex-grow">
+                                        <label htmlFor="LastName" className="block mb-2">Position</label>
+                                        <input autoComplete='on' type="text" id="Position" value={Position} onChange={(e) => setPosition(e.target.value)} placeholder="Position" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" required />
+                                    </div>
+                                </div>
                                 <div className="mb-4">
                                     <label htmlFor="Message" className="block mb-2">Message</label>
-                                    <textarea id="Message" value={Message} onChange={(e) => setMessage(e.target.value)} placeholder="Your Message" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" rows="5"></textarea>
+                                    <textarea id="Message" value={Message} onChange={(e) => setMessage(e.target.value)} placeholder="Products Required" className="block w-full p-3 rounded-xl border-0 text-[#5e1c0e] placeholder:text-[#5e1c0e] bg-[#fdfde1]" rows="5" required ></textarea>
                                 </div>
-                                <button type="submit" className="w-full p-3 rounded-xl border-0 bg-[#fd9b40] hover:scale-105 shadow-black">Submit</button>
+                                <button type="submit" className="w-full p-3 mb-4 rounded-xl border-0 bg-[#fd9b40] hover:scale-105 shadow-black">Submit</button>
+                                <div className={isSubmitted ? 'flex' : 'hidden'}>
+                                    {isSubmitted && (
+                                        <div className="w-full flex justify-center items-center text-center bg-[#fdfde1] p-3 rounded-xl border-0">
+                                            <p className="text-center text-green-500">Message sent successfully!</p>
+                                        </div>
+                                    )}
+                                </div>
                             </form>
                         </div>
                     </div>
