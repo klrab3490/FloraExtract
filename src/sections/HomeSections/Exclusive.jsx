@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import EX1 from "../../assets/Exclusives/DAILY_N-DURANCE.png";
 import Sep1 from "../../assets/Vector-IMG/sep-1.png";
 import Sep2 from "../../assets/Vector-IMG/sep-2.png";
@@ -34,6 +35,10 @@ function Exclusive() {
                         <h2 className="text-3xl sm:font-mono"> &quot;We Provide You With a Wide Variety of Products, Ranging from Exotic Plant Extracts to Premium Spices&quot; </h2>
                     </marquee>
                 </div>
+            </div>
+            <div className="w-full flex flex-col sm:text-3xl text-xl font-mono justify-center items-center bg-[#5ACEA1] sm:px-14 px-4">
+                Currently wee are providing free samples of our products to our customers. You can get your free sample by clicking the button below.
+                <Link to={"/contact"} className="w-auto h-12 sm:h-16 bg-[#fd9b40] text-[#290c06] font-medium text-2xl sm:text-3xl px-5 py-2 sm:px-10 sm:py-3 rounded-full flex justify-center items-center mt-5 sm:mt-10">Get Free Sample</Link>
             </div>
             <div className="bg-[#fff]">
                 <img src={Sep2} alt="" className="w-[100vw] h-20" />

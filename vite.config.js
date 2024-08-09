@@ -1,8 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import envCompatible from 'vite-plugin-env-compatible';
 
 export default defineConfig({
-  plugins: [react()],
+  envPrefix: 'REACT_APP_',
+  plugins: [
+    react(),
+    envCompatible(),
+  ],
   assetsInclude: ['**/*.JPG'], // Add this line to handle JPG files
   build: {
     chunkSizeWarningLimit: 2000,
