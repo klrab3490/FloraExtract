@@ -215,7 +215,7 @@ export default function Extracts() {
             <div className='grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 py-5'>
                 {extracts.map((data,index) => (
                     <div key={index} className='sm:p-5 p-2'>
-                        <div className='flex flex-col h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
+                        <div className='flex flex-col border-[2px] border-black h-full p-5 rounded-xl group transition-transform transform xl:hover:scale-105'>
                             <div className='flex justify-center items-center w-full h-[300px]'>
                                 {!imageLoaded && <ImageLoader />}
                                 <img src={data.img} onLoad={handleImageLoad} className={`w-full h-[300px] rounded-xl object-cover ${imageLoaded ? 'block' : 'hidden'}`} />
