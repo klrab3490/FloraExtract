@@ -38,28 +38,28 @@ function NavbarSec() {
     return (
         <div className="sticky top-0 z-[1000] bg-[#004812] text-white">
             <motion.div ref={navRef} initial={{ y:-50, opacity:0}} animate={{y:0, opacity:1}} transition={{ type: "spring", damping: 30,duration:500 , stiffness: 200, ease: "easeOut" }} className="w-full flex justify-between items-center py-2 font-semibold ">
-                <div className="hidden sm:flex flex-col items-center cursor-pointer sm:pl-14 pl-0">
+                <div className="hidden md:flex flex-col items-center cursor-pointer sm:pl-14 pl-0">
                     <img src={Logo} alt="Floral Extracts" className="h-20" />
                 </div>
                 <div className="flex sm:pr-14 pr-0">
-                    <div className="px-4 py-2 hidden sm:flex" onClick={ScrollToTop}>
+                    <div className="px-4 py-2 hidden md:flex" onClick={ScrollToTop}>
                         <NavLink to={"/"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Home </NavLink>
                     </div>
-                    <div className="px-4 py-2 hidden sm:flex " onClick={ScrollToTop}>
+                    <div className="px-4 py-2 hidden md:flex " onClick={ScrollToTop}>
                         <NavLink to={"/about"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> About </NavLink>
                     </div>
-                    <div className="px-4 py-2 hidden sm:flex" onClick={ScrollToTop}>
+                    <div className="px-4 py-2 hidden md:flex" onClick={ScrollToTop}>
                         <NavLink to={"/shop"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Products </NavLink>
                     </div>
-                    <div className="px-4 py-2 hidden sm:flex " onClick={ScrollToTop}>
+                    <div className="px-4 py-2 hidden md:flex " onClick={ScrollToTop}>
                         <NavLink to={"/gallery"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Gallery </NavLink>
                     </div>
-                    <div className="px-4 py-2 hidden sm:flex" onClick={ScrollToTop}>
+                    <div className="px-4 py-2 hidden md:flex" onClick={ScrollToTop}>
                         <NavLink to={"/contact"} className="text-2xl hover:text-[#fd9b40] transition duration-300 cursor-pointer"> Contact </NavLink>
                     </div>
                 </div>
             </motion.div>
-            <div className="flex sm:hidden items-center justify-between px-5 relative pb-4">
+            <div className="flex md:hidden items-center justify-between px-5 relative pb-4">
                 <div className="flex items-center space-x-4 justify-center">
                     <img src={Logo} alt="Floral Extracts" className="h-16" />
                 </div>
