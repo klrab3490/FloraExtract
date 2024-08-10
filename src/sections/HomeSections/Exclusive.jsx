@@ -17,7 +17,7 @@ function Exclusive() {
             <div className="bg-[#fff]">
                 <img src={Sep1} alt="" className="w-[100vw] h-20" />
             </div>
-            <div className="w-full sm:h-[65vh] h-[45vh] relative pt-10 flex justify-center items-center bg-[#5ACEA1]">
+            <div className="w-full h-[45vh] relative pt-10 flex justify-center items-center bg-[#5ACEA1]">
                 {/* Images behind the banner */}
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                     <img src={EX1} alt="" className="sm:h-[400px] h-[200px]" />
@@ -36,9 +36,9 @@ function Exclusive() {
                     </marquee>
                 </div>
             </div>
-            <div className="w-full flex flex-col sm:text-3xl text-xl font-mono justify-center items-center bg-[#5ACEA1] sm:px-14 px-4">
-                Currently wee are providing free samples of our products to our customers. You can get your free sample by clicking the button below.
-                <Link to={"/contact"} className="w-auto h-12 sm:h-16 bg-[#fd9b40] text-[#290c06] font-medium text-2xl sm:text-3xl px-5 py-2 sm:px-10 sm:py-3 rounded-full flex justify-center items-center mt-5 sm:mt-10">Get Free Sample</Link>
+            <div className="w-full flex flex-col sm:text-2xl text-xl text-center justify-center items-center bg-[#5ACEA1] sm:px-14 px-4">
+                Currently we are providing free samples of our products to our customers. You can get your free sample by clicking the button below.
+                <Link to={"/contact"} className="bg-[#fd9b40] text-[#290c06] font-medium text-2xl sm:text-3xl rounded-full flex justify-center items-center px-5 py-3 mt-3">Get Free Sample</Link>
             </div>
             <div className="bg-[#fff]">
                 <img src={Sep2} alt="" className="w-[100vw] h-20" />
