@@ -91,7 +91,7 @@ export default function TalkToUs() {
                         </div>
                     </div>
 
-                    <div className='flex lg:flex-row flex-col px-4 sm:px-14'>
+                    <div className='flex lg:flex-row flex-col-reverse px-4 sm:px-14'>
                         <div className="lg:w-1/2 w-full flex flex-col lg:border-r-[1px] border-t-[1px] border-[#5e1c0e]">
                             <div className="text-5xl sm:text-7xl w-full text-center p-4">Get in Touch with FloraExtracts</div>
                             <div className='flex flex-wrap border-y-[1px] border-[#5e1c0e] p-3 items-center justify-center'>
