@@ -38,7 +38,7 @@ function Exclusive() {
             </div>
             <div className="w-full flex flex-col sm:text-2xl text-xl text-center justify-center items-center bg-[#5ACEA1] sm:px-14 px-4">
                 Currently we are providing free samples of our products to our customers. You can get your free sample by clicking the button below.
-                <Link to={"/contact"} className="bg-[#fd9b40] text-[#290c06] font-medium text-2xl sm:text-3xl rounded-full flex justify-center items-center px-5 py-3 mt-3">Get Free Sample</Link>
+                <Link to={"http://www.floraextracts.us/request_sample.html"} className="bg-[#fd9b40] text-[#290c06] font-medium text-2xl sm:text-3xl rounded-full flex justify-center items-center px-5 py-3 mt-3">Get Free Sample</Link>
             </div>
             <div className="bg-[#fff]">
                 <img src={Sep2} alt="" className="w-[100vw] h-20" />

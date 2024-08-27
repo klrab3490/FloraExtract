@@ -9,7 +9,7 @@ import img5 from "../assets/Gallery/IFT/5.jpg"
 import img6 from "../assets/Gallery/IFT/6.jpg"
 import img7 from "../assets/Gallery/IFT/7.jpg"
 import img8 from "../assets/Gallery/IFT/8.jpg"
-import img9 from "../assets/Gallery/IFT/9.jpg"
+import img9 from "../assets/Gallery/IFT/10.jpg"
 
 // Import Images: Meeting with Companies
 import img10 from "../assets/Gallery/Meeting/Bhoomi Natural Products and Exports Pvt.Ltd.jpg"

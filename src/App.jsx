@@ -13,6 +13,7 @@ import Shop from "./pages/Shop";
 import Brochure from "./pages/Brochure";
 import Preloader from "./components/Preload";
 import Gallery from "./pages/Gallery";
+import SampleSection from "./sections/SampleSection/SampleSection";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,6 +47,8 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/brochure" element={<Brochure />} />
+            <Route path="/404" element={<NotFound />} />
+            <Route path="/samples" element={<SampleSection />} />
             {/* Callback route for not found paths */}
             <Route
               path="/*"
