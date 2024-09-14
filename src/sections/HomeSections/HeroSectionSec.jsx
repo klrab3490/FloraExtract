@@ -37,10 +37,7 @@ function Counter({ targetNumber }) {
 
 function HeroSectionSec() {
   const content = [
-    <div
-      key="content1"
-      className="w-full h-[75vh] rounded-xl border-4 border-[#290c06]"
-    >
+    <div key="content1" className="w-full h-[75vh] rounded-xl border-4 border-[#290c06]">
       <div className="flex flex-col items-center justify-center h-full w-full sm:w-[94vw] p-2">
         <h1 className="text-4xl sm:text-8xl text-[#290c06] text-center py-4 font-semibold">
           Nurturing Health, <br />
@@ -52,35 +49,20 @@ function HeroSectionSec() {
           innovative soft gels, including patented products that optimize health
           and elevate your life.
         </h1>
-        <NavLink
-          to={"/shop"}
-          className="flex mt-4 relative justify-center items-center w-full sm:w-52 z-20"
-        >
+        <NavLink to={"/shop"} className="flex mt-4 relative justify-center items-center w-full sm:w-52 z-20">
           <div className="relative">
             <div className="absolute w-full sm:w-[163px] h-full sm:h-14 top-2 left-2 bg-[#290c06]"></div>
             <div className="flex justify-center items-center px-3 py-3 bg-[#fd9b40] hover:bg-[#e88b34] cursor-pointer relative z-10">
-              <h1 className="text-base sm:text-xl font-medium text-[#290c06]">
-                See Products
-              </h1>
-              <MdArrowOutward
-                size={20}
-                className="text-white sm:text-lg"
-              />
+              <h1 className="text-base sm:text-xl font-medium text-[#290c06]">See Products</h1>
+              <MdArrowOutward size={20} className="text-white sm:text-lg"/>
             </div>
           </div>
         </NavLink>
       </div>
     </div>,
-    <div
-      key="content2"
-      className="w-full"
-    >
+    <div key="content2" className="w-full">
       <div className="relative h-[75vh] w-full">
-        <img
-          src={img}
-          alt="hero"
-          className="w-[100vw] h-full object-cover rounded-xl"
-        />
+        <img src={img} alt="hero" className="w-[100vw] h-full object-cover rounded-xl"/>
         <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/60">
           <div className="flex flex-col items-center justify-center h-full">
             <h1 className="text-4xl sm:text-7xl p-4 text-white font-bold tracking-wider">
@@ -95,10 +77,7 @@ function HeroSectionSec() {
               standardized botanical extracts for over 20 years.
               <br /> And we believe our journey has only begun.
             </p>
-            <NavLink
-              to={"/shop"}
-              className="bg-green-500 text-white py-2 px-6 rounded-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hover:bg-green-600 transition duration-300"
-            >
+            <NavLink to={"/shop"} className="bg-green-500 text-white py-2 px-6 rounded-full text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl hover:bg-green-600 transition duration-300">
               {" "}
               Explore Now{" "}
             </NavLink>
@@ -106,16 +85,9 @@ function HeroSectionSec() {
         </div>
       </div>
     </div>,
-    <div
-      key="content2"
-      className="w-full"
-    >
+    <div key="content2" className="w-full">
       <div className="relative h-[75vh]">
-        <img
-          src={research}
-          alt="hero"
-          className="w-[100vw] h-full object-cover rounded-xl"
-        />
+        <img src={research} alt="hero" className="w-[100vw] h-full object-cover rounded-xl"/>
         <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/60 text-white">
           <div className="flex flex-col items-center justify-center h-full">
             <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">
@@ -145,16 +117,9 @@ function HeroSectionSec() {
         </div>
       </div>
     </div>,
-    <div
-      key="content3"
-      className="w-full"
-    >
+    <div key="content3" className="w-full" >
       <div className="relative h-[75vh]">
-        <img
-          src={ocean}
-          alt="hero"
-          className="w-[100vw] h-full object-cover rounded-xl"
-        />
+        <img src={ocean} alt="hero" className="w-[100vw] h-full object-cover rounded-xl"/>
         <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/30 text-white">
           <div className="flex flex-col items-center justify-center h-full pb-44">
             <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">
@@ -167,16 +132,9 @@ function HeroSectionSec() {
         </div>
       </div>
     </div>,
-    <div
-      key="content4"
-      className="w-full"
-    >
+    <div key="content4" className="w-full" >
       <div className="relative h-[75vh]">
-        <img
-          src={nature}
-          alt="hero"
-          className="w-[100vw] h-full object-cover rounded-xl"
-        />
+        <img src={nature} alt="hero" className="w-[100vw] h-full object-cover rounded-xl"/>
         <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/20 text-white">
           <div className="flex flex-col items-center justify-center h-full pb-36">
             <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">
@@ -207,13 +165,7 @@ function HeroSectionSec() {
           {content.map(
             (item, index) =>
               index === current && (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: "100" }}
-                  animate={{ opacity: 1, x: 0, width: "100" }}
-                  exit={{ opacity: 0, x: "-100", width: 0 }}
-                  transition={{ duration: 0.8, ease: "easeInOut" }}
-                >
+                <motion.div key={index} initial={{ opacity: 0, x: "100" }} animate={{ opacity: 1, x: 0, width: "100" }} exit={{ opacity: 0, x: "-100", width: 0 }} transition={{ duration: 0.8, ease: "easeInOut" }}>
                   {item}
                 </motion.div>
               )

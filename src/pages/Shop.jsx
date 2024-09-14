@@ -6,6 +6,7 @@ import NaturalColors from '../sections/ShopSections/NaturalColors/NaturalColors'
 import NaturalPreservatives from '../sections/ShopSections/NaturalPreservatives/NaturalPreservatives';
 import Organic from '../sections/ShopSections/Organic/Organic';
 import Spices from '../sections/ShopSections/Spices/Spices';
+import ImpNews from '../components/ImpNews';
 
 export default function Shop() {
     const contents = [
@@ -20,11 +21,15 @@ export default function Shop() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
-        <div className='px-4 sm:px-14'>
-            <div className='flex flex-wrap items-center justify-center py-5'>
+        <div>
+            <ImpNews>
+                We are please to inform you that we are to present our products at the upcoming IFT Chicago Session at booth 952. We are looking forward to your presence.
+            </ImpNews>
+            <div className='px-4 sm:px-14'>
+                <div className='flex flex-wrap items-center justify-center py-5'>
                 <div className={currentIndex === 0 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(0)}>Extracts</div>
                 <div className={currentIndex === 1 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(1)}>Flavour Ingredients</div>
-                <div className={currentIndex === 2 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(2)}>Finished Products</div>
+                <div className={currentIndex === 2 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(2)}>Nutraceuticals</div>
                 <div className={currentIndex === 3 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(3)}>Natural Food Colours</div>
                 <div className={currentIndex === 4 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(4)}>Natural Preservatives</div>
                 <div className={currentIndex === 5 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(5)}>Organic</div>
@@ -32,6 +37,7 @@ export default function Shop() {
             </div>
             <div>
                 {contents[currentIndex]}
+            </div>
             </div>
         </div>
     );

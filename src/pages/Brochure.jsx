@@ -8,6 +8,7 @@ import NaturalFoodColour from "../assets/Brochure/Natural Food Colour.pdf";
 import NaturalPreservatives from "../assets/Brochure/Natural Preservatives.pdf";
 import Spices from "../assets/Brochure/Spices.pdf";
 import DocViewer, { DocViewerRenderers } from "@cyntler/react-doc-viewer";
+import ImpNews from '../components/ImpNews';
 
 export default function Brochure() {
   const docs = [
@@ -32,6 +33,10 @@ export default function Brochure() {
 
   return (
     <div className="py-5 px-4 sm:px-14">
+    
+    <ImpNews>
+                We are please to inform you that we are to present our products at the upcoming IFT Chicago Session at booth 952. We are looking forward to your presence.
+    </ImpNews>
       <h1 className="text-4xl font-semibold text-center">Brochures</h1>
       <ul className="text-xl p-4">
         <li className="flex justify-start items-center">
