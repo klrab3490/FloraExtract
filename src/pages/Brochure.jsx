@@ -62,7 +62,7 @@ export default function Brochure() {
           />
         </li>
         <li className="flex justify-start items-center">
-          Finished Products{" "}
+          Nutraceutical Products{" "}
           <FaEye
             className="ml-5 mr-2 cursor-pointer"
             onClick={() => setPdfUrl(docs[2])}
