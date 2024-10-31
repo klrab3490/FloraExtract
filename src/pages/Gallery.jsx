@@ -15,6 +15,7 @@ import img9 from "../assets/Gallery/IFT/10.jpg"
 import img10 from "../assets/Gallery/Meeting/Bhoomi Natural Products and Exports Pvt.Ltd.jpg"
 import img11 from "../assets/Gallery/Meeting/Bhoomi Natural Products and Exports Pvt.Ltd 2.jpg"
 import img12 from "../assets/Gallery/Meeting/Cappacale Foods.jpg"
+import img13 from "../assets/Gallery/Meeting/Plant Lipids.jpg"
 
 // image Arrays
 const images_Visit = [
@@ -22,12 +23,16 @@ const images_Visit = [
 ]
 const meeting = [
     {
+        id: 0,
+        name: "1. Plant Lipids",
+        images: [img13]
+    }, {
         id: 1,
-        name: "1. Bhoomi Natural Products and Exports Pvt.Ltd",
+        name: "2. Bhoomi Natural Products and Exports Pvt.Ltd",
         images: [img10, img11]
     }, {
         id: 2,
-        name: "2. Cappacale Foods",
+        name: "3. Cappacale Foods",
         images: [img12]
     },
 ];
