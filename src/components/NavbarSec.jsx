@@ -7,6 +7,7 @@ import { MenuButton } from "./MenuButton";
 import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer"
+import ImpNews from "./ImpNews";
 
 function ScrollToTop() {
     window.scrollTo({
@@ -92,6 +93,9 @@ function NavbarSec() {
                     </AnimatePresence>
                 </div>
             </div>
+            <ImpNews>
+                <p>We are pleased to inform you that we will be presenting our products at the upcoming <strong>IFT Suppliers Expo</strong> in Chicago on <strong>November 7th</strong> at <strong>Booth No. 952</strong>. The expo will be held from <strong>8:30 AM to 6:30 PM CST</strong> at the <strong>Donald E. Stephens Convention Center, Rosemont, IL</strong>. We look forward to your presence and the opportunity to connect with you.</p>
+            </ImpNews>
         </div>
     );
 }

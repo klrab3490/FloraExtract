@@ -4,9 +4,8 @@ import Flavour from '../sections/ShopSections/Flavour Ingredients/Flavour';
 import FinishedProducts from '../sections/ShopSections/FinishedProduct/FinishedProducts';
 import NaturalColors from '../sections/ShopSections/NaturalColors/NaturalColors';
 import NaturalPreservatives from '../sections/ShopSections/NaturalPreservatives/NaturalPreservatives';
-import Organic from '../sections/ShopSections/Organic/Organic';
 import Spices from '../sections/ShopSections/Spices/Spices';
-import ImpNews from '../components/ImpNews';
+import Organic from '../sections/ShopSections/Organic/Organic';
 
 export default function Shop() {
     const contents = [
@@ -22,9 +21,6 @@ export default function Shop() {
 
     return (
         <div>
-            <ImpNews>
-                We are please to inform you that we are to present our products at the upcoming IFT Chicago Session at booth 952. We are looking forward to your presence.
-            </ImpNews>
             <div className='px-4 sm:px-14'>
                 <div className='flex flex-wrap items-center justify-center py-5'>
                 <div className={currentIndex === 0 ? 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline text-[#fd9b40]' : 'px-4 py-2 flex text-center justify-center text-2xl font-medium cursor-pointer hover:text-[#fd9b40] hover:underline'} onClick={() => setCurrentIndex(0)}>Extracts</div>

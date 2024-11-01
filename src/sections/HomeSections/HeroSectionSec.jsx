@@ -37,7 +37,7 @@ function Counter({ targetNumber }) {
 
 function HeroSectionSec() {
   const content = [
-    <div key="content1" className="w-full h-[75vh] rounded-xl border-4 border-[#290c06]">
+    <div key="content1" className="w-full h-[75dvh] rounded-xl border-4 border-[#290c06]">
       <div className="flex flex-col items-center justify-center h-full w-full sm:w-[94vw] p-2">
         <h1 className="text-4xl sm:text-8xl text-[#290c06] text-center py-4 font-semibold">
           Nurturing Health, <br />
@@ -61,9 +61,9 @@ function HeroSectionSec() {
       </div>
     </div>,
     <div key="content2" className="w-full">
-      <div className="relative h-[75vh] w-full">
+      <div className="relative h-[75dvh] w-full">
         <img src={img} alt="hero" className="w-[100vw] h-full object-cover rounded-xl"/>
-        <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/60">
+        <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75dvh] w-full rounded-xl bg-black/60">
           <div className="flex flex-col items-center justify-center h-full">
             <h1 className="text-4xl sm:text-7xl p-4 text-white font-bold tracking-wider">
               {" "}
@@ -86,9 +86,9 @@ function HeroSectionSec() {
       </div>
     </div>,
     <div key="content2" className="w-full">
-      <div className="relative h-[75vh]">
+      <div className="relative h-[75dvh]">
         <img src={research} alt="hero" className="w-[100vw] h-full object-cover rounded-xl"/>
-        <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/60 text-white">
+        <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75dvh] w-full rounded-xl bg-black/60 text-white">
           <div className="flex flex-col items-center justify-center h-full">
             <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">
               We Provide The Best By <br /> Innovating Naturally
@@ -118,9 +118,9 @@ function HeroSectionSec() {
       </div>
     </div>,
     <div key="content3" className="w-full" >
-      <div className="relative h-[75vh]">
+      <div className="relative h-[75dvh]">
         <img src={ocean} alt="hero" className="w-[100vw] h-full object-cover rounded-xl"/>
-        <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/30 text-white">
+        <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75dvh] w-full rounded-xl bg-black/30 text-white">
           <div className="flex flex-col items-center justify-center h-full pb-44">
             <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">
               Unlock your Inner Energy
@@ -133,9 +133,9 @@ function HeroSectionSec() {
       </div>
     </div>,
     <div key="content4" className="w-full" >
-      <div className="relative h-[75vh]">
+      <div className="relative h-[75dvh]">
         <img src={nature} alt="hero" className="w-[100vw] h-full object-cover rounded-xl"/>
-        <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75vh] w-full rounded-xl bg-black/20 text-white">
+        <div className="absolute top-0 left-0 sm:p-10 p-2 text-center h-[75dvh] w-full rounded-xl bg-black/20 text-white">
           <div className="flex flex-col items-center justify-center h-full pb-36">
             <div className="text-4xl sm:text-7xl p-4 font-bold tracking-wider">
               Unlock your Inner Energy
