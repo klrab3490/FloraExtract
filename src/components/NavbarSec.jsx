@@ -94,7 +94,7 @@ function NavbarSec() {
                 </div>
             </div>
             <ImpNews>
-                <p>We are pleased to inform you that we will be presenting our products at the upcoming <strong>IFT Suppliers Expo</strong> in Chicago on <strong>November 7th</strong> at <strong>Booth No. 952</strong>. The expo will be held from <strong>8:30 AM to 6:30 PM CST</strong> at the <strong>Donald E. Stephens Convention Center, Rosemont, IL</strong>. We look forward to your presence and the opportunity to connect with you.</p>
+                <p>We are excited to announce that images from the <strong>IFT Suppliers Expo</strong> in Chicago are now available! Head over to our gallery to see highlights from the event. We hope you enjoy the photos and feel inspired by the connections and moments captured.</p>
             </ImpNews>
         </div>
     );
